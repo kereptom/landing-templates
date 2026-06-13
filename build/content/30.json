@@ -1,0 +1,45 @@
+{
+  "lang": "en",
+  "title": "Forever: sample landing template",
+  "desc": "Demonstration landing page. All text is sample (dummy) content.",
+  "sections": [
+    {"type":"nav","brand":"Forever","links":["Services","Gallery","Pricing","FAQ"],"cta":"Book a call"},
+    {"type":"hero","eyebrow":"Sample template","h1":"A wedding that feels <em>like you</em>.","sub":"Forever plans every detail, from venue to last dance, so you can be fully present on the day that matters most.","cta":"Book a free consultation","cta2":"See our work","illus":"spark"},
+    {"type":"logos","label":"Featured by venues at","items":["Rosewood Hall","Vineyard Estate","Lakeside Manor","Garden Pavilion","The Old Mill"]},
+    {"type":"features","h2":"Every detail, <em>handled</em>.","sub":"One team for the whole journey, from the first idea to the final thank-you note.","cards":[
+      ["heart","Full planning","We shape your vision and carry it through every decision and date."],
+      ["calendar","Day-of coordination","On the day itself we run the timeline so you simply enjoy it."],
+      ["users","Trusted vendors","A curated network of florists, caterers and photographers we love."],
+      ["map","Venue scouting","We find and secure the place that fits your style and budget."],
+      ["sparkle","Design and styling","Cohesive looks, from table settings to the smallest paper detail."],
+      ["check","Budget care","Clear numbers and gentle guidance so nothing surprises you later."]
+    ]},
+    {"type":"stats","items":[["400+","weddings planned"],["98%","couples recommend"],["4.9","average rating"],["15","years of experience"]]},
+    {"type":"split1","eyebrow":"Vision","h2":"From a feeling to a <em>plan</em>.","text":"We start with what you dream of, then turn it into a clear timeline, a realistic budget and a team that makes it real.","bullets":["A mood and style we shape together","A month-by-month planning calendar","Vendors matched to your taste and budget"],"illus":"growth"},
+    {"type":"split2","eyebrow":"Calm","h2":"A day that runs <em>itself</em>.","text":"When the date arrives, you are a guest at your own wedding. We hold the timeline, the vendors and every little fire so you never have to.","bullets":["A detailed run-of-show for the whole day","One coordinator your guests can turn to","Quiet problem-solving you never even notice"],"illus":"people"},
+    {"type":"steps","h2":"Planned in <em>three steps</em>.","sub":"No spreadsheets, no stress, no late-night worry.","steps":[
+      ["Tell us your story","Share your date, your dreams and what matters most to you."],
+      ["We build the plan","Venue, vendors and timeline come together around your vision."],
+      ["Celebrate the day","Walk down the aisle while we take care of the rest."]
+    ]},
+    {"type":"testimonial","quote":"Forever turned a year of decisions into something we actually enjoyed. On the day we just held hands and watched it all unfold perfectly.","author":"Sample Couple","role":"married at Sample Venue"},
+    {"type":"pricing","h2":"Honest, <em>simple</em> pricing.","sub":"Pick the support you need. Every package is tailored after we meet.","tiers":[
+      {"name":"Day-of","price":"$1,200","period":"/ wedding","features":["Final-month coordination","Detailed day-of timeline","Vendor confirmations","On-site coordinator"],"cta":"Get started","featured":false},
+      {"name":"Full planning","price":"$4,500","period":"/ wedding","features":["Everything in Day-of","End-to-end planning","Venue and vendor sourcing","Budget management"],"cta":"Book a consultation","featured":true},
+      {"name":"Bespoke","price":"Custom","period":"","features":["Everything in Full planning","Multi-day celebrations","Destination weddings","Dedicated design team"],"cta":"Talk to us","featured":false}
+    ]},
+    {"type":"faq","h2":"Questions couples <em>often ask</em>.","items":[
+      ["How far ahead should we book?","Most couples reach out nine to twelve months before, but we happily take on shorter timelines too."],
+      ["Do you work with our venue?","Yes. We work at any venue you love and can also help you find the right one."],
+      ["Can you stay within our budget?","Absolutely. We build a clear budget early and guide every choice to protect it."],
+      ["Do you handle the vendors for us?","We source, book and manage every vendor, so you have one point of contact throughout."],
+      ["What happens on the wedding day?","We run the full timeline on-site, so you and your families can simply be present."]
+    ]},
+    {"type":"cta","h2":"Ready to start planning?","sub":"Tell us about your day and we will show you how calm wedding planning can feel.","button":"Book a free call"},
+    {"type":"footer","brand":"Forever","tagline":"Thoughtful wedding planning, from first idea to last dance. Sample dummy brand for template preview.","columns":[
+      ["Services","Full planning","Day-of coordination","Styling","Venue scouting"],
+      ["Company","About","Gallery","Reviews","Contact"],
+      ["Legal","Privacy","Terms","Bookings","Imprint"]
+    ],"copyright":"// Forever is a sample template with dummy content"}
+  ]
+}

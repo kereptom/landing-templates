@@ -1,0 +1,45 @@
+{
+  "lang": "en",
+  "title": "Estate: sample landing template",
+  "desc": "Demonstration landing page. All text is sample (dummy) content.",
+  "sections": [
+    {"type":"nav","brand":"Estate","links":["Listings","Services","Stories","Contact"],"cta":"Book a viewing"},
+    {"type":"hero","eyebrow":"Sample template","h1":"Homes that feel <em>extraordinary</em>.","sub":"Estate connects discerning buyers with the finest residences, from coastal villas to penthouse skylines, with discretion and care.","cta":"Browse listings","cta2":"Meet our advisors","illus":"house"},
+    {"type":"logos","label":"Featured in","items":["Veranda","Marble","Crestline","Aurelia","Belmont"]},
+    {"type":"features","h2":"A standard you can <em>feel</em>.","sub":"Every property is hand-selected and every detail considered, so your search stays effortless from first tour to final key.","cards":[
+      ["home","Curated portfolio","A private collection of homes you will not find on open markets."],
+      ["map","Prime locations","Addresses chosen for views, privacy and lasting value."],
+      ["shield","Quiet discretion","Confidential viewings and protected client information at every step."],
+      ["camera","Cinematic tours","Film-quality walkthroughs and drone footage of every residence."],
+      ["users","Personal advisors","One dedicated expert who knows your taste and your timeline."],
+      ["chart","Honest valuations","Clear, data-backed pricing so you always negotiate with confidence."]
+    ]},
+    {"type":"stats","items":[["$2.4B","in sales closed"],["320+","luxury homes sold"],["4.9","client satisfaction"],["28","days average to offer"]]},
+    {"type":"split1","eyebrow":"Discover","h2":"Your next home, <em>privately found</em>.","text":"We learn what moves you, then surface residences that match before they ever reach the public market.","bullets":["Off-market and pre-launch access","Tours arranged around your schedule","A shortlist tailored to your taste"],"illus":"target"},
+    {"type":"split2","eyebrow":"Close","h2":"A sale handled with <em>care</em>.","text":"From the first offer to the final signature, our team manages the detail so the experience stays calm and considered.","bullets":["Expert negotiation on your behalf","Trusted legal and finance partners","One point of contact throughout"],"illus":"shield"},
+    {"type":"steps","h2":"From first tour to <em>front door</em>.","sub":"A simple path to a home you will love for years.","steps":[
+      ["Share your vision","Tell us your style, budget and the life you picture."],
+      ["Tour in private","Visit a curated shortlist at times that suit you."],
+      ["Move in with ease","We handle the paperwork while you plan the housewarming."]
+    ]},
+    {"type":"testimonial","quote":"Estate found us a villa that was never publicly listed, then handled the entire purchase flawlessly. We simply showed up with the keys waiting.","author":"Sample Client","role":"Private Buyer, Sample City"},
+    {"type":"pricing","h2":"Tailored <em>representation</em>.","sub":"Choose the level of service that fits your move.","tiers":[
+      {"name":"Discover","price":"$0","period":"/ no obligation","features":["Curated listing alerts","One advisory call","Market overview report","Standard viewings"],"cta":"Start your search","featured":false},
+      {"name":"Signature","price":"2.5%","period":"/ on sale price","features":["Dedicated personal advisor","Off-market access","Cinematic tours included","Full negotiation support"],"cta":"Book a viewing","featured":true},
+      {"name":"Private Office","price":"Bespoke","period":"","features":["Confidential search team","Global property network","Relocation concierge","White-glove closing"],"cta":"Speak with us","featured":false}
+    ]},
+    {"type":"faq","h2":"Questions, <em>answered</em>.","items":[
+      ["Do you show off-market homes?","Yes. Signature and Private Office clients see residences before they are ever publicly listed."],
+      ["How are your fees structured?","Buyers search at no obligation. On a sale we charge a clear percentage agreed in advance, with no hidden costs."],
+      ["Can you help me relocate?","Our Private Office includes a concierge who arranges schools, movers and local introductions."],
+      ["Is my search kept private?","Always. Viewings and client details are handled with strict confidentiality at every stage."],
+      ["Do you work internationally?","Through our partner network we source and sell luxury homes across major cities and coastlines."]
+    ]},
+    {"type":"cta","h2":"Ready to find your home?","sub":"Tell us what you are looking for and we will open the right doors, privately and on your schedule.","button":"Book a viewing"},
+    {"type":"footer","brand":"Estate","tagline":"Curated luxury residences with discretion and care. Sample dummy brand for template preview.","columns":[
+      ["Explore","Listings","Locations","New developments","Sold homes"],
+      ["Company","About","Our advisors","Stories","Careers"],
+      ["Contact","Call us","Email","Visit office","Mon-Sat 9-19"]
+    ],"copyright":"// Estate is a sample template with dummy content"}
+  ]
+}

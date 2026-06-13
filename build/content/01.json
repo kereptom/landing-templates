@@ -1,0 +1,45 @@
+{
+  "lang": "en",
+  "title": "Nimbus: sample landing template",
+  "desc": "Demonstration landing page. All text is sample (dummy) content.",
+  "sections": [
+    {"type":"nav","brand":"Nimbus","links":["Features","Pricing","FAQ","Blog"],"cta":"Start free"},
+    {"type":"hero","eyebrow":"Sample template","h1":"Ship projects, <em>not chaos</em>.","sub":"Nimbus keeps plans, tasks and updates in one calm place, so your team always knows what is next.","cta":"Start free trial","cta2":"See how it works","illus":"network"},
+    {"type":"logos","label":"Trusted by teams at","items":["Northwind","Lumen","Forge","Atlas","Vela"]},
+    {"type":"features","h2":"Everything in <em>one place</em>.","sub":"Stop stitching five tools together. Nimbus covers the whole flow from idea to done.","cards":[
+      ["target","Clear goals","Turn fuzzy ideas into measurable outcomes everyone can see."],
+      ["bolt","Fast by default","A keyboard-first interface that never gets in your way."],
+      ["users","Real collaboration","Comments, mentions and shared context, right where work happens."],
+      ["chart","Live dashboards","Know status at a glance without chasing anyone for updates."],
+      ["lock","Secure by design","Your data stays yours, with granular roles and audit logs."],
+      ["sparkle","Smart automations","Let routine steps run themselves and focus on the work that matters."]
+    ]},
+    {"type":"stats","items":[["12k+","teams onboarded"],["98%","would recommend"],["4.9","average rating"],["40%","less status chasing"]]},
+    {"type":"split1","eyebrow":"Plan","h2":"From idea to <em>roadmap</em> in minutes.","text":"Break big goals into clear steps, set owners and dates, and watch the plan stay in sync as reality changes.","bullets":["Drag-and-drop timeline","Dependencies that update themselves","Templates for common projects"],"illus":"growth"},
+    {"type":"split2","eyebrow":"Track","h2":"One source of <em>truth</em>.","text":"No more guessing who is doing what. Every task, decision and file lives in one shared, searchable space.","bullets":["Real-time updates","Powerful search across everything","Notifications that respect your focus"],"illus":"layers"},
+    {"type":"steps","h2":"Up and running in <em>three steps</em>.","sub":"No long setup, no consultant required.","steps":[
+      ["Create your space","Sign up and invite your team in under a minute."],
+      ["Bring in your work","Import tasks or start fresh with a ready template."],
+      ["Find your flow","Watch updates roll in and ship your first project."]
+    ]},
+    {"type":"testimonial","quote":"We replaced three tools with Nimbus and cut our weekly status meeting in half. The team finally trusts the plan.","author":"Sample Person","role":"Head of Operations, Sample Co"},
+    {"type":"pricing","h2":"Simple, <em>fair</em> pricing.","sub":"Start free. Upgrade when your team grows.","tiers":[
+      {"name":"Starter","price":"$0","period":"/ forever","features":["Up to 5 members","Unlimited tasks","Basic dashboards","Community support"],"cta":"Get started","featured":false},
+      {"name":"Team","price":"$9","period":"/ user / mo","features":["Everything in Starter","Automations","Advanced reports","Priority support"],"cta":"Start free trial","featured":true},
+      {"name":"Business","price":"$19","period":"/ user / mo","features":["Everything in Team","SSO and audit logs","Custom roles","Dedicated manager"],"cta":"Contact sales","featured":false}
+    ]},
+    {"type":"faq","h2":"Frequently asked <em>questions</em>.","items":[
+      ["Is there really a free plan?","Yes. The Starter plan is free forever for up to five members, no card required."],
+      ["Can I import from other tools?","You can bring tasks in from a spreadsheet or start from a ready template in seconds."],
+      ["How does billing work?","You pay per active member, monthly or yearly. Cancel anytime, no lock-in."],
+      ["Is my data secure?","Data is encrypted in transit and at rest, with roles and audit logs on paid plans."],
+      ["Do you offer onboarding?","Team and Business plans include guided onboarding and priority support."]
+    ]},
+    {"type":"cta","h2":"Ready to ship calmly?","sub":"Join thousands of teams who replaced the chaos with one clear plan.","button":"Start free today"},
+    {"type":"footer","brand":"Nimbus","tagline":"One calm place for plans, tasks and updates. Sample dummy brand for template preview.","columns":[
+      ["Product","Features","Pricing","Changelog","Roadmap"],
+      ["Company","About","Careers","Blog","Contact"],
+      ["Legal","Privacy","Terms","Security","Status"]
+    ],"copyright":"// Nimbus is a sample template with dummy content"}
+  ]
+}

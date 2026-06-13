@@ -1,0 +1,45 @@
+{
+  "lang": "cs",
+  "title": "Stavby CZ: ukázková šablona landing page",
+  "desc": "Demonstrační landing page. Veškerý text je ukázkový (dummy) obsah.",
+  "sections": [
+    {"type":"nav","brand":"Stavby CZ","links":["Služby","Reference","Ceník","Kontakt"],"cta":"Cenová nabídka"},
+    {"type":"hero","eyebrow":"Ukázková šablona","h1":"Stavíme domy, které <em>vydrží</em>.","sub":"Novostavby, rekonstrukce i přístavby na klíč. Pevný termín, jasný rozpočet a stavbyvedoucí, který vše ohlídá.","cta":"Cenová nabídka","cta2":"Prohlédnout realizace","illus":"house"},
+    {"type":"logos","label":"Stavíme pro","items":["Rodiny","Developery","Obce","Firmy","Bytová družstva"]},
+    {"type":"features","h2":"Co pro vás <em>postavíme</em>.","sub":"Jeden tým od základů po kolaudaci. Bez koordinace deseti subdodavatelů.","cards":[
+      ["home","Novostavby","Rodinné domy na klíč od základové desky po předání klíčů."],
+      ["tool","Rekonstrukce","Kompletní přestavby bytů i domů, od bouracích prací po finální omítky."],
+      ["wrench","Přístavby","Garáže, podkroví a přístavby napojené na stávající stavbu."],
+      ["shield","Záruka na dílo","Na každou realizaci dáváme záruku písemně a v plném rozsahu."],
+      ["calendar","Pevný termín","Harmonogram dohodneme dopředu a stavbu předáme včas."],
+      ["chart","Přehled nákladů","Položkový rozpočet a průběžné výkazy, vždy víte, kam jdou peníze."]
+    ]},
+    {"type":"stats","items":[["20+","let na trhu"],["4,9","hodnocení investorů"],["250+","dokončených staveb"],["98%","předáno v termínu"]]},
+    {"type":"split1","eyebrow":"Postup","h2":"Od pozemku k <em>hotovému domu</em>.","text":"Žádné improvizace. Nejdřív projekt a rozpočet, pak teprve stavíme. V každé fázi víte, co se děje a co bude dál.","bullets":["Projekt a položkový rozpočet předem","Harmonogram, který dodržíme","Stavbyvedoucí na každé etapě"],"illus":"growth"},
+    {"type":"split2","eyebrow":"Jistota","h2":"Rozpočet, který <em>drží</em>.","text":"Cenu díla řekneme dopředu a držíme se jí. Vícepráce odsouhlasíte předem, nikdy je nenajdete až na konečné faktuře.","bullets":["Pevná cena podle smlouvy o dílo","Vícepráce jen po písemném schválení","Platby vázané na dokončené etapy"],"illus":"shield"},
+    {"type":"steps","h2":"Stačí <em>tři kroky</em>.","sub":"Od prvního setkání k předání hotové stavby.","steps":[
+      ["Poptávka a obhlídka","Projdeme pozemek nebo objekt a probereme váš záměr."],
+      ["Projekt a rozpočet","Připravíme řešení, harmonogram a závaznou cenu díla."],
+      ["Stavba a předání","Postavíme, zkontrolujeme a předáme dílo i se zárukou."]
+    ]},
+    {"type":"testimonial","quote":"Dům postavili přesně podle harmonogramu a rozpočet seděl na korunu. Stavbyvedoucí byl na každé schůzce a vše s námi probral.","author":"Ukázkový investor","role":"stavebník rodinného domu, Brno"},
+    {"type":"pricing","h2":"Orientační <em>ceník</em>.","sub":"Závaznou cenu spočítáme po obhlídce a podle projektu.","tiers":[
+      {"name":"Drobné stavební práce","price":"od 8 000 Kč","period":"/ den","features":["Zednické a obkladačské práce","Drobné bourání a vyzdívky","Sádrokartonové konstrukce","Cenová nabídka zdarma"],"cta":"Poptat práce","featured":false},
+      {"name":"Rekonstrukce na klíč","price":"od 450 000 Kč","period":"/ zakázka","features":["Kompletní přestavba bytu","Položkový rozpočet předem","Koordinace všech profesí","Záruka 60 měsíců"],"cta":"Poptat rekonstrukci","featured":true},
+      {"name":"Novostavba na klíč","price":"individuální","period":"","features":["Rodinný dům od základů","Smlouva o dílo s pevnou cenou","Stavbyvedoucí na stavbě","Předání ke kolaudaci"],"cta":"Domluvit schůzku","featured":false}
+    ]},
+    {"type":"faq","h2":"Časté <em>dotazy</em>.","items":[
+      ["Jak dlouho trvá stavba domu?","Hrubou stavbu zvládneme v řádu měsíců, dům na klíč podle rozsahu obvykle za 8 až 12 měsíců."],
+      ["Dáváte cenu díla předem?","Ano. Po obhlídce a podle projektu dostanete položkový rozpočet a smlouvu o dílo s pevnou cenou."],
+      ["Postavíte i podle našeho projektu?","Rádi postavíme podle vašeho projektu, nebo vám projekt zajistíme od našich architektů."],
+      ["V jaké oblasti stavíte?","Brno a Jihomoravský kraj. U větších zakázek se domluvíme i v dalších regionech."],
+      ["Jak probíhá placení?","Platby vážeme na dokončené etapy podle harmonogramu, vždy po jejich převzetí."]
+    ]},
+    {"type":"cta","h2":"Plánujete stavbu?","sub":"Napište nebo zavolejte. Domluvíme obhlídku a připravíme nezávaznou cenovou nabídku.","button":"Cenová nabídka"},
+    {"type":"footer","brand":"Stavby CZ","tagline":"Spolehlivá stavební firma na novostavby, rekonstrukce a přístavby. Ukázková značka pro náhled šablony.","columns":[
+      ["Služby","Novostavby","Rekonstrukce","Přístavby","Stavební práce"],
+      ["Firma","O nás","Reference","Ceník","Kariéra"],
+      ["Kontakt","Telefon","E-mail","Brno a okolí","Po-Pá 7-17"]
+    ],"copyright":"// Stavby CZ je ukázková šablona s dummy obsahem"}
+  ]
+}

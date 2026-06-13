@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wander: sample landing template</title>
+<meta name="description" content="Demonstration landing page. All text is sample (dummy) content.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23f2683c'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400..800&family=Lora:ital,wght@0,400..700;1,400..600&family=JetBrains+Mono:wght@400..600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --c-1:#f2683c; --c-2:#f58f6f; --c-3:#c25330; --accent-soft:#fde7dd; --accent-line:#fbcebe;
+  --paper:#fffaf5; --paper-soft:#f7f2ed; --ink:#201410; --ink-2:#5a504c; --ink-3:#908782;
+  --rule:#e4deda; --rule-soft:#f2ece7; --grad:linear-gradient(120deg,#f58f6f 0%,#f2683c 55%,#c25330 100%); --r:1.4;
+  --display:"Sora", system-ui, sans-serif; --serif:"Lora", Georgia, serif; --mono:"JetBrains Mono", ui-monospace, monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--paper);color:var(--ink);font-family:var(--serif);line-height:1.6;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,.brand,.btn,.eyebrow,.stat-n,.price-amt,.step-n,.logos-label{font-family:var(--display)}
+.container{max-width:1160px;margin:0 auto;padding:0 24px}
+.container.narrow{max-width:780px}
+em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+body.em-solid em{background:none;-webkit-text-fill-color:var(--c-1);color:var(--c-1)}
+.eyebrow{display:inline-block;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--c-1);background:var(--accent-soft);border:1px solid var(--accent-line);padding:6px 14px;border-radius:999px;margin-bottom:20px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:16px;padding:13px 26px;border-radius:calc(11px*var(--r));border:1px solid transparent;cursor:pointer;transition:transform .15s,box-shadow .2s,background .2s;white-space:nowrap}
+.btn-sm{padding:9px 18px;font-size:14.5px}
+.btn-primary{background:var(--grad);color:#fff;box-shadow:0 8px 22px -8px var(--c-1)}
+body.em-solid .btn-primary{background:var(--c-1)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 30px -10px var(--c-1)}
+.btn-ghost{background:transparent;border-color:var(--rule);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--c-1);color:var(--c-1)}
+.btn-light{background:#fff;color:#111;box-shadow:0 10px 30px -12px rgba(0,0,0,.5)}
+.btn-light:hover{transform:translateY(-2px)}
+.nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb, var(--paper) 82%, transparent);backdrop-filter:saturate(180%) blur(16px);border-bottom:1px solid transparent;transition:border-color .2s,box-shadow .2s}
+.nav.scrolled{border-bottom-color:var(--rule);box-shadow:0 4px 20px -16px rgba(0,0,0,.4)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:19px;letter-spacing:-.01em}
+.brand-dot{width:18px;height:18px;border-radius:6px;background:var(--grad);flex:none}
+.nav-links{display:flex;gap:30px;font-family:var(--display);font-weight:500;font-size:15px}
+.nav-links a{color:var(--ink-2)}
+.nav-links a:hover{color:var(--c-1)}
+.nav-cta{display:flex;align-items:center;gap:10px}
+.burger{display:none;flex-direction:column;gap:4px;background:none;border:none;padding:8px;cursor:pointer}
+.burger span{width:22px;height:2px;background:var(--ink);border-radius:2px}
+.hero{padding:clamp(48px,8vw,96px) 0 clamp(40px,6vw,80px)}
+.hero-in{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(38px,5.6vw,64px);font-weight:800;letter-spacing:-.03em;line-height:1.04;margin-bottom:20px}
+.lede{font-size:clamp(17px,2.1vw,21px);color:var(--ink-2);max-width:34ch;margin-bottom:30px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.art-panel{background:var(--accent-soft);border:1px solid var(--accent-line);border-radius:calc(24px*var(--r));padding:clamp(28px,5vw,54px);display:flex;align-items:center;justify-content:center}
+.art-panel .ill{width:100%;max-width:340px;height:auto}
+.logos{padding:30px 0 10px}
+.logos-label{text-align:center;font-size:12.5px;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-3);margin-bottom:18px}
+.logos-row{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 42px;font-family:var(--display);font-weight:700;font-size:20px;color:var(--ink-3);opacity:.8}
+.section{padding:clamp(56px,8vw,108px) 0}
+.head{text-align:center;max-width:680px;margin:0 auto clamp(36px,5vw,56px)}
+.head h2{font-size:clamp(28px,4.2vw,44px);font-weight:800;letter-spacing:-.025em;line-height:1.1;margin-bottom:14px}
+.head p{font-size:clamp(16px,1.9vw,19px);color:var(--ink-2)}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.feature{background:var(--paper-soft);border:1px solid var(--rule);border-radius:calc(16px*var(--r));padding:28px 26px;transition:transform .18s,box-shadow .2s,border-color .2s}
+.feature:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(0,0,0,.4);border-color:var(--accent-line)}
+.feat-ic{width:48px;height:48px;border-radius:calc(12px*var(--r));background:var(--accent-soft);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.feat-ic .ic{width:24px;height:24px;stroke:var(--c-1);fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.feature h3{font-size:19px;font-weight:700;margin-bottom:8px;letter-spacing:-.01em}
+.feature p{font-size:15.5px;color:var(--ink-2)}
+.stats{padding:clamp(28px,4vw,40px) 0}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;background:var(--accent-soft);border:1px solid var(--accent-line);border-radius:calc(20px*var(--r));padding:clamp(26px,4vw,40px)}
+.stats-row>div{text-align:center}
+.stat-n{font-size:clamp(30px,4vw,46px);font-weight:800;letter-spacing:-.02em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1}
+body.em-solid .stat-n{background:none;-webkit-text-fill-color:var(--c-1);color:var(--c-1)}
+.stat-l{font-size:14px;color:var(--ink-2);margin-top:8px}
+.split-in{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,72px);align-items:center}
+.split.flip .split-art{order:-1}
+.split h2{font-size:clamp(26px,3.6vw,38px);font-weight:800;letter-spacing:-.02em;line-height:1.12;margin-bottom:16px}
+.split p{font-size:17px;color:var(--ink-2);margin-bottom:22px}
+.ticks{list-style:none;display:flex;flex-direction:column;gap:13px}
+.ticks li{display:flex;gap:12px;align-items:flex-start;font-size:16px;color:var(--ink-2)}
+.li-ic{width:22px;height:22px;flex:none;stroke:var(--c-1);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;margin-top:1px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.step{text-align:center;padding:0 10px}
+.step-n{width:54px;height:54px;border-radius:50%;background:var(--grad);color:#fff;font-weight:800;font-size:22px;display:flex;align-items:center;justify-content:center;margin:0 auto 18px}
+body.em-solid .step-n{background:var(--c-1)}
+.step h3{font-size:19px;font-weight:700;margin-bottom:8px}
+.step p{font-size:15.5px;color:var(--ink-2)}
+.quote-in{max-width:840px;margin:0 auto;text-align:center;position:relative}
+.quote-mark{font-family:var(--display);font-size:90px;line-height:.6;color:var(--accent-line);margin-bottom:8px}
+.quote-in blockquote{font-family:var(--serif);font-size:clamp(22px,3.2vw,32px);font-weight:500;line-height:1.4;letter-spacing:-.01em;margin-bottom:24px}
+.quote-by strong{font-family:var(--display);font-size:17px}
+.quote-by span{display:block;color:var(--ink-3);font-size:14.5px;margin-top:3px}
+.pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:start}
+.price-card{position:relative;background:var(--paper-soft);border:1px solid var(--rule);border-radius:calc(18px*var(--r));padding:30px 26px;display:flex;flex-direction:column;gap:18px}
+.price-card.featured{border-color:var(--c-1);box-shadow:0 24px 50px -28px var(--c-1);transform:scale(1.03)}
+.badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--grad);color:#fff;font-family:var(--display);font-size:12px;font-weight:600;padding:5px 14px;border-radius:999px}
+body.em-solid .badge{background:var(--c-1)}
+.price-name{font-family:var(--display);font-weight:700;font-size:18px}
+.price-amt{font-size:40px;font-weight:800;letter-spacing:-.02em;line-height:1}
+.price-amt span{font-family:var(--serif);font-size:15px;font-weight:400;color:var(--ink-3);letter-spacing:0}
+.price-card .ticks{gap:11px}
+.price-card .ticks li{font-size:15px}
+.price-card .btn{width:100%;margin-top:6px}
+.faq{display:flex;flex-direction:column;gap:12px}
+.faq-i{border:1px solid var(--rule);border-radius:calc(12px*var(--r));background:var(--paper-soft);padding:0 22px}
+.faq-i summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0;font-family:var(--display);font-weight:600;font-size:17px}
+.faq-i summary::-webkit-details-marker{display:none}
+.faq-x{font-family:var(--display);font-size:22px;color:var(--c-1);transition:transform .2s;flex:none}
+.faq-i[open] .faq-x{transform:rotate(45deg)}
+.faq-i p{color:var(--ink-2);font-size:15.5px;padding:0 0 18px}
+.cta{background:var(--grad);color:#fff;text-align:center}
+body.em-solid .cta{background:var(--c-1)}
+.cta-in{padding:clamp(56px,8vw,96px) 0;max-width:720px;margin:0 auto}
+.cta h2{font-size:clamp(28px,4.4vw,46px);font-weight:800;letter-spacing:-.02em;color:#fff;margin-bottom:14px}
+.cta p{font-size:clamp(16px,2vw,20px);color:rgba(255,255,255,.88);margin-bottom:30px}
+.footer{background:var(--paper-soft);border-top:1px solid var(--rule);padding-top:clamp(48px,6vw,72px)}
+.foot-in{display:grid;grid-template-columns:1.4fr 2fr;gap:40px;padding-bottom:40px}
+.fbrand p{color:var(--ink-3);font-size:15px;margin-top:14px;max-width:32ch}
+.fcols{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.fhead{font-family:var(--display);font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink);margin-bottom:14px}
+.fcol a{display:block;color:var(--ink-2);font-size:15px;padding:5px 0}
+.fcol a:hover{color:var(--c-1)}
+.foot-bar{border-top:1px solid var(--rule);padding:22px 0 40px;color:var(--ink-3);font-size:13.5px;font-family:var(--mono)}
+@media (max-width:880px){
+  .nav-links{display:none}
+  .nav.open .nav-links{display:flex;position:absolute;top:64px;left:0;right:0;flex-direction:column;background:var(--paper);border-bottom:1px solid var(--rule);padding:16px 24px;gap:14px}
+  .burger{display:flex}
+  .hero-in,.split-in,.foot-in{grid-template-columns:1fr}
+  .split.flip .split-art{order:0}
+  .hero-art{order:-1;max-width:420px}
+  .features,.steps,.pricing{grid-template-columns:1fr}
+  .stats-row{grid-template-columns:repeat(2,1fr)}
+  .fcols{grid-template-columns:repeat(3,1fr)}
+  .price-card.featured{transform:none}
+}
+@media (max-width:520px){ .fcols{grid-template-columns:1fr} .stats-row{grid-template-columns:1fr} }
+</style>
+</head>
+<body class="">
+<header class="nav" id="nav"><div class="container nav-in"><a class="brand" href="#top"><span class="brand-dot"></span>Wander</a><nav class="nav-links"><a href="#0">Destinations</a><a href="#1">Trips</a><a href="#2">Pricing</a><a href="#3">Stories</a></nav><div class="nav-cta"><a class="btn btn-sm" href="#cta">Plan a trip</a><button class="burger" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')"><span></span><span></span><span></span></button></div></div></header>
+<section class="hero" id="top"><div class="container hero-in"><div class="hero-copy"><span class="eyebrow">Sample template</span><h1>See the world, <em>skip the stress</em>.</h1><p class="lede">Wander handles flights, stays and day plans in one tidy itinerary, so you can travel light and stay present.</p><div class="hero-cta"><a class="btn btn-primary" href="#cta">Start planning</a><a class="btn btn-ghost" href="#features">Browse destinations</a></div></div><div class="hero-art"><div class="art-panel"><svg class="ill" viewBox="0 0 240 200" fill="none" stroke="var(--c-1)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="120" cy="100" r="74"/><path d="M46 100h148M120 26v148"/><path d="M120 26c-34 22-34 126 0 148M120 26c34 22 34 126 0 148"/><path d="M58 64c40 22 84 22 124 0M58 136c40-22 84-22 124 0"/></svg></div></div></div></section>
+<section class="logos"><div class="container"><p class="logos-label">Travelers booked with</p><div class="logos-row"><span>Coastline</span><span>Summit</span><span>Meridian</span><span>Lagoon</span><span>Saffron</span></div></div></section>
+<section class="section" id="features"><div class="container"><div class="head"><h2>Your whole trip in <em>one place</em>.</h2><p>Stop juggling tabs and screenshots. Wander keeps the entire journey from dream to departure together.</p></div><div class="features"><div class="feature"><div class="feat-ic"><svg class="ic" viewBox="0 0 24 24"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div><h3>Smart itineraries</h3><p>Day-by-day plans that adapt to your pace, weather and mood.</p></div><div class="feature"><div class="feat-ic"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18z"/></svg></div><h3>Hand-picked places</h3><p>Local stays and hidden corners, not the same tired tourist list.</p></div><div class="feature"><div class="feat-ic"><svg class="ic" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1A4 4 0 0 1 16 11"/></svg></div><h3>Travel together</h3><p>Invite friends, vote on plans and split the costs without the spreadsheet.</p></div><div class="feature"><div class="feat-ic"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div><h3>Flexible booking</h3><p>Lock in dates with free changes, because plans love to wander too.</p></div><div class="feature"><div class="feat-ic"><svg class="ic" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Covered everywhere</h3><p>Trip protection and 24/7 help, from delayed flights to lost bags.</p></div><div class="feature"><div class="feat-ic"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3v6M12 15v6M3 12h6M15 12h6M6 6l3 3M15 15l3 3M18 6l-3 3M9 15l-3 3"/></svg></div><h3>Local picks</h3><p>Suggestions from people who actually live where you are going.</p></div></div></div></section>
+<section class="stats"><div class="container stats-row"><div><div class="stat-n">80k+</div><div class="stat-l">trips planned</div></div><div><div class="stat-n">96%</div><div class="stat-l">would travel again</div></div><div><div class="stat-n">4.9</div><div class="stat-l">average rating</div></div><div><div class="stat-n">120+</div><div class="stat-l">countries covered</div></div></div></section>
+<section class="section split"><div class="container split-in"><div class="split-copy"><span class="eyebrow">Plan</span><h2>From idea to <em>itinerary</em> in minutes.</h2><p>Tell us where and when, and Wander drafts a route with stays, transfers and daily ideas you can reshape in a tap.</p><ul class="ticks"><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Routes built around your interests</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Transfers and stays that connect</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>One-tap swaps when plans shift</span></li></ul></div><div class="split-art"><div class="art-panel"><svg class="ill" viewBox="0 0 240 200" fill="none" stroke="var(--c-1)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="110" cy="105" r="62"/><circle cx="110" cy="105" r="36"/><circle cx="110" cy="105" r="10"/><path d="m150 65 40-40M178 25h12v12" stroke-width="5"/></svg></div></div></div></section>
+<section class="section split flip"><div class="container split-in"><div class="split-art"><div class="art-panel"><svg class="ill" viewBox="0 0 240 200" fill="none" stroke="var(--c-1)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m120 36 86 44-86 44-86-44z"/><path d="m34 118 86 44 86-44M34 152l86 44 86-44" stroke-width="5"/></svg></div></div><div class="split-copy"><span class="eyebrow">Travel</span><h2>Everything you need, <em>offline too</em>.</h2><p>Tickets, maps and confirmations stay in one pocket, ready even when the signal is not. No more frantic inbox digging.</p><ul class="ticks"><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>All bookings in one wallet</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Maps that work without data</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Reminders that respect your time zone</span></li></ul></div></div></section>
+<section class="section steps-wrap"><div class="container"><div class="head"><h2>Packed and going in <em>three steps</em>.</h2><p>No travel agent visit, no endless tabs.</p></div><div class="steps"><div class="step"><div class="step-n">1</div><h3>Tell us your dream</h3><p>Pick a place or let Wander surprise you with a match.</p></div><div class="step"><div class="step-n">2</div><h3>Shape the plan</h3><p>Tweak the draft itinerary until it feels like yours.</p></div><div class="step"><div class="step-n">3</div><h3>Book and go</h3><p>Confirm everything at once and hit the road.</p></div></div></div></section>
+<section class="section quote-wrap"><div class="container quote-in"><div class="quote-mark">&ldquo;</div><blockquote>We planned two weeks across the coast in one evening with Wander. Everything just worked, and we actually relaxed for once.</blockquote><div class="quote-by"><strong>Sample Traveler</strong><span>Weekend explorer, Sample City</span></div></div></section>
+<section class="section pricing-wrap" id="pricing"><div class="container"><div class="head"><h2>Simple, <em>honest</em> pricing.</h2><p>Start free. Upgrade when the trips get bigger.</p></div><div class="pricing"><div class="price-card"><div class="price-name">Explorer</div><div class="price-amt">$0<span>/ forever</span></div><ul class="ticks"><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Up to 3 trips</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Basic itineraries</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Shared planning</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Community tips</span></li></ul><a class="btn btn-ghost" href="#cta">Get started</a></div><div class="price-card featured"><span class="badge">Popular</span><div class="price-name">Voyager</div><div class="price-amt">$8<span>/ month</span></div><ul class="ticks"><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Everything in Explorer</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Unlimited trips</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Offline access</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Priority support</span></li></ul><a class="btn btn-primary" href="#cta">Start free trial</a></div><div class="price-card"><div class="price-name">Globetrotter</div><div class="price-amt">$16<span>/ month</span></div><ul class="ticks"><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Everything in Voyager</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Trip protection</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Concierge picks</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Group cost splitting</span></li></ul><a class="btn btn-ghost" href="#cta">Talk to us</a></div></div></div></section>
+<section class="section faq-wrap" id="faq"><div class="container narrow"><div class="head"><h2>Frequently asked <em>questions</em>.</h2></div><div class="faq"><details class="faq-i"><summary>Is there really a free plan?<span class="faq-x">+</span></summary><p>Yes. The Explorer plan is free forever for up to three trips, no card required.</p></details><details class="faq-i"><summary>Can Wander book my flights and stays?<span class="faq-x">+</span></summary><p>You can book stays, transfers and activities in-app, with flight search rolling out by region.</p></details><details class="faq-i"><summary>What if my plans change?<span class="faq-x">+</span></summary><p>Voyager and Globetrotter include flexible dates, so you can reshuffle without the panic.</p></details><details class="faq-i"><summary>Do the maps work without internet?<span class="faq-x">+</span></summary><p>Yes. Paid plans download maps, tickets and confirmations for offline use.</p></details><details class="faq-i"><summary>Is my booking protected?<span class="faq-x">+</span></summary><p>Globetrotter adds trip protection and 24/7 help for delays, cancellations and lost bags.</p></details></div></div></section>
+<section class="cta" id="cta"><div class="container cta-in"><h2>Ready to wander?</h2><p>Join thousands of travelers who swapped the planning headache for one clear itinerary.</p><a class="btn btn-light" href="#top">Plan a trip today</a></div></section>
+<footer class="footer"><div class="container foot-in"><div class="fbrand"><a class="brand" href="#top"><span class="brand-dot"></span>Wander</a><p>One tidy place for flights, stays and day plans. Sample dummy brand for template preview.</p></div><div class="fcols"><div class="fcol"><div class="fhead">Product</div><a href="#">Destinations</a><a href="#">Trips</a><a href="#">Pricing</a><a href="#">Stories</a></div><div class="fcol"><div class="fhead">Company</div><a href="#">About</a><a href="#">Careers</a><a href="#">Press</a><a href="#">Contact</a></div><div class="fcol"><div class="fhead">Legal</div><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a><a href="#">Status</a></div></div></div><div class="container foot-bar">// Wander is a sample template with dummy content</div></footer>
+<script>
+const nav=document.getElementById('nav');
+const onScroll=()=>nav&&nav.classList.toggle('scrolled',window.scrollY>8);
+window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+document.querySelectorAll('.nav-links a, .nav-cta a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+</script>
+</body>
+</html>

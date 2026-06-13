@@ -1,0 +1,45 @@
+{
+  "lang": "cs",
+  "title": "Domov: ukázková šablona landing page",
+  "desc": "Demonstrační landing page. Veškerý text je ukázkový (dummy) obsah.",
+  "sections": [
+    {"type":"nav","brand":"Domov","links":["Nabídka","Prodej","Ceník","Kontakt"],"cta":"Nezávazná konzultace"},
+    {"type":"hero","eyebrow":"Ukázková šablona","h1":"Najděte si nový <em>domov</em>.","sub":"Provedeme vás prodejem i koupí nemovitosti od ocenění po podpis. Bez stresu, s férovou cenou a právní jistotou.","cta":"Nezávazná konzultace","cta2":"Prohlédnout nabídku","illus":"house"},
+    {"type":"logos","label":"Spolupracujeme s","items":["Banky","Developeři","SVJ","Notáři","Investoři"]},
+    {"type":"features","h2":"S čím vám <em>pomůžeme</em>.","sub":"Jeden makléř na ocenění, prodej i papírování. Nemusíte obvolávat pět kanceláří.","cards":[
+      ["home","Prodej nemovitosti","Připravíme inzerci, prohlídky i vyjednání nejlepší ceny."],
+      ["map","Hledání bydlení","Vybereme byt či dům podle vašich představ a rozpočtu."],
+      ["chart","Odhad ceny zdarma","Reálné ocenění podle aktuálního stavu trhu ve vaší lokalitě."],
+      ["doc","Právní servis","Smlouvy, úschova i katastr připravíme a ohlídáme za vás."],
+      ["camera","Profi prezentace","Profesionální fotky, video a 3D prohlídka pro každou nabídku."],
+      ["shield","Bezpečný obchod","Advokátní úschova peněz a kontrola každého kroku převodu."]
+    ]},
+    {"type":"stats","items":[["18+","let na trhu"],["4,9","hodnocení klientů"],["35 dní","průměrná doba prodeje"],["2500+","prodaných nemovitostí"]]},
+    {"type":"split1","eyebrow":"Postup","h2":"Od ocenění k <em>podpisu</em>.","text":"Žádné nejasnosti. Nejdřív nemovitost oceníme a připravíme, pak teprve inzerujeme. Vždy víte, v jaké fázi prodej je.","bullets":["Odhad ceny a příprava inzerce","Organizace prohlídek a vyjednávání","Smlouvy, úschova a převod v katastru"],"illus":"growth"},
+    {"type":"split2","eyebrow":"Jistota","h2":"Cena, kterou <em>předem znáte</em>.","text":"Provizi i postup řekneme dopředu a držíme se jich. Žádné skryté poplatky, žádná překvapení na konci obchodu.","bullets":["Jasná provize bez skrytých příplatků","Platba až po úspěšném převodu","Advokátní úschova a kontrola dokladů"],"illus":"shield"},
+    {"type":"steps","h2":"Stačí <em>tři kroky</em>.","sub":"Od první schůzky k novým klíčům bez starostí.","steps":[
+      ["Ozvěte se","Řekněte nám, co prodáváte nebo hledáte."],
+      ["Oceníme a připravíme","Stanovíme cenu a spustíme prodej či výběr."],
+      ["Podpis a předání","Ohlídáme smlouvy, úschovu i předání klíčů."]
+    ]},
+    {"type":"testimonial","quote":"Byt prodali za měsíc a o korunu výš, než jsme čekali. Všechny smlouvy i katastr vyřídili za nás, my jen podepsali.","author":"Ukázkový klient","role":"prodávající, Brno"},
+    {"type":"pricing","h2":"Orientační <em>ceník</em>.","sub":"Přesnou provizi řekneme po prohlídce nemovitosti, vždy předem.","tiers":[
+      {"name":"Odhad ceny","price":"zdarma","period":"","features":["Ocenění podle trhu","Analýza lokality","Doporučení k prodeji","Bez závazku"],"cta":"Chci odhad","featured":false},
+      {"name":"Prodej na klíč","price":"od 2 %","period":"/ z ceny","features":["Profi fotky a inzerce","Prohlídky a vyjednávání","Smlouvy a úschova","Převod v katastru"],"cta":"Prodat nemovitost","featured":true},
+      {"name":"Hledání bydlení","price":"individuální","period":"","features":["Výběr podle představ","Prověření nabídek","Pomoc s financováním","Asistence u podpisu"],"cta":"Domluvit konzultaci","featured":false}
+    ]},
+    {"type":"faq","h2":"Časté <em>dotazy</em>.","items":[
+      ["Kolik stojí ocenění?","Odhad tržní ceny vaší nemovitosti je u nás zdarma a nezávazný."],
+      ["Jak vysoká je provize?","Provizi řekneme předem podle typu zakázky a té se po celou dobu držíme."],
+      ["Kdo zajistí smlouvy?","Kupní smlouvu, úschovu i návrh na katastr připraví a ohlídá náš právní tým."],
+      ["V jaké oblasti působíte?","Brno a okolí do 40 km. U výjimečných nemovitostí se domluvíme i dál."],
+      ["Jak probíhá platba?","Provizi platíte až po úspěšném převodu nemovitosti na katastru."]
+    ]},
+    {"type":"cta","h2":"Chcete prodat nebo koupit?","sub":"Napište nebo zavolejte. Oceníme nemovitost a domluvíme další kroky.","button":"Nezávazná konzultace"},
+    {"type":"footer","brand":"Domov","tagline":"Spolehlivá realitní kancelář pro prodej i koupi nemovitostí. Ukázková značka pro náhled šablony.","columns":[
+      ["Služby","Prodej","Koupě","Odhad ceny","Pronájem"],
+      ["Firma","O nás","Reference","Ceník","Kariéra"],
+      ["Kontakt","Telefon","E-mail","Brno a okolí","Po-Pá 8-18"]
+    ],"copyright":"// Domov je ukázková šablona s dummy obsahem"}
+  ]
+}

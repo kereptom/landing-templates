@@ -1,0 +1,45 @@
+{
+  "lang": "en",
+  "title": "Learnly: sample landing template",
+  "desc": "Demonstration landing page. All text is sample (dummy) content.",
+  "sections": [
+    {"type":"nav","brand":"Learnly","links":["Courses","Pricing","FAQ","Blog"],"cta":"Start learning"},
+    {"type":"hero","eyebrow":"Sample template","h1":"Learn new skills, <em>at your pace</em>.","sub":"Learnly puts expert-led courses, hands-on projects and progress tracking in one place, so you actually finish what you start.","cta":"Start free trial","cta2":"Browse courses","illus":"growth"},
+    {"type":"logos","label":"Learners come from","items":["Northwind","Lumen","Forge","Atlas","Vela"]},
+    {"type":"features","h2":"Everything to <em>keep learning</em>.","sub":"Stop juggling videos, PDFs and notes. Learnly brings the whole journey from first lesson to finished skill together.","cards":[
+      ["play","Bite-sized lessons","Short, focused videos you can fit into any busy day."],
+      ["doc","Hands-on projects","Build real things and prove what you have learned."],
+      ["users","Mentor support","Ask questions and get answers from people who teach for a living."],
+      ["chart","Progress tracking","See streaks, milestones and exactly what comes next."],
+      ["star","Verified certificates","Earn shareable certificates the moment you complete a path."],
+      ["sparkle","Smart recommendations","Get the next course suggested for you, not for everyone."]
+    ]},
+    {"type":"stats","items":[["2M+","lessons completed"],["97%","would recommend"],["4.9","average rating"],["500+","expert-led courses"]]},
+    {"type":"split1","eyebrow":"Learn","h2":"From beginner to <em>confident</em> in weeks.","text":"Follow a guided path that adapts to your level, sets clear milestones and keeps the next step always within reach.","bullets":["Structured learning paths","Quizzes that reinforce each lesson","Templates for common projects"],"illus":"target"},
+    {"type":"split2","eyebrow":"Practice","h2":"Skills that <em>actually stick</em>.","text":"Watching is not learning. Every course pairs lessons with practice, feedback and projects you can add to your portfolio.","bullets":["Interactive coding and exercises","Feedback on your submitted work","A portfolio that grows as you go"],"illus":"layers"},
+    {"type":"steps","h2":"Start learning in <em>three steps</em>.","sub":"No long setup, no credit card required.","steps":[
+      ["Pick your goal","Tell us what you want to learn and where you are starting."],
+      ["Follow your path","Move through lessons and projects at your own speed."],
+      ["Earn your skill","Finish the path, claim your certificate and apply it."]
+    ]},
+    {"type":"testimonial","quote":"I went from zero to building my own app in two months with Learnly. The projects made everything click in a way videos alone never did.","author":"Sample Person","role":"Career switcher, Sample Co"},
+    {"type":"pricing","h2":"Simple, <em>fair</em> pricing.","sub":"Start free. Upgrade when you are ready to go further.","tiers":[
+      {"name":"Free","price":"$0","period":"/ forever","features":["Access to 50+ courses","Track your progress","Community forum","Basic projects"],"cta":"Get started","featured":false},
+      {"name":"Pro","price":"$15","period":"/ month","features":["Everything in Free","Full course library","Verified certificates","Mentor support"],"cta":"Start free trial","featured":true},
+      {"name":"Teams","price":"$29","period":"/ user / mo","features":["Everything in Pro","Team dashboards","Assigned learning paths","Dedicated manager"],"cta":"Contact sales","featured":false}
+    ]},
+    {"type":"faq","h2":"Frequently asked <em>questions</em>.","items":[
+      ["Is there really a free plan?","Yes. The Free plan gives you 50+ courses forever, no card required."],
+      ["Do I get a certificate?","Pro and Teams plans include verified, shareable certificates for every path you complete."],
+      ["How does billing work?","You pay monthly or yearly and can cancel anytime, with no lock-in."],
+      ["Can I learn at my own pace?","Absolutely. Courses are self-paced, so you can pause and pick up exactly where you left off."],
+      ["Do you offer team plans?","Yes. The Teams plan adds dashboards, assigned paths and a dedicated manager."]
+    ]},
+    {"type":"cta","h2":"Ready to learn something new?","sub":"Join millions of learners who turned spare moments into real, lasting skills.","button":"Start learning today"},
+    {"type":"footer","brand":"Learnly","tagline":"Expert-led courses, hands-on projects and progress tracking in one place. Sample dummy brand for template preview.","columns":[
+      ["Product","Courses","Pricing","Certificates","Roadmap"],
+      ["Company","About","Careers","Blog","Contact"],
+      ["Legal","Privacy","Terms","Security","Status"]
+    ],"copyright":"// Learnly is a sample template with dummy content"}
+  ]
+}

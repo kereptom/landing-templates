@@ -1,0 +1,45 @@
+{
+  "lang": "cs",
+  "title": "Tlapka: ukázková šablona landing page",
+  "desc": "Demonstrační landing page. Veškerý text je ukázkový (dummy) obsah.",
+  "sections": [
+    {"type":"nav","brand":"Tlapka","links":["Služby","Salon","Ceník","Kontakt"],"cta":"Rezervovat termín"},
+    {"type":"hero","eyebrow":"Ukázková šablona","h1":"Péče o mazlíčka, <em>na kterou spoléháte</em>.","sub":"Profesionální salon i spolehlivé hlídání pod jednou střechou. Vašemu psovi i kočce se u nás budou líbit.","cta":"Rezervovat termín","cta2":"Jak to funguje","illus":"leaf"},
+    {"type":"logos","label":"Důvěřují nám","items":["Pejskaři","Kočkaři","Útulky","Chovatelé","Veterináři"]},
+    {"type":"features","h2":"Co pro mazlíčka <em>uděláme</em>.","sub":"Stříhání, koupel i hlídání na jednom místě. Bez stresu pro vás i zvíře.","cards":[
+      ["scissors","Stříhání srsti","Úprava podle plemene i přání, od drápků po finální česání."],
+      ["sparkle","Koupel a péče","Šetrné šampony, vyfénování a čistá, voňavá srst."],
+      ["home","Hlídání mazlíčka","Pohlídáme psa i kočku, když jste na cestách nebo v práci."],
+      ["heart","Klid a trpělivost","Pracujeme v klidném tempu, aby se zvíře cítilo bezpečně."],
+      ["calendar","Snadná rezervace","Vyberte si termín online, potvrdíme ho obratem."],
+      ["shield","Bez stresu","Zkušený personál a hygienické prostředí pro každého mazlíčka."]
+    ]},
+    {"type":"stats","items":[["10+","let zkušeností"],["4,9","hodnocení klientů"],["5000+","spokojených tlapek"],["100%","láska ke zvířatům"]]},
+    {"type":"split1","eyebrow":"Salon","h2":"Úprava srsti s <em>citem</em>.","text":"Každé zvíře je jiné. Sestříhání i koupel přizpůsobíme plemeni, věku i povaze, vždy v klidném tempu.","bullets":["Stříhání podle plemene i vašeho přání","Šetrná kosmetika bez dráždivých látek","Drápky, uši a tlapky v jednom termínu"],"illus":"leaf"},
+    {"type":"split2","eyebrow":"Hlídání","h2":"Domov, když jste <em>pryč</em>.","text":"Když odjedete, postaráme se o krmení, procházky i mazlení. Posíláme fotky, ať máte klid.","bullets":["Krmení a procházky podle vašeho režimu","Denně fotky a zprávy o mazlíčkovi","Hlídání u nás i u vás doma"],"illus":"house"},
+    {"type":"steps","h2":"Stačí <em>tři kroky</em>.","sub":"Od rezervace k spokojenému mazlíčkovi.","steps":[
+      ["Vyberte termín","Online nebo telefonicky si zvolte vhodný čas."],
+      ["Přiveďte mazlíčka","Postaráme se o úpravu nebo hlídání podle domluvy."],
+      ["Vyzvedněte spokojené zvíře","Předáme vám voňavého a odpočinutého mazlíčka."]
+    ]},
+    {"type":"testimonial","quote":"Našeho knírače stříhají přesně podle našich představ a vždy je po návštěvě klidný a spokojený. Konečně salon, kam se rádi vracíme.","author":"Ukázkový zákazník","role":"majitelka psa, Brno"},
+    {"type":"pricing","h2":"Orientační <em>ceník</em>.","sub":"Přesnou cenu řekneme podle plemene a stavu srsti.","tiers":[
+      {"name":"Koupel a péče","price":"od 400 Kč","period":"/ návštěva","features":["Koupel a vyfénování","Vyčesání srsti","Zastřižení drápků","Čištění uší"],"cta":"Rezervovat koupel","featured":false},
+      {"name":"Kompletní úprava","price":"od 800 Kč","period":"/ návštěva","features":["Stříhání podle plemene","Koupel a fénování","Drápky a tlapky","Termín do tří dnů"],"cta":"Rezervovat úpravu","featured":true},
+      {"name":"Hlídání","price":"individuální","period":"","features":["Hlídání u nás i u vás","Krmení a procházky","Denní fotoreport","Dlouhodobé pobyty"],"cta":"Domluvit hlídání","featured":false}
+    ]},
+    {"type":"faq","h2":"Časté <em>dotazy</em>.","items":[
+      ["Jak dlouho úprava trvá?","Podle plemene a stavu srsti zpravidla jednu až dvě hodiny, termín vám řekneme dopředu."],
+      ["Zvládnete i nervózní zvíře?","Ano. Pracujeme v klidu a trpělivě, u úzkostných mazlíčků postupujeme pomalu a po krocích."],
+      ["Co potřebuji k hlídání?","Stačí krmivo, oblíbenou hračku a informace o režimu. Vše ostatní zařídíme."],
+      ["Pro jaká zvířata jste?","Staráme se o psy i kočky všech plemen a velikostí, od štěňat po seniory."],
+      ["Jak se dá platit?","Hotově i kartou, vždy až po dokončení služby a předání mazlíčka."]
+    ]},
+    {"type":"cta","h2":"Dopřejte mazlíčkovi péči.","sub":"Rezervujte si termín v salonu nebo domluvte hlídání. Ozveme se obratem.","button":"Rezervovat termín"},
+    {"type":"footer","brand":"Tlapka","tagline":"Salon a hlídání pro psy i kočky s láskou a trpělivostí. Ukázková značka pro náhled šablony.","columns":[
+      ["Služby","Stříhání","Koupel","Hlídání","Péče o drápky"],
+      ["Salon","O nás","Reference","Ceník","Galerie"],
+      ["Kontakt","Telefon","E-mail","Brno a okolí","Po-Pá 8-18"]
+    ],"copyright":"// Tlapka je ukázková šablona s dummy obsahem"}
+  ]
+}

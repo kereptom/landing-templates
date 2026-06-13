@@ -1,0 +1,45 @@
+{
+  "lang": "cs",
+  "title": "Saldo: ukázková šablona landing page",
+  "desc": "Demonstrační landing page. Veškerý text je ukázkový (dummy) obsah.",
+  "sections": [
+    {"type":"nav","brand":"Saldo","links":["Služby","Ceník","Časté dotazy","Kontakt"],"cta":"Nezávazná konzultace"},
+    {"type":"hero","eyebrow":"Ukázková šablona","h1":"Účetnictví <em>bez starostí</em>.","sub":"Vedeme účetnictví, hlídáme termíny a optimalizujeme daně, abyste se mohli věnovat svému podnikání.","cta":"Nezávazná konzultace","cta2":"Jak to funguje","illus":"chart"},
+    {"type":"logos","label":"Důvěřují nám","items":["Živnostníci","E-shopy","Startupy","Restaurace","Ordinace"]},
+    {"type":"features","h2":"Co pro vás <em>zajistíme</em>.","sub":"Účetnictví, mzdy i daně pod jednou střechou. Bez shánění tří kanceláří.","cards":[
+      ["doc","Vedení účetnictví","Daňová evidence i podvojné účetnictví přesně podle zákona."],
+      ["chart","Daňové přiznání","Sestavíme a podáme přiznání včas a v pořádku."],
+      ["users","Mzdy a personalistika","Zpracování mezd, přihlášky a komunikace s úřady."],
+      ["trend","Daňová optimalizace","Najdeme legální cesty, jak odvádět jen to nutné."],
+      ["clock","Hlídání termínů","Žádné pokuty z nepozornosti, lhůty hlídáme za vás."],
+      ["shield","Diskrétnost","Vaše data jsou v bezpečí, s mlčenlivostí v ceně."]
+    ]},
+    {"type":"stats","items":[["18+","let praxe"],["4,9","hodnocení klientů"],["500+","spokojených firem"],["0","pokut z prodlení"]]},
+    {"type":"split1","eyebrow":"Postup","h2":"Od dokladů k <em>čistým číslům</em>.","text":"Doklady nám pošlete jak vám to vyhovuje. Zbytek zařídíme my a vy máte vždy přehled o své firmě.","bullets":["Doklady online, papírově i e-mailem","Měsíční přehled hospodaření","Konzultace, kdykoli potřebujete"],"illus":"growth"},
+    {"type":"split2","eyebrow":"Férovost","h2":"Cena, kterou <em>předem znáte</em>.","text":"Paušál řekneme dopředu podle počtu dokladů a držíme se ho. Žádné nemilé překvapení na konci roku.","bullets":["Pevný měsíční paušál bez skrytých příplatků","Daňové přiznání v ceně paušálu","Zastoupení před úřady, když je třeba"],"illus":"shield"},
+    {"type":"steps","h2":"Stačí <em>tři kroky</em>.","sub":"Od první schůzky k bezstarostnému účetnictví.","steps":[
+      ["Ozvěte se","Domluvíme nezávaznou konzultaci a poznáme vaši firmu."],
+      ["Předáte agendu","Převezmeme účetnictví od vás či od předchozí kanceláře."],
+      ["Máte klid","Účtujeme, hlídáme termíny a vy podnikáte."]
+    ]},
+    {"type":"testimonial","quote":"Převzali účetnictví uprostřed roku bez jediného zaškobrtnutí. Poprvé mám v číslech jasno a žádné pokuty.","author":"Ukázkový zákazník","role":"jednatel e-shopu, Brno"},
+    {"type":"pricing","h2":"Orientační <em>ceník</em>.","sub":"Přesnou cenu řekneme po vstupní konzultaci, vždy předem.","tiers":[
+      {"name":"Živnostník","price":"od 990 Kč","period":"/ měsíc","features":["Daňová evidence","Přiznání k dani z příjmů","Přehledy pro ČSSZ a ZP","E-mailová podpora"],"cta":"Poptat službu","featured":false},
+      {"name":"Firma","price":"od 2 900 Kč","period":"/ měsíc","features":["Podvojné účetnictví","Přiznání k DPH měsíčně","Zpracování mezd do 5 osob","Daňové přiznání v ceně"],"cta":"Domluvit konzultaci","featured":true},
+      {"name":"Na míru","price":"individuální","period":"","features":["Účetnictví větších firem","Mzdy nad 5 osob","Daňové poradenství","Zastoupení před úřady"],"cta":"Domluvit schůzku","featured":false}
+    ]},
+    {"type":"faq","h2":"Časté <em>dotazy</em>.","items":[
+      ["Jak předám doklady?","Jak vám to vyhovuje: naskenované online, e-mailem nebo papírově osobně."],
+      ["Převezmete účetnictví během roku?","Ano. Agendu od předchozí kanceláře převezmeme kdykoli během roku, bez výpadku."],
+      ["Je daňové přiznání v ceně?","U firemního paušálu ano. U ostatních služeb cenu řekneme předem při konzultaci."],
+      ["Zastupujete nás před úřady?","Ano. Komunikujeme s finančním úřadem, ČSSZ i zdravotními pojišťovnami za vás."],
+      ["Hlídáte termíny podání?","Všechny lhůty hlídáme za vás, takže vám nehrozí pokuty z prodlení."]
+    ]},
+    {"type":"cta","h2":"Potřebujete spolehlivé účetní?","sub":"Napište nebo zavolejte. Domluvíme nezávaznou konzultaci a probereme vaši agendu.","button":"Nezávazná konzultace"},
+    {"type":"footer","brand":"Saldo","tagline":"Spolehlivé účetnictví a daňové poradenství pro živnostníky i firmy. Ukázková značka pro náhled šablony.","columns":[
+      ["Služby","Účetnictví","Mzdy","Daně","Poradenství"],
+      ["Firma","O nás","Reference","Ceník","Kariéra"],
+      ["Kontakt","Telefon","E-mail","Praha a Brno","Po-Pá 8-17"]
+    ],"copyright":"// Saldo je ukázková šablona s dummy obsahem"}
+  ]
+}

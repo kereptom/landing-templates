@@ -1,0 +1,45 @@
+{
+  "lang": "cs",
+  "title": "Slunce: ukázková šablona landing page",
+  "desc": "Demonstrační landing page o fotovoltaice. Veškerý text je ukázkový (dummy) obsah.",
+  "sections": [
+    {"type":"nav","brand":"Slunce","links":["Řešení","Reference","Ceník","Kontakt"],"cta":"Spočítat úsporu"},
+    {"type":"hero","eyebrow":"Ukázková šablona","h1":"Vyrábějte si <em>vlastní proud</em>.","sub":"Fotovoltaika na klíč od návrhu po dotaci. Snižte účty za elektřinu a získejte energetickou nezávislost.","cta":"Spočítat úsporu","cta2":"Jak to funguje","illus":"house"},
+    {"type":"logos","label":"Instalujeme pro","items":["Domácnosti","Firmy","Obce","Zemědělce","SVJ"]},
+    {"type":"features","h2":"Co pro vás <em>zařídíme</em>.","sub":"Jeden partner od první konzultace po spuštění elektrárny. Bez shánění více firem.","cards":[
+      ["sun","Panely na míru","Návrh podle spotřeby, orientace střechy i vašeho rozpočtu."],
+      ["bolt","Baterie a úložiště","Energii vyrobenou přes den využijete i večer a v noci."],
+      ["chart","Chytré řízení","Aplikace ukáže výrobu, spotřebu i aktuální úspory v reálném čase."],
+      ["leaf","Čistá energie","Vyrábějte ekologicky a snižte svou uhlíkovou stopu."],
+      ["doc","Dotace a papíry","Vyřídíme dotaci Nová zelená úsporám i připojení do sítě za vás."],
+      ["shield","Záruka a servis","Dlouhá záruka na panely a pravidelný servis bez starostí."]
+    ]},
+    {"type":"stats","items":[["10+","let záruky"],["4,9","hodnocení klientů"],["70%","úspora za elektřinu"],["2500+","instalací ročně"]]},
+    {"type":"split1","eyebrow":"Postup","h2":"Od návrhu k <em>spuštění</em>.","text":"Žádné překvapení. Nejdřív spočítáme úsporu, navrhneme systém a teprve pak montujeme. Vždy víte, co vás čeká.","bullets":["Bezplatná konzultace a výpočet úspory","Návrh systému přesně na vaši spotřebu","Montáž i revize od jednoho týmu"],"illus":"growth"},
+    {"type":"split2","eyebrow":"Nezávislost","h2":"Účet, který <em>klesá</em>.","text":"Elektřinu si vyrobíte sami a přebytky uložíte do baterie nebo prodáte. Méně závislosti na cenách dodavatelů.","bullets":["Výroba pokryje většinu denní spotřeby","Přebytky do baterie nebo do sítě","Návratnost obvykle do několika let"],"illus":"target"},
+    {"type":"steps","h2":"Stačí <em>tři kroky</em>.","sub":"Od konzultace k vlastní elektrárně bez starostí.","steps":[
+      ["Spočítáme úsporu","Ozvěte se, navrhneme řešení a ukážeme návratnost."],
+      ["Zařídíme dotaci","Vyřídíme dotaci, projekt i připojení do sítě."],
+      ["Namontujeme a spustíme","Instalaci i revizi zvládneme za jeden den."]
+    ]},
+    {"type":"testimonial","quote":"Elektrárnu spustili za jediný den a dotaci vyřídili kompletně za nás. Účet za elektřinu nám klesl o víc než polovinu.","author":"Ukázkový zákazník","role":"majitel domu, Brno"},
+    {"type":"pricing","h2":"Orientační <em>ceník</em>.","sub":"Přesnou cenu řekneme po výpočtu úspory, vždy předem.","tiers":[
+      {"name":"Start","price":"od 149 000 Kč","period":"/ sestava","features":["Panely do 5 kWp","Bez baterie","Návrh systému zdarma","Připojení do sítě"],"cta":"Spočítat úsporu","featured":false},
+      {"name":"Domácnost","price":"od 279 000 Kč","period":"/ sestava","features":["Panely do 10 kWp","Baterie pro večerní spotřebu","Vyřízení dotace","Aplikace pro řízení"],"cta":"Nezávazná nabídka","featured":true},
+      {"name":"Firma","price":"individuální","period":"","features":["Výkon nad 30 kWp","Velkokapacitní úložiště","Optimalizace spotřeby","Servis na míru"],"cta":"Domluvit konzultaci","featured":false}
+    ]},
+    {"type":"faq","h2":"Časté <em>dotazy</em>.","items":[
+      ["Jaká je návratnost investice?","Záleží na spotřebě a velikosti systému, obvykle se elektrárna vrátí během několika let."],
+      ["Vyřídíte za mě dotaci?","Ano. Kompletně zařídíme dotaci Nová zelená úsporám i připojení do distribuční sítě."],
+      ["Funguje fotovoltaika i v zimě?","Ano, panely vyrábějí i za zataženo, výroba je nižší, ale celoroční úspora zůstává."],
+      ["Co se stane s přebytky?","Uložíte je do baterie pro večerní spotřebu nebo je prodáte zpět do sítě."],
+      ["Jakou dáváte záruku?","Na panely poskytujeme dlouhou záruku a nabízíme pravidelný servis celého systému."]
+    ]},
+    {"type":"cta","h2":"Chcete vlastní elektrárnu?","sub":"Napište nebo zavolejte. Spočítáme úsporu a navrhneme řešení přímo pro vás.","button":"Spočítat úsporu"},
+    {"type":"footer","brand":"Slunce","tagline":"Fotovoltaika na klíč od návrhu po dotaci. Ukázková značka pro náhled šablony.","columns":[
+      ["Řešení","Panely","Baterie","Chytré řízení","Dotace"],
+      ["Firma","O nás","Reference","Ceník","Kariéra"],
+      ["Kontakt","Telefon","E-mail","Celá ČR","Po-Pá 8-18"]
+    ],"copyright":"// Slunce je ukázková šablona s dummy obsahem"}
+  ]
+}

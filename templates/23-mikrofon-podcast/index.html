@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mikrofon: ukázková šablona landing page</title>
+<meta name="description" content="Demonstrační landing page. Veškerý text je ukázkový (dummy) obsah.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23d6a019'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..600;1,8..60,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --c-1:#d6a019; --c-2:#e1b955; --c-3:#ab8014; --accent-soft:#faf1d9; --accent-line:#f3e1b4;
+  --paper:#fffdf6; --paper-soft:#f7f5ee; --ink:#1e1a10; --ink-2:#58554c; --ink-3:#8e8c83;
+  --rule:#e4e2da; --rule-soft:#f2efe8; --grad:linear-gradient(120deg,#e1b955 0%,#d6a019 55%,#ab8014 100%); --r:1.2;
+  --display:"Schibsted Grotesk", system-ui, sans-serif; --serif:"Source Serif 4", Georgia, serif; --mono:"Space Mono", ui-monospace, monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--paper);color:var(--ink);font-family:var(--serif);line-height:1.6;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,.brand,.btn,.eyebrow,.stat-n,.price-amt,.step-n,.logos-label{font-family:var(--display)}
+.container{max-width:1160px;margin:0 auto;padding:0 24px}
+.container.narrow{max-width:780px}
+em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+body.em-solid em{background:none;-webkit-text-fill-color:var(--c-1);color:var(--c-1)}
+.eyebrow{display:inline-block;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--c-1);background:var(--accent-soft);border:1px solid var(--accent-line);padding:6px 14px;border-radius:999px;margin-bottom:20px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:16px;padding:13px 26px;border-radius:calc(11px*var(--r));border:1px solid transparent;cursor:pointer;transition:transform .15s,box-shadow .2s,background .2s;white-space:nowrap}
+.btn-sm{padding:9px 18px;font-size:14.5px}
+.btn-primary{background:var(--grad);color:#fff;box-shadow:0 8px 22px -8px var(--c-1)}
+body.em-solid .btn-primary{background:var(--c-1)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 30px -10px var(--c-1)}
+.btn-ghost{background:transparent;border-color:var(--rule);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--c-1);color:var(--c-1)}
+.btn-light{background:#fff;color:#111;box-shadow:0 10px 30px -12px rgba(0,0,0,.5)}
+.btn-light:hover{transform:translateY(-2px)}
+.nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb, var(--paper) 82%, transparent);backdrop-filter:saturate(180%) blur(16px);border-bottom:1px solid transparent;transition:border-color .2s,box-shadow .2s}
+.nav.scrolled{border-bottom-color:var(--rule);box-shadow:0 4px 20px -16px rgba(0,0,0,.4)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:19px;letter-spacing:-.01em}
+.brand-dot{width:18px;height:18px;border-radius:6px;background:var(--grad);flex:none}
+.nav-links{display:flex;gap:30px;font-family:var(--display);font-weight:500;font-size:15px}
+.nav-links a{color:var(--ink-2)}
+.nav-links a:hover{color:var(--c-1)}
+.nav-cta{display:flex;align-items:center;gap:10px}
+.burger{display:none;flex-direction:column;gap:4px;background:none;border:none;padding:8px;cursor:pointer}
+.burger span{width:22px;height:2px;background:var(--ink);border-radius:2px}
+.hero{padding:clamp(48px,8vw,96px) 0 clamp(40px,6vw,80px)}
+.hero-in{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(38px,5.6vw,64px);font-weight:800;letter-spacing:-.03em;line-height:1.04;margin-bottom:20px}
+.lede{font-size:clamp(17px,2.1vw,21px);color:var(--ink-2);max-width:34ch;margin-bottom:30px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.art-panel{background:var(--accent-soft);border:1px solid var(--accent-line);border-radius:calc(24px*var(--r));padding:clamp(28px,5vw,54px);display:flex;align-items:center;justify-content:center}
+.art-panel .ill{width:100%;max-width:340px;height:auto}
+.logos{padding:30px 0 10px}
+.logos-label{text-align:center;font-size:12.5px;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-3);margin-bottom:18px}
+.logos-row{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 42px;font-family:var(--display);font-weight:700;font-size:20px;color:var(--ink-3);opacity:.8}
+.section{padding:clamp(56px,8vw,108px) 0}
+.head{text-align:center;max-width:680px;margin:0 auto clamp(36px,5vw,56px)}
+.head h2{font-size:clamp(28px,4.2vw,44px);font-weight:800;letter-spacing:-.025em;line-height:1.1;margin-bottom:14px}
+.head p{font-size:clamp(16px,1.9vw,19px);color:var(--ink-2)}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.feature{background:var(--paper-soft);border:1px solid var(--rule);border-radius:calc(16px*var(--r));padding:28px 26px;transition:transform .18s,box-shadow .2s,border-color .2s}
+.feature:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(0,0,0,.4);border-color:var(--accent-line)}
+.feat-ic{width:48px;height:48px;border-radius:calc(12px*var(--r));background:var(--accent-soft);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.feat-ic .ic{width:24px;height:24px;stroke:var(--c-1);fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.feature h3{font-size:19px;font-weight:700;margin-bottom:8px;letter-spacing:-.01em}
+.feature p{font-size:15.5px;color:var(--ink-2)}
+.stats{padding:clamp(28px,4vw,40px) 0}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;background:var(--accent-soft);border:1px solid var(--accent-line);border-radius:calc(20px*var(--r));padding:clamp(26px,4vw,40px)}
+.stats-row>div{text-align:center}
+.stat-n{font-size:clamp(30px,4vw,46px);font-weight:800;letter-spacing:-.02em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1}
+body.em-solid .stat-n{background:none;-webkit-text-fill-color:var(--c-1);color:var(--c-1)}
+.stat-l{font-size:14px;color:var(--ink-2);margin-top:8px}
+.split-in{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,72px);align-items:center}
+.split.flip .split-art{order:-1}
+.split h2{font-size:clamp(26px,3.6vw,38px);font-weight:800;letter-spacing:-.02em;line-height:1.12;margin-bottom:16px}
+.split p{font-size:17px;color:var(--ink-2);margin-bottom:22px}
+.ticks{list-style:none;display:flex;flex-direction:column;gap:13px}
+.ticks li{display:flex;gap:12px;align-items:flex-start;font-size:16px;color:var(--ink-2)}
+.li-ic{width:22px;height:22px;flex:none;stroke:var(--c-1);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;margin-top:1px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.step{text-align:center;padding:0 10px}
+.step-n{width:54px;height:54px;border-radius:50%;background:var(--grad);color:#fff;font-weight:800;font-size:22px;display:flex;align-items:center;justify-content:center;margin:0 auto 18px}
+body.em-solid .step-n{background:var(--c-1)}
+.step h3{font-size:19px;font-weight:700;margin-bottom:8px}
+.step p{font-size:15.5px;color:var(--ink-2)}
+.quote-in{max-width:840px;margin:0 auto;text-align:center;position:relative}
+.quote-mark{font-family:var(--display);font-size:90px;line-height:.6;color:var(--accent-line);margin-bottom:8px}
+.quote-in blockquote{font-family:var(--serif);font-size:clamp(22px,3.2vw,32px);font-weight:500;line-height:1.4;letter-spacing:-.01em;margin-bottom:24px}
+.quote-by strong{font-family:var(--display);font-size:17px}
+.quote-by span{display:block;color:var(--ink-3);font-size:14.5px;margin-top:3px}
+.pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:start}
+.price-card{position:relative;background:var(--paper-soft);border:1px solid var(--rule);border-radius:calc(18px*var(--r));padding:30px 26px;display:flex;flex-direction:column;gap:18px}
+.price-card.featured{border-color:var(--c-1);box-shadow:0 24px 50px -28px var(--c-1);transform:scale(1.03)}
+.badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--grad);color:#fff;font-family:var(--display);font-size:12px;font-weight:600;padding:5px 14px;border-radius:999px}
+body.em-solid .badge{background:var(--c-1)}
+.price-name{font-family:var(--display);font-weight:700;font-size:18px}
+.price-amt{font-size:40px;font-weight:800;letter-spacing:-.02em;line-height:1}
+.price-amt span{font-family:var(--serif);font-size:15px;font-weight:400;color:var(--ink-3);letter-spacing:0}
+.price-card .ticks{gap:11px}
+.price-card .ticks li{font-size:15px}
+.price-card .btn{width:100%;margin-top:6px}
+.faq{display:flex;flex-direction:column;gap:12px}
+.faq-i{border:1px solid var(--rule);border-radius:calc(12px*var(--r));background:var(--paper-soft);padding:0 22px}
+.faq-i summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0;font-family:var(--display);font-weight:600;font-size:17px}
+.faq-i summary::-webkit-details-marker{display:none}
+.faq-x{font-family:var(--display);font-size:22px;color:var(--c-1);transition:transform .2s;flex:none}
+.faq-i[open] .faq-x{transform:rotate(45deg)}
+.faq-i p{color:var(--ink-2);font-size:15.5px;padding:0 0 18px}
+.cta{background:var(--grad);color:#fff;text-align:center}
+body.em-solid .cta{background:var(--c-1)}
+.cta-in{padding:clamp(56px,8vw,96px) 0;max-width:720px;margin:0 auto}
+.cta h2{font-size:clamp(28px,4.4vw,46px);font-weight:800;letter-spacing:-.02em;color:#fff;margin-bottom:14px}
+.cta p{font-size:clamp(16px,2vw,20px);color:rgba(255,255,255,.88);margin-bottom:30px}
+.footer{background:var(--paper-soft);border-top:1px solid var(--rule);padding-top:clamp(48px,6vw,72px)}
+.foot-in{display:grid;grid-template-columns:1.4fr 2fr;gap:40px;padding-bottom:40px}
+.fbrand p{color:var(--ink-3);font-size:15px;margin-top:14px;max-width:32ch}
+.fcols{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.fhead{font-family:var(--display);font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink);margin-bottom:14px}
+.fcol a{display:block;color:var(--ink-2);font-size:15px;padding:5px 0}
+.fcol a:hover{color:var(--c-1)}
+.foot-bar{border-top:1px solid var(--rule);padding:22px 0 40px;color:var(--ink-3);font-size:13.5px;font-family:var(--mono)}
+@media (max-width:880px){
+  .nav-links{display:none}
+  .nav.open .nav-links{display:flex;position:absolute;top:64px;left:0;right:0;flex-direction:column;background:var(--paper);border-bottom:1px solid var(--rule);padding:16px 24px;gap:14px}
+  .burger{display:flex}
+  .hero-in,.split-in,.foot-in{grid-template-columns:1fr}
+  .split.flip .split-art{order:0}
+  .hero-art{order:-1;max-width:420px}
+  .features,.steps,.pricing{grid-template-columns:1fr}
+  .stats-row{grid-template-columns:repeat(2,1fr)}
+  .fcols{grid-template-columns:repeat(3,1fr)}
+  .price-card.featured{transform:none}
+}
+@media (max-width:520px){ .fcols{grid-template-columns:1fr} .stats-row{grid-template-columns:1fr} }
+</style>
+</head>
+<body class="">
+<header class="nav" id="nav"><div class="container nav-in"><a class="brand" href="#top"><span class="brand-dot"></span>Mikrofon</a><nav class="nav-links"><a href="#0">Epizody</a><a href="#1">Hosté</a><a href="#2">Předplatné</a><a href="#3">Kontakt</a></nav><div class="nav-cta"><a class="btn btn-sm" href="#cta">Poslechnout</a><button class="burger" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')"><span></span><span></span><span></span></button></div></div></header>
+<section class="hero" id="top"><div class="container hero-in"><div class="hero-copy"><span class="eyebrow">Ukázková šablona</span><h1>Příběhy, které <em>stojí za poslech</em>.</h1><p class="lede">Každý týden nová epizoda s lidmi, kteří mají co říct. Rozhovory bez vaty, témata do hloubky a zvuk, který si užijete ve sluchátkách.</p><div class="hero-cta"><a class="btn btn-primary" href="#cta">Poslechnout zdarma</a><a class="btn btn-ghost" href="#features">Projít epizody</a></div></div><div class="hero-art"><div class="art-panel"><svg class="ill" viewBox="0 0 240 200" fill="none" stroke="var(--c-1)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="80" cy="74" r="22"/><path d="M44 150a36 36 0 0 1 72 0"/><circle cx="158" cy="84" r="18"/><path d="M128 150a30 30 0 0 1 60 0"/></svg></div></div></div></section>
+<section class="logos"><div class="container"><p class="logos-label">Najdete nás na</p><div class="logos-row"><span>Spotify</span><span>Apple</span><span>YouTube</span><span>Podcasty</span><span>RSS</span></div></div></section>
+<section class="section" id="features"><div class="container"><div class="head"><h2>Proč si nás <em>oblíbíte</em>.</h2><p>Žádné nekonečné odbočky. Jen dobré otázky, zajímaví hosté a poctivá produkce.</p></div><div class="features"><div class="feature"><div class="feat-ic"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div><h3>Pravidelně každý týden</h3><p>Nová epizoda vychází ve čtvrtek ráno, ať máte na cestu do práce co poslouchat.</p></div><div class="feature"><div class="feat-ic"><svg class="ic" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1A4 4 0 0 1 16 11"/></svg></div><h3>Hosté z první ruky</h3><p>Lidé, kteří svým oborem skutečně žijí, ne jen mluví do prázdna.</p></div><div class="feature"><div class="feat-ic"><svg class="ic" viewBox="0 0 24 24"><path d="M12 3v6M12 15v6M3 12h6M15 12h6M6 6l3 3M15 15l3 3M18 6l-3 3M9 15l-3 3"/></svg></div><h3>Témata do hloubky</h3><p>Necháme prostor vyprávět, neskáčeme do řeči a jdeme až k jádru věci.</p></div><div class="feature"><div class="feat-ic"><svg class="ic" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h6"/></svg></div><h3>Přepisy ke každé epizodě</h3><p>Raději čtete? Ke každému dílu najdete celý přepis i shrnutí.</p></div><div class="feature"><div class="feat-ic"><svg class="ic" viewBox="0 0 24 24"><path d="M19 14c1.5-1.5 3-3.3 3-5.5A4.5 4.5 0 0 0 12 5 4.5 4.5 0 0 0 2 8.5c0 2.2 1.5 4 3 5.5l7 7z"/></svg></div><h3>Bez reklamních předělů</h3><p>Předplatitelé poslouchají úplně bez přerušení a o pár dní dřív.</p></div><div class="feature"><div class="feat-ic"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18z"/></svg></div><h3>Posloucháte odkudkoli</h3><p>Spotify, Apple, YouTube i klasické RSS. Vyberte si, kde vám to vyhovuje.</p></div></div></div></section>
+<section class="stats"><div class="container stats-row"><div><div class="stat-n">120+</div><div class="stat-l">odvysílaných dílů</div></div><div><div class="stat-n">4,8</div><div class="stat-l">hodnocení posluchačů</div></div><div><div class="stat-n">50k+</div><div class="stat-l">poslechů měsíčně</div></div><div><div class="stat-n">35 min</div><div class="stat-l">průměrná délka dílu</div></div></div></section>
+<section class="section split"><div class="container split-in"><div class="split-copy"><span class="eyebrow">Tvorba</span><h2>Od nápadu k <em>hotové epizodě</em>.</h2><p>Nepouštíme mikrofon jen tak. Každý díl si připravíme, ověříme fakta a sestříháme tak, aby vás držel u poslechu od první minuty.</p><ul class="ticks"><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Rešerše a otázky připravené předem</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Studiový zvuk, žádné šumy a praskání</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Pečlivý střih bez zbytečných pauz</span></li></ul></div><div class="split-art"><div class="art-panel"><svg class="ill" viewBox="0 0 240 200" fill="none" stroke="var(--c-1)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M120 40v40M120 120v40M40 100h40M160 100h40M70 50l28 28M170 150l-28-28M170 50l-28 28M70 150l28-28"/><circle cx="120" cy="100" r="16"/></svg></div></div></div></section>
+<section class="section split flip"><div class="container split-in"><div class="split-art"><div class="art-panel"><svg class="ill" viewBox="0 0 240 200" fill="none" stroke="var(--c-1)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="34" y="44" width="120" height="84" rx="14"/><path d="M64 128v22l26-22"/><path d="M62 74h64M62 98h40"/><circle cx="170" cy="140" r="30"/><path d="M158 140h24M170 128v24" stroke-width="5"/></svg></div></div><div class="split-copy"><span class="eyebrow">Komunita</span><h2>Pořad, který <em>tvoříme spolu</em>.</h2><p>Témata i hosty často navrhujete vy. Posloucháte, píšete nám zpětnou vazbu a my podle ní pořad dál ladíme.</p><ul class="ticks"><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Hosté na vaše tipy z komentářů</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Hlasování o příštích tématech</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Otázky posluchačů přímo v dílu</span></li></ul></div></div></section>
+<section class="section steps-wrap"><div class="container"><div class="head"><h2>Začnete ve <em>třech krocích</em>.</h2><p>Od první epizody k pravidelnému poslechu.</p></div><div class="steps"><div class="step"><div class="step-n">1</div><h3>Vyberte aplikaci</h3><p>Spotify, Apple nebo YouTube, podle toho, co máte rádi.</p></div><div class="step"><div class="step-n">2</div><h3>Sledujte pořad</h3><p>Klikněte na odběr a žádný nový díl vám neunikne.</p></div><div class="step"><div class="step-n">3</div><h3>Poslouchejte naplno</h3><p>Pusťte si epizodu na cestu, na běhání i k vaření.</p></div></div></div></section>
+<section class="section quote-wrap"><div class="container quote-in"><div class="quote-mark">&ldquo;</div><blockquote>Mikrofon mi dělá společnost cestou do práce každý čtvrtek. Rozhovory jsou bez vaty a hosty si vážně umí vybrat.</blockquote><div class="quote-by"><strong>Ukázkový posluchač</strong><span>stálý odběratel, Brno</span></div></div></section>
+<section class="section pricing-wrap" id="pricing"><div class="container"><div class="head"><h2>Podpořte nás <em>předplatným</em>.</h2><p>Poslouchat můžete zdarma. Předplatné odemkne bonusy a podpoří tvorbu.</p></div><div class="pricing"><div class="price-card"><div class="price-name">Posluchač</div><div class="price-amt">0 Kč<span>/ navždy</span></div><ul class="ticks"><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Všechny epizody zdarma</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Poslech ve všech aplikacích</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Přepisy ke každému dílu</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Reklamní předěly v dílech</span></li></ul><a class="btn btn-ghost" href="#cta">Začít poslouchat</a></div><div class="price-card featured"><span class="badge">Doporučeno</span><div class="price-name">Fanoušek</div><div class="price-amt">99 Kč<span>/ měsíc</span></div><ul class="ticks"><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Epizody bez reklam</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Díly o dva dny dříve</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Bonusové nezkrácené rozhovory</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Uzavřená skupina posluchačů</span></li></ul><a class="btn btn-primary" href="#cta">Stát se fanouškem</a></div><div class="price-card"><div class="price-name">Mecenáš</div><div class="price-amt">299 Kč<span>/ měsíc</span></div><ul class="ticks"><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Vše z plánu Fanoušek</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Poděkování v závěru dílu</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Přístup k živým nahrávkám</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Hlasování o tématech</span></li></ul><a class="btn btn-ghost" href="#cta">Podpořit pořad</a></div></div></div></section>
+<section class="section faq-wrap" id="faq"><div class="container narrow"><div class="head"><h2>Časté <em>dotazy</em>.</h2></div><div class="faq"><details class="faq-i"><summary>Kdy vychází nové díly?<span class="faq-x">+</span></summary><p>Každý čtvrtek ráno. Předplatitelé mají přístup už v úterý.</p></details><details class="faq-i"><summary>Kde si pořad mohu pustit?<span class="faq-x">+</span></summary><p>Na Spotify, Apple Podcasts, YouTube i přes klasické RSS ve vaší oblíbené aplikaci.</p></details><details class="faq-i"><summary>Musím za poslech platit?<span class="faq-x">+</span></summary><p>Ne. Všechny epizody jsou zdarma, předplatné jen odemyká bonusy a podporuje tvorbu.</p></details><details class="faq-i"><summary>Máte ke každému dílu přepis?<span class="faq-x">+</span></summary><p>Ano, ke každé epizodě najdete na webu celý přepis i krátké shrnutí.</p></details><details class="faq-i"><summary>Můžu navrhnout hosta nebo téma?<span class="faq-x">+</span></summary><p>Rádi. Napište nám tip a o tématech předplatitelé navíc hlasují.</p></details></div></div></section>
+<section class="cta" id="cta"><div class="container cta-in"><h2>Pustíte si první díl?</h2><p>Přidejte si Mikrofon do své aplikace a žádná nová epizoda vám neunikne.</p><a class="btn btn-light" href="#top">Poslechnout zdarma</a></div></section>
+<footer class="footer"><div class="container foot-in"><div class="fbrand"><a class="brand" href="#top"><span class="brand-dot"></span>Mikrofon</a><p>Týdenní podcast o lidech a tématech, která stojí za poslech. Ukázková značka pro náhled šablony.</p></div><div class="fcols"><div class="fcol"><div class="fhead">Pořad</div><a href="#">Epizody</a><a href="#">Hosté</a><a href="#">Přepisy</a><a href="#">Témata</a></div><div class="fcol"><div class="fhead">Poslech</div><a href="#">Spotify</a><a href="#">Apple</a><a href="#">YouTube</a><a href="#">RSS</a></div><div class="fcol"><div class="fhead">Kontakt</div><a href="#">E-mail</a><a href="#">Tipy na hosty</a><a href="#">Spolupráce</a><a href="#">Sociální sítě</a></div></div></div><div class="container foot-bar">// Mikrofon je ukázková šablona s dummy obsahem</div></footer>
+<script>
+const nav=document.getElementById('nav');
+const onScroll=()=>nav&&nav.classList.toggle('scrolled',window.scrollY>8);
+window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+document.querySelectorAll('.nav-links a, .nav-cta a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+</script>
+</body>
+</html>

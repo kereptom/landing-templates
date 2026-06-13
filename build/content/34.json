@@ -1,0 +1,45 @@
+{
+  "lang": "en",
+  "title": "Echo: sample landing template",
+  "desc": "Demonstration landing page. All text is sample (dummy) content.",
+  "sections": [
+    {"type":"nav","brand":"Echo","links":["Music","Shows","Store","Contact"],"cta":"Get tickets"},
+    {"type":"hero","eyebrow":"Sample template","h1":"Loud nights, <em>real sound</em>.","sub":"Echo is a four-piece band built for the stage. Stream the new record, catch a show, and turn the volume all the way up.","cta":"Hear the new single","cta2":"See tour dates","illus":"spark"},
+    {"type":"logos","label":"Heard on","items":["Wavelength FM","Indie Pulse","Night Owl","Stage Left","Loud & Clear"]},
+    {"type":"features","h2":"What makes <em>Echo</em>.","sub":"More than a playlist. A live, raw sound you can feel in your chest.","cards":[
+      ["play","New album out now","Twelve tracks recorded live in one room over three nights."],
+      ["star","Built for the stage","A full-throttle live set that never coasts on backing tracks."],
+      ["heart","A loyal crowd","Fans who sing every word back from the front row to the rafters."],
+      ["camera","Behind the scenes","Studio sessions, tour diaries and unreleased rehearsal cuts."],
+      ["gift","Limited merch","Vinyl, tees and tour posters pressed in small signed runs."],
+      ["mail","Stay in the loop","Get first access to tickets, drops and surprise shows."]
+    ]},
+    {"type":"stats","items":[["120+","shows played"],["2M","streams a month"],["4.9","fan rating"],["8","countries toured"]]},
+    {"type":"split1","eyebrow":"The record","h2":"The sound of <em>one room</em>.","text":"No overdubs, no autotune, no shortcuts. We tracked the whole album live to capture the band as it really plays.","bullets":["Recorded live to tape","Twelve original songs","Mixed by a Grammy-winning engineer"],"illus":"growth"},
+    {"type":"split2","eyebrow":"On tour","h2":"Catch us <em>on the road</em>.","text":"From sweaty clubs to summer festivals, the live show is where Echo really comes alive. Find a date near you.","bullets":["Dates across eight countries","Early access for the mailing list","Meet and greet on select nights"],"illus":"people"},
+    {"type":"steps","h2":"From fan to <em>front row</em>.","sub":"Three easy steps to never miss a show.","steps":[
+      ["Hear the music","Stream the new album on your favorite platform."],
+      ["Join the list","Sign up for presale codes and tour announcements."],
+      ["Grab your ticket","Lock in your spot before the show sells out."]
+    ]},
+    {"type":"testimonial","quote":"Echo live is the best gig I have seen in years. The room was electric and they did not let up for a second.","author":"Sample Fan","role":"Reviewer, Sample Music Blog"},
+    {"type":"pricing","h2":"Pick your <em>ticket</em>.","sub":"Every tier gets you in the door. Choose how close you want to be.","tiers":[
+      {"name":"General","price":"$25","period":"/ ticket","features":["Standing room entry","Access to the full set","Coat check included","Digital tour poster"],"cta":"Buy ticket","featured":false},
+      {"name":"VIP","price":"$65","period":"/ ticket","features":["Everything in General","Early entry and best view","Signed setlist","Limited tour tee"],"cta":"Go VIP","featured":true},
+      {"name":"Backstage","price":"$140","period":"/ ticket","features":["Everything in VIP","Meet and greet","Soundcheck access","Signed vinyl copy"],"cta":"Get backstage","featured":false}
+    ]},
+    {"type":"faq","h2":"Common <em>questions</em>.","items":[
+      ["Where can I stream the album?","The new record is live on every major streaming platform and on vinyl in the store."],
+      ["How do I get presale codes?","Join the mailing list and we send codes before tickets go on general sale."],
+      ["Are the shows all ages?","Most venues are all ages, but a few are 18+. Check each date before you book."],
+      ["Can I meet the band?","Backstage tickets include a meet and greet, and we hang at the merch table after most shows."],
+      ["Do you ship merch worldwide?","Yes. We ship vinyl and apparel internationally, with tracking on every order."]
+    ]},
+    {"type":"cta","h2":"Ready for a loud night?","sub":"Stream the album, grab a ticket and join the crowd at the next Echo show.","button":"Get tickets now"},
+    {"type":"footer","brand":"Echo","tagline":"A four-piece band built for the stage. Sample dummy brand for template preview.","columns":[
+      ["Music","New album","Singles","Vinyl","Playlists"],
+      ["Live","Tour dates","Tickets","Past shows","Festivals"],
+      ["Connect","About","Press kit","Newsletter","Contact"]
+    ],"copyright":"// Echo is a sample template with dummy content"}
+  ]
+}

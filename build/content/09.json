@@ -1,0 +1,45 @@
+{
+  "lang": "en",
+  "title": "Frame Studio: sample landing template",
+  "desc": "Demonstration landing page. All text is sample (dummy) content.",
+  "sections": [
+    {"type":"nav","brand":"Frame Studio","links":["Portfolio","Services","Pricing","Contact"],"cta":"Book a shoot"},
+    {"type":"hero","eyebrow":"Sample template","h1":"Photos that <em>tell your story</em>.","sub":"Frame Studio captures portraits, weddings and brands with a calm, unhurried eye, so every frame feels like you.","cta":"Book a shoot","cta2":"View portfolio","illus":"spark"},
+    {"type":"logos","label":"Featured in","items":["Verdant","Halcyon","Meridian","Solace","Driftwood"]},
+    {"type":"features","h2":"What we <em>capture</em>.","sub":"One studio for every moment that matters. No juggling five photographers.","cards":[
+      ["camera","Portraits","Natural, flattering portraits that look like the real you."],
+      ["heart","Weddings","Full-day coverage that quietly keeps up with every moment."],
+      ["star","Brand shoots","Product and lifestyle images that make your brand shine."],
+      ["sun","Natural light","We chase the good light so your photos glow on their own."],
+      ["sparkle","Careful retouching","Subtle edits that keep skin, color and texture true to life."],
+      ["gift","Print-ready files","High-resolution images plus albums you will actually hold."]
+    ]},
+    {"type":"stats","items":[["600+","shoots delivered"],["4.9","average rating"],["12 yrs","behind the lens"],["48 h","sneak-peek turnaround"]]},
+    {"type":"split1","eyebrow":"Process","h2":"From first call to <em>final gallery</em>.","text":"No guesswork on the day. We plan the look together, then show up relaxed and ready so you can just be present.","bullets":["A pre-shoot call to plan the look","A shot list, so nothing gets missed","An online gallery to share and download"],"illus":"growth"},
+    {"type":"split2","eyebrow":"Craft","h2":"Edited with a <em>gentle hand</em>.","text":"We retouch to flatter, never to fake. Colors stay true, skin stays real, and the mood stays exactly as you remember it.","bullets":["Color graded for a consistent look","Hand-finished, not batch-filtered","Backup copies kept safe for a year"],"illus":"layers"},
+    {"type":"steps","h2":"Booked in <em>three steps</em>.","sub":"No long forms, no pressure.","steps":[
+      ["Tell us your vision","Share the occasion, the vibe and your dates."],
+      ["Lock in the date","Pick a slot and reserve it with a small deposit."],
+      ["Get your gallery","Receive a sneak peek fast, then the full set."]
+    ]},
+    {"type":"testimonial","quote":"Frame Studio made us forget the camera was even there. The gallery felt like our day, not a stiff photo shoot. Every shot was us.","author":"Sample Couple","role":"Wedding clients, Sample City"},
+    {"type":"pricing","h2":"Simple, <em>honest</em> pricing.","sub":"Pick a session. Add prints and albums anytime.","tiers":[
+      {"name":"Mini","price":"$190","period":"/ session","features":["30-minute shoot","One location","15 edited photos","Online gallery"],"cta":"Book a mini","featured":false},
+      {"name":"Signature","price":"$420","period":"/ session","features":["Two-hour shoot","Two locations","60 edited photos","Print release included"],"cta":"Book a shoot","featured":true},
+      {"name":"Wedding","price":"$1,900","period":"/ day","features":["Full-day coverage","Second photographer","400+ edited photos","Custom album"],"cta":"Check our date","featured":false}
+    ]},
+    {"type":"faq","h2":"Frequently asked <em>questions</em>.","items":[
+      ["How soon will I see my photos?","A sneak peek arrives within 48 hours, with the full gallery delivered in two to three weeks."],
+      ["What should I wear?","We send a simple style guide after booking and are happy to help you plan outfits."],
+      ["Do you travel for shoots?","Yes. Local sessions are included, and travel beyond the city is quoted up front."],
+      ["Can we order prints?","Every gallery includes a print store, and albums can be added to any package."],
+      ["What if it rains?","We reschedule weather-dependent shoots at no extra cost, or move indoors."]
+    ]},
+    {"type":"cta","h2":"Ready to be photographed?","sub":"Tell us about your shoot and we will reply within a day with dates and ideas.","button":"Book a shoot"},
+    {"type":"footer","brand":"Frame Studio","tagline":"Portraits, weddings and brand photography with a calm, natural eye. Sample dummy brand for template preview.","columns":[
+      ["Studio","Portfolio","Services","About","Journal"],
+      ["Sessions","Portraits","Weddings","Brands","Prints"],
+      ["Contact","Email","Phone","Studio visit","Mon-Sat 9-18"]
+    ],"copyright":"// Frame Studio is a sample template with dummy content"}
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "lang": "en",
+  "title": "BrightSmile: sample landing template",
+  "desc": "Demonstration landing page. All text is sample (dummy) content.",
+  "sections": [
+    {"type":"nav","brand":"BrightSmile","links":["Services","Team","Pricing","Contact"],"cta":"Book a visit"},
+    {"type":"hero","eyebrow":"Sample template","h1":"A dentist you <em>look forward to</em>.","sub":"Gentle, modern dental care for the whole family. Clear prices, easy booking and a smile you will be proud of.","cta":"Book a visit","cta2":"Meet the team","illus":"spark"},
+    {"type":"logos","label":"Caring for","items":["Families","Children","Professionals","Seniors","Students"]},
+    {"type":"features","h2":"Care that <em>fits your life</em>.","sub":"From routine check-ups to a full smile makeover, all under one calm roof.","cards":[
+      ["check","Check-ups","Thorough exams that catch small issues before they grow."],
+      ["sparkle","Teeth whitening","Brighten your smile safely with a treatment tailored to you."],
+      ["tool","Fillings and repairs","Tooth-coloured fillings that blend in and last."],
+      ["heart","Gentle for kids","A friendly, fear-free first visit your child will remember fondly."],
+      ["star","Implants","Replace missing teeth with natural-looking, lasting results."],
+      ["clock","Emergency care","Same-day appointments when sudden pain cannot wait."]
+    ]},
+    {"type":"stats","items":[["20+","years of care"],["4.9","average rating"],["15k+","happy patients"],["98%","would return"]]},
+    {"type":"split1","eyebrow":"Comfort","h2":"Visits that feel <em>calm</em>.","text":"We take the time to explain every step, work gently and keep you relaxed from the waiting room to the chair.","bullets":["Pain-free numbing techniques","Honest, no-pressure advice","A warm, modern practice"],"illus":"leaf"},
+    {"type":"split2","eyebrow":"Transparency","h2":"Prices you <em>know upfront</em>.","text":"No surprises on the invoice. We agree the plan and the cost before any treatment begins, so you stay in control.","bullets":["Clear quote before we start","Flexible payment plans","Free first consultation"],"illus":"shield"},
+    {"type":"steps","h2":"Your visit in <em>three steps</em>.","sub":"From first call to a brighter smile, without the stress.","steps":[
+      ["Book online","Pick a time that suits you in under a minute."],
+      ["Meet your dentist","We examine, listen and agree a clear plan."],
+      ["Leave smiling","Get treated gently and walk out confident."]
+    ]},
+    {"type":"testimonial","quote":"I used to dread the dentist. The team at BrightSmile was so gentle and clear about costs that I actually look forward to my check-ups now.","author":"Sample Patient","role":"Patient, Sample City"},
+    {"type":"pricing","h2":"Simple, <em>honest</em> pricing.","sub":"Clear prices for every visit. The exact quote comes after your exam.","tiers":[
+      {"name":"Check-up","price":"$49","period":"/ visit","features":["Full dental exam","Routine cleaning","Cavity screening","Personalised advice"],"cta":"Book a check-up","featured":false},
+      {"name":"Whitening","price":"$199","period":"/ treatment","features":["Custom shade match","In-chair whitening","Take-home top-up kit","Follow-up review"],"cta":"Book whitening","featured":true},
+      {"name":"Smile makeover","price":"custom","period":"","features":["Full smile assessment","Tailored treatment plan","Itemised quote upfront","Flexible payment plan"],"cta":"Book a consultation","featured":false}
+    ]},
+    {"type":"faq","h2":"Frequently asked <em>questions</em>.","items":[
+      ["Do you take new patients?","Yes, we welcome new patients of all ages and your first consultation is free."],
+      ["Does it hurt?","We use gentle numbing and take our time, so most visits are comfortable and pain-free."],
+      ["Will I know the price first?","Always. We agree a clear, itemised quote before any treatment begins."],
+      ["Can I bring my children?","Of course. We make first visits friendly and fun so kids feel at ease."],
+      ["What if I have a dental emergency?","Call us and we will arrange a same-day appointment whenever possible."]
+    ]},
+    {"type":"cta","h2":"Ready for a brighter smile?","sub":"Book your visit today and see how easy gentle dental care can be.","button":"Book a visit"},
+    {"type":"footer","brand":"BrightSmile","tagline":"Gentle, modern dental care with prices you know upfront. Sample dummy brand for template preview.","columns":[
+      ["Services","Check-ups","Whitening","Implants","Emergency care"],
+      ["Practice","About","Our team","Pricing","Reviews"],
+      ["Contact","Phone","Email","Find us","Mon-Fri 8-18"]
+    ],"copyright":"// BrightSmile is a sample template with dummy content"}
+  ]
+}

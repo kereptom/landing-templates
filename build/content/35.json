@@ -1,0 +1,45 @@
+{
+  "lang": "cs",
+  "title": "Pomáháme: ukázková šablona landing page",
+  "desc": "Demonstrační landing page neziskové organizace. Veškerý text je ukázkový (dummy) obsah.",
+  "sections": [
+    {"type":"nav","brand":"Pomáháme","links":["Projekty","Příběhy","Darovat","Kontakt"],"cta":"Přispět nyní"},
+    {"type":"hero","eyebrow":"Ukázková šablona","h1":"Společně dokážeme <em>víc</em>.","sub":"Pomáháme rodinám i jednotlivcům v nouzi po celém Česku. Každý dar jde tam, kde je nejvíc potřeba.","cta":"Darovat","cta2":"Co děláme","illus":"people"},
+    {"type":"logos","label":"Podporují nás","items":["Dárci","Firmy","Nadace","Obce","Dobrovolníci"]},
+    {"type":"features","h2":"Jak <em>pomáháme</em>.","sub":"Konkrétní podpora tam, kde má skutečný dopad. Od jídla a tepla po dlouhodobé vzdělání.","cards":[
+      ["heart","Přímá pomoc","Jídlo, oblečení a teplý domov pro ty, kdo to právě potřebují."],
+      ["users","Podpora rodin","Provázíme rodiny v krizi až k samostatnému a důstojnému životu."],
+      ["leaf","Vzdělávání dětí","Doučování a kroužky, aby žádné dítě nezůstalo pozadu."],
+      ["shield","Krizová linka","Nonstop pomoc pro lidi v tíživé a náhlé životní situaci."],
+      ["globe","Dobrovolnictví","Spojujeme tisíce dobrovolníků s těmi, kdo potřebují ruku."],
+      ["chart","Transparentnost","Každou korunu vykazujeme a ukazujeme její konkrétní dopad."]
+    ]},
+    {"type":"stats","items":[["18 let","pomáháme v Česku"],["42 000","podpořených lidí"],["96 %","darů jde přímo na pomoc"],["2 500","aktivních dobrovolníků"]]},
+    {"type":"split1","eyebrow":"Dopad","h2":"Vaše pomoc má <em>konkrétní tvář</em>.","text":"Nejsme jen čísla. Za každým darem je člověk, kterému se díky vám rozsvítí v domě i v životě. Ukazujeme přesně komu a jak jste pomohli.","bullets":["Pravidelné zprávy o využití darů","Příběhy rodin, kterým jste pomohli","Audit hospodaření zveřejněný každý rok"],"illus":"growth"},
+    {"type":"split2","eyebrow":"Důvěra","h2":"Hospodaříme <em>poctivě</em>.","text":"Víme, že nám svěřujete víc než peníze, svěřujete nám důvěru. Proto je každý projekt podložený rozpočtem a každá koruna dohledatelná.","bullets":["Veřejné výroční zprávy a účetnictví","Maximum darů míří přímo na pomoc","Nezávislá kontrola financování"],"illus":"shield"},
+    {"type":"steps","h2":"Pomoci je <em>snadné</em>.","sub":"Od rozhodnutí k reálné změně ve třech krocích.","steps":[
+      ["Vyberte si","Zvolte projekt nebo přispějte tam, kde je nejvíc třeba."],
+      ["Přispějte","Darujte jednorázově nebo nastavte pravidelnou podporu."],
+      ["Sledujte dopad","Dostanete zprávu, komu a jak vaše pomoc pomohla."]
+    ]},
+    {"type":"testimonial","quote":"Když nám vyhořel byt, byli první, kdo přijel. Pomohli nám s bydlením i papíry a nikdy se neptali, jestli si to zasloužíme.","author":"Ukázkový příběh","role":"podpořená rodina, Brno"},
+    {"type":"pricing","h2":"Vyberte si <em>výši daru</em>.","sub":"Každý příspěvek pomáhá. Přispět můžete jednorázově i pravidelně.","tiers":[
+      {"name":"Malý dar","price":"200 Kč","period":"/ měsíčně","features":["Teplé jídlo pro člověka v nouzi","Děkovný dopis","Zprávy o dopadu","Daňové potvrzení"],"cta":"Darovat 200 Kč","featured":false},
+      {"name":"Doporučený dar","price":"500 Kč","period":"/ měsíčně","features":["Doučování dítěte na měsíc","Vše z malého daru","Pozvánky na akce","Jméno mezi podporovateli"],"cta":"Darovat 500 Kč","featured":true},
+      {"name":"Velký dar","price":"libovolná","period":"","features":["Podpora celé rodiny","Osobní zpráva o dopadu","Setkání s týmem","Partnerství projektu"],"cta":"Domluvit dar","featured":false}
+    ]},
+    {"type":"faq","h2":"Časté <em>dotazy</em>.","items":[
+      ["Kam přesně jdou mé peníze?","Maximum darů míří přímo na pomoc. Konkrétní využití zveřejňujeme ve výročních zprávách."],
+      ["Dostanu potvrzení pro daně?","Ano. Ke každému daru vám vystavíme potvrzení, které snižuje váš daňový základ."],
+      ["Mohu darovat pravidelně?","Ano. Nastavíte si měsíční příspěvek a kdykoli ho můžete změnit nebo ukončit."],
+      ["Komu pomáháte?","Rodinám i jednotlivcům v nouzi po celém Česku, od krizové pomoci po dlouhodobou podporu."],
+      ["Jak se mohu zapojit jinak než darem?","Hledáme dobrovolníky i firemní partnery. Ozvěte se a najdeme společně cestu."]
+    ]},
+    {"type":"cta","h2":"Přidáte se k nám?","sub":"Stačí malý krok. Společně proměníme pomoc v konkrétní změnu.","button":"Darovat nyní"},
+    {"type":"footer","brand":"Pomáháme","tagline":"Nezisková organizace, která pomáhá lidem v nouzi po celém Česku. Ukázková značka pro náhled šablony.","columns":[
+      ["Pomoc","Přímá pomoc","Podpora rodin","Vzdělávání","Krizová linka"],
+      ["Organizace","O nás","Výroční zprávy","Dobrovolnictví","Kariéra"],
+      ["Kontakt","Telefon","E-mail","Praha","Po-Pá 9-17"]
+    ],"copyright":"// Pomáháme je ukázková šablona s dummy obsahem"}
+  ]
+}

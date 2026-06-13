@@ -1,0 +1,45 @@
+{
+  "lang": "en",
+  "title": "Metrica: sample landing template",
+  "desc": "Demonstration landing page. All text is sample (dummy) content.",
+  "sections": [
+    {"type":"nav","brand":"Metrica","links":["Features","Pricing","FAQ","Docs"],"cta":"Get a demo"},
+    {"type":"hero","eyebrow":"Sample template","h1":"See what your <em>users do</em>.","sub":"Metrica turns raw events into clear answers, so your team ships the features people actually want.","cta":"Start free trial","cta2":"Watch the tour","illus":"growth"},
+    {"type":"logos","label":"Powering product teams at","items":["Northwind","Lumen","Forge","Atlas","Vela"]},
+    {"type":"features","h2":"Analytics that <em>make sense</em>.","sub":"Skip the spreadsheets and SQL gymnastics. Metrica answers product questions in seconds.","cards":[
+      ["chart","Funnels and trends","Spot where users drop off and which features keep them coming back."],
+      ["users","Cohort retention","Group users by behavior and watch how engagement holds over time."],
+      ["bolt","Instant queries","Ask a question and get a chart back before your coffee cools."],
+      ["map","User journeys","Follow real paths through your product, step by step."],
+      ["lock","Privacy first","Granular controls, data residency and full audit logs by default."],
+      ["sparkle","Smart alerts","Get pinged the moment a key metric moves, not a week later."]
+    ]},
+    {"type":"stats","items":[["8B+","events per day"],["99.9%","query uptime"],["120ms","median query time"],["3k+","product teams"]]},
+    {"type":"split1","eyebrow":"Explore","h2":"From raw events to <em>real insight</em>.","text":"Point and click your way to answers. No SQL, no waiting on the data team, just the metric you need right now.","bullets":["Self-serve dashboards anyone can build","Breakdowns by any property in one click","Saved views your whole team can share"],"illus":"target"},
+    {"type":"split2","eyebrow":"Trust","h2":"Numbers you can <em>rely on</em>.","text":"One clean event model means everyone reads the same chart the same way. No duplicate metrics, no arguing about definitions.","bullets":["Governed metric definitions","Live data with sub-second refresh","Version history on every dashboard"],"illus":"layers"},
+    {"type":"steps","h2":"Live in <em>three steps</em>.","sub":"No data warehouse migration required.","steps":[
+      ["Drop in the SDK","Add a few lines and start sending events in minutes."],
+      ["Map your metrics","Define the actions that matter with a guided setup."],
+      ["Share the dashboard","Invite your team and watch the insights roll in."]
+    ]},
+    {"type":"testimonial","quote":"We finally killed our weekly metrics spreadsheet. With Metrica anyone on the team can answer their own product questions in seconds.","author":"Sample Person","role":"VP Product, Sample Co"},
+    {"type":"pricing","h2":"Pricing that <em>scales with you</em>.","sub":"Start free. Pay only when your event volume grows.","tiers":[
+      {"name":"Free","price":"$0","period":"/ forever","features":["Up to 1M events / mo","Core dashboards","30-day history","Community support"],"cta":"Get started","featured":false},
+      {"name":"Growth","price":"$99","period":"/ mo","features":["Everything in Free","Up to 50M events / mo","Cohorts and funnels","Email support"],"cta":"Start free trial","featured":true},
+      {"name":"Scale","price":"Custom","period":"","features":["Everything in Growth","Unlimited events","SSO and audit logs","Dedicated manager"],"cta":"Contact sales","featured":false}
+    ]},
+    {"type":"faq","h2":"Questions, <em>answered</em>.","items":[
+      ["Is there really a free plan?","Yes. The Free plan covers up to one million events a month, forever, with no card required."],
+      ["How do I send events?","Drop in our SDK or use the HTTP API. Most teams are sending data within an hour."],
+      ["Can I track without third-party cookies?","Yes. Metrica works server-side and first-party, so it keeps reporting even when cookies are blocked."],
+      ["Is my data secure?","Data is encrypted in transit and at rest, with roles, data residency and audit logs on paid plans."],
+      ["Do you offer onboarding?","Growth and Scale plans include guided onboarding and a metric design review."]
+    ]},
+    {"type":"cta","h2":"Ready to know your users?","sub":"Join thousands of teams who trade guesswork for clear product analytics.","button":"Start free today"},
+    {"type":"footer","brand":"Metrica","tagline":"Product analytics that turn events into clear answers. Sample dummy brand for template preview.","columns":[
+      ["Product","Features","Pricing","Changelog","Integrations"],
+      ["Company","About","Careers","Blog","Contact"],
+      ["Legal","Privacy","Terms","Security","Status"]
+    ],"copyright":"// Metrica is a sample template with dummy content"}
+  ]
+}

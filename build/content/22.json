@@ -1,0 +1,45 @@
+{
+  "lang": "en",
+  "title": "Summit: sample landing template",
+  "desc": "Demonstration landing page. All text is sample (dummy) content.",
+  "sections": [
+    {"type":"nav","brand":"Summit","links":["Agenda","Speakers","Tickets","Venue"],"cta":"Get tickets"},
+    {"type":"hero","eyebrow":"Sample template","h1":"Where builders <em>meet ideas</em>.","sub":"Summit brings the people shaping tomorrow's tech onto one stage, with talks, workshops and hallway conversations that stick.","cta":"Get your ticket","cta2":"View the agenda","illus":"people"},
+    {"type":"logos","label":"Partners and sponsors","items":["Northwind","Lumen","Forge","Atlas","Vela"]},
+    {"type":"features","h2":"A conference <em>worth the trip</em>.","sub":"Two days of deep talks, hands-on labs and the connections you actually remember.","cards":[
+      ["calendar","Curated agenda","Three tracks of talks picked for signal, not filler."],
+      ["users","Real networking","Structured intros and open spaces to meet your people."],
+      ["bolt","Hands-on labs","Build something live with experts beside you."],
+      ["mail","Speaker access","Ask the questions you came for, face to face."],
+      ["map","Easy logistics","One downtown venue with everything within reach."],
+      ["star","After-hours","Evening socials, demos and music to keep it going."]
+    ]},
+    {"type":"stats","items":[["2","days of talks"],["60+","speakers"],["3k","attendees"],["18","countries"]]},
+    {"type":"split1","eyebrow":"Learn","h2":"Talks that <em>go deep</em>.","text":"No vendor pitches in disguise. Every session is chosen for real lessons you can take back to your team on Monday.","bullets":["Three parallel tracks","Live demos, not slideware","Recordings for every ticket holder"],"illus":"growth"},
+    {"type":"split2","eyebrow":"Connect","h2":"The hallway <em>is the point</em>.","text":"Great talks get you in the room, but the people are why you stay. We build in time and space to actually meet them.","bullets":["Topic-based meetups","Matchmaking in the app","Quiet corners to keep talking"],"illus":"chat"},
+    {"type":"steps","h2":"Joining is <em>simple</em>.","sub":"From sign-up to the front row in three steps.","steps":[
+      ["Grab a ticket","Pick your pass and check out in under a minute."],
+      ["Plan your days","Build a schedule from the agenda in the app."],
+      ["Show up and meet","Walk in, scan your badge and dive into the talks."]
+    ]},
+    {"type":"testimonial","quote":"I came for two talks and left with a new co-founder, three hires and a notebook full of ideas. Best ticket I bought all year.","author":"Sample Person","role":"Founder, Sample Co"},
+    {"type":"pricing","h2":"Passes for <em>every budget</em>.","sub":"Prices rise as seats fill. Lock yours in early.","tiers":[
+      {"name":"Community","price":"$0","period":"/ livestream","features":["Main stage livestream","Talk recordings later","Public chat access","Event newsletter"],"cta":"Register free","featured":false},
+      {"name":"Standard","price":"$299","period":"/ both days","features":["All three tracks","Hands-on labs","Networking app access","After-hours socials"],"cta":"Get your ticket","featured":true},
+      {"name":"Pro","price":"$699","period":"/ both days","features":["Everything in Standard","Speaker meet-and-greets","Reserved front rows","Lounge and concierge"],"cta":"Go Pro","featured":false}
+    ]},
+    {"type":"faq","h2":"Questions, <em>answered</em>.","items":[
+      ["When and where is Summit?","It runs over two days at a single downtown venue. Exact dates and address are on the venue page."],
+      ["Can I watch remotely?","Yes. The free Community pass includes the main stage livestream and recordings afterward."],
+      ["Are talks recorded?","Every standard and pro ticket includes access to recordings of all sessions after the event."],
+      ["Can I get a refund?","Tickets are transferable up to one week before the event if your plans change."],
+      ["Is there a student rate?","Yes, discounted student passes are available with valid ID, subject to availability."]
+    ]},
+    {"type":"cta","h2":"Ready to join us on stage-side?","sub":"Seats are limited and prices go up as we fill. Grab yours while early-bird lasts.","button":"Get your ticket"},
+    {"type":"footer","brand":"Summit","tagline":"Two days of tech talks, labs and the connections that stick. Sample dummy brand for template preview.","columns":[
+      ["Event","Agenda","Speakers","Tickets","Venue"],
+      ["Attend","Travel","Hotels","Code of conduct","FAQ"],
+      ["Connect","About","Sponsors","Press","Contact"]
+    ],"copyright":"// Summit is a sample template with dummy content"}
+  ]
+}

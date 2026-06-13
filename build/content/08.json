@@ -1,0 +1,45 @@
+{
+  "lang": "cs",
+  "title": "Bistro Oliva: ukázková šablona landing page",
+  "desc": "Demonstrační landing page. Veškerý text je ukázkový (dummy) obsah.",
+  "sections": [
+    {"type":"nav","brand":"Bistro Oliva","links":["Menu","Snídaně","Rezervace","Kontakt"],"cta":"Rezervovat stůl"},
+    {"type":"hero","eyebrow":"Ukázková šablona","h1":"Poctivá kuchyně <em>každý den</em>.","sub":"Sezónní suroviny, čerstvé pečivo a denní menu za férovou cenu. Sedněte si na kávu nebo k obědu, jsme kousek od vás.","cta":"Rezervovat stůl","cta2":"Prohlédnout menu","illus":"leaf"},
+    {"type":"logos","label":"Vaří u nás rádi","items":["Studenti","Kanceláře","Rodiny","Turisté","Sousedé"]},
+    {"type":"features","h2":"Co u nás <em>najdete</em>.","sub":"Snídaně, obědy i večerní bistro pod jednou střechou. Bez kompromisů v chuti.","cards":[
+      ["leaf","Sezónní suroviny","Vaříme z toho, co právě dozrálo, od lokálních dodavatelů."],
+      ["sun","Snídaně do 11:00","Vajíčka, croissanty a domácí granola každé ráno."],
+      ["heart","Denní menu","Polévka a tři hlavní jídla, každý den jinak a čerstvě."],
+      ["star","Výběrová káva","Pražená kousek od nás, připravená baristou."],
+      ["gift","Dárkové poukazy","Potěšte blízké voucherem na snídani i večeři."],
+      ["calendar","Rezervace předem","Zamluvte si stůl online během pár vteřin."]
+    ]},
+    {"type":"stats","items":[["10+","let na rohu"],["4,8","hodnocení hostů"],["120","jídel denně"],["100%","domácí pečivo"]]},
+    {"type":"split1","eyebrow":"Kuchyně","h2":"Od trhu na <em>váš talíř</em>.","text":"Nakupujeme ráno, vaříme přes den a co se neprodá, nezamrazíme. Proto se menu mění podle toho, co je zrovna nejlepší.","bullets":["Zelenina a maso od lokálních farem","Pečivo pečeme každé ráno u nás","Bezmasé i bezlepkové varianty"],"illus":"leaf"},
+    {"type":"split2","eyebrow":"Atmosféra","h2":"Místo, kam se <em>rádi vrátíte</em>.","text":"Útulný interiér, zahrádka do dvora a obsluha, která vás zná jménem. Klidné ráno i veselý večer s přáteli.","bullets":["Zahrádka otevřená přes léto","Dětský koutek a menu pro nejmenší","Wi-Fi a tichý kout na práci"],"illus":"house"},
+    {"type":"steps","h2":"Návštěva ve <em>třech krocích</em>.","sub":"Žádné objednávkové fronty ani zdržení.","steps":[
+      ["Vyberte si čas","Rezervujte stůl online nebo nám zavolejte."],
+      ["Přijďte k nám","Posaďte se, my doneseme menu a kávu."],
+      ["Vychutnejte si to","Najezte se v klidu a přijďte zas."]
+    ]},
+    {"type":"testimonial","quote":"Chodíme sem na obědy celý tým. Denní menu je vždycky čerstvé, polévka domácí a obsluha milá. Lepší bistro v okolí nenajdete.","author":"Ukázkový host","role":"stálý zákazník, Brno"},
+    {"type":"pricing","h2":"Orientační <em>ceník</em>.","sub":"Ceny denního menu a nápojů se mohou podle sezóny lišit.","tiers":[
+      {"name":"Snídaně","price":"od 120 Kč","period":"/ porce","features":["Vajíčka dle výběru","Domácí pečivo","Káva nebo čaj","Podáváme do 11:00"],"cta":"Přijít na snídani","featured":false},
+      {"name":"Denní menu","price":"od 165 Kč","period":"/ oběd","features":["Polévka dne","Výběr ze tří hlavních jídel","Voda na stole zdarma","Podáváme 11:00–14:00"],"cta":"Rezervovat oběd","featured":true},
+      {"name":"Večeře","price":"individuální","period":"","features":["Sezónní à la carte","Výběr vín a koktejlů","Stůl pro skupiny","Rezervace doporučena"],"cta":"Zamluvit stůl","featured":false}
+    ]},
+    {"type":"faq","h2":"Časté <em>dotazy</em>.","items":[
+      ["Dá se u vás rezervovat stůl?","Ano, online během pár vteřin nebo telefonicky. U večeří rezervaci doporučujeme."],
+      ["Máte bezmasá a bezlepková jídla?","Každý den nabízíme aspoň jednu bezmasou volbu, bezlepkové varianty po domluvě."],
+      ["Do kdy podáváte snídaně?","Snídaně točíme každý den do 11:00, denní menu pak od 11:00 do 14:00."],
+      ["Můžeme přijít s dětmi?","Samozřejmě. Máme dětský koutek, menu pro nejmenší i přebalovací pult."],
+      ["Berete platební karty?","Platit můžete kartou, hotově i stravenkami, jak vám to vyhovuje."]
+    ]},
+    {"type":"cta","h2":"Máte chuť na něco dobrého?","sub":"Rezervujte si stůl nebo se prostě zastavte. Těšíme se na vás každý den.","button":"Rezervovat stůl"},
+    {"type":"footer","brand":"Bistro Oliva","tagline":"Poctivá kuchyně ze sezónních surovin, snídaně i denní menu. Ukázková značka pro náhled šablony.","columns":[
+      ["Nabídka","Snídaně","Denní menu","Večeře","Káva"],
+      ["Bistro","O nás","Reference","Ceník","Kariéra"],
+      ["Kontakt","Telefon","E-mail","Brno a okolí","Po-Ne 8-22"]
+    ],"copyright":"// Bistro Oliva je ukázková šablona s dummy obsahem"}
+  ]
+}

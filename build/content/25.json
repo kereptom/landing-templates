@@ -1,0 +1,45 @@
+{
+  "lang": "cs",
+  "title": "Shoptik: ukázková šablona landing page",
+  "desc": "Demonstrační landing page. Veškerý text je ukázkový (dummy) obsah.",
+  "sections": [
+    {"type":"nav","brand":"Shoptik","links":["Funkce","Ceník","Reference","Kontakt"],"cta":"Vyzkoušet zdarma"},
+    {"type":"hero","eyebrow":"Ukázková šablona","h1":"Spusťte e-shop, který <em>prodává</em>.","sub":"Shoptik spojí katalog, platby i dopravu na jednom místě, takže rozjedete prodej během odpoledne, ne týdnů.","cta":"Vyzkoušet zdarma","cta2":"Jak to funguje","illus":"cart"},
+    {"type":"logos","label":"Prodávají s námi","items":["Móda Dee","Kávárna Bean","Hobby Zóna","Petíček","Studio Lumi"]},
+    {"type":"features","h2":"Vše pro <em>online prodej</em>.","sub":"Nemusíte lepit pět nástrojů dohromady. Shoptik pokryje cestu od produktu po doručení.","cards":[
+      ["cart","Katalog a sklad","Produkty, varianty a zásoby přehledně na jednom místě."],
+      ["bolt","Rychlá pokladna","Košík bez zbytečných kroků, který nakupující dovede k platbě."],
+      ["chart","Prodejní statistiky","Vidíte tržby, marže i nejprodávanější zboží v reálném čase."],
+      ["globe","Více jazyků a měn","Prodávejte za hranice bez složitého nastavování."],
+      ["shield","Bezpečné platby","Šifrované transakce a ochrana dat zákazníků jako základ."],
+      ["sparkle","Chytrá automatizace","Skladové pohyby i e-maily zákazníkům běží samy za vás."]
+    ]},
+    {"type":"stats","items":[["9k+","spuštěných e-shopů"],["99,9%","dostupnost"],["4,8","hodnocení obchodníků"],["30%","rychlejší pokladna"]]},
+    {"type":"split1","eyebrow":"Spuštění","h2":"Od nápadu k <em>prvnímu prodeji</em>.","text":"Vyberte šablonu, nahrajte produkty a zapněte platby. Bez kodéra, bez čekání na agenturu.","bullets":["Hotové vzhledy připravené na míru","Import produktů z tabulky","Platební brány na pár kliknutí"],"illus":"growth"},
+    {"type":"split2","eyebrow":"Růst","h2":"Data, která vás <em>posouvají</em>.","text":"Nehádejte, co funguje. Shoptik ukáže, odkud chodí zákazníci, co kupují a kde košík opouštějí.","bullets":["Přehledný dashboard tržeb","Napojení na marketing a slevy","Reporty, kterým rozumíte"],"illus":"chart"},
+    {"type":"steps","h2":"Spuštěno ve <em>třech krocích</em>.","sub":"Žádné dlouhé nastavování ani technik na telefonu.","steps":[
+      ["Založte obchod","Zaregistrujte se a vyberte vzhled za pár minut."],
+      ["Nahrajte produkty","Naimportujte katalog nebo začněte od šablony."],
+      ["Spusťte prodej","Zapněte platby a přijměte první objednávku."]
+    ]},
+    {"type":"testimonial","quote":"Z papírové evidence jsme přešli na Shoptik za jediný víkend. První objednávka dorazila dřív, než jsme stihli dopít kávu.","author":"Ukázkový obchodník","role":"majitelka e-shopu, Brno"},
+    {"type":"pricing","h2":"Jednoduchý <em>ceník</em>.","sub":"Začněte zdarma. Plaťte víc, až vám obchod poroste.","tiers":[
+      {"name":"Start","price":"0 Kč","period":"/ navždy","features":["Do 20 produktů","Neomezené objednávky","Základní statistiky","Podpora v komunitě"],"cta":"Začít zdarma","featured":false},
+      {"name":"Obchod","price":"490 Kč","period":"/ měsíc","features":["Vše ze Startu","Neomezený katalog","Automatizace a slevy","Přednostní podpora"],"cta":"Vyzkoušet zdarma","featured":true},
+      {"name":"Byznys","price":"1 290 Kč","period":"/ měsíc","features":["Vše z Obchodu","Více jazyků a měn","Pokročilé reporty","Vlastní manažer účtu"],"cta":"Kontaktovat nás","featured":false}
+    ]},
+    {"type":"faq","h2":"Časté <em>dotazy</em>.","items":[
+      ["Je verze zdarma opravdu zdarma?","Ano. Tarif Start je zdarma navždy pro malý katalog, bez zadání karty."],
+      ["Můžu naimportovat produkty?","Katalog nahrajete z tabulky nebo začnete od připravené šablony během chvíle."],
+      ["Jak funguje platba za tarif?","Platíte měsíčně nebo ročně, kdykoli můžete zrušit bez závazku."],
+      ["Jsou platby zákazníků bezpečné?","Transakce jsou šifrované a data zákazníků chráněná na všech tarifech."],
+      ["Pomůžete s rozjezdem?","Tarify Obchod a Byznys zahrnují provedení nastavením a přednostní podporu."]
+    ]},
+    {"type":"cta","h2":"Připraveni začít prodávat?","sub":"Přidejte se k tisícům obchodníků, kteří rozjeli prodej s Shoptikem.","button":"Vyzkoušet zdarma"},
+    {"type":"footer","brand":"Shoptik","tagline":"E-shop platforma pro katalog, platby i dopravu na jednom místě. Ukázková značka pro náhled šablony.","columns":[
+      ["Produkt","Funkce","Ceník","Novinky","Plán vývoje"],
+      ["Firma","O nás","Kariéra","Blog","Kontakt"],
+      ["Právní","Soukromí","Podmínky","Bezpečnost","Stav služby"]
+    ],"copyright":"// Shoptik je ukázková šablona s dummy obsahem"}
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "lang": "en",
+  "title": "Cortex: sample landing template",
+  "desc": "Demonstration landing page. All text is sample (dummy) content.",
+  "sections": [
+    {"type":"nav","brand":"Cortex","links":["Features","Pricing","FAQ","Docs"],"cta":"Try free"},
+    {"type":"hero","eyebrow":"Sample template","h1":"Think less, <em>do more</em>.","sub":"Cortex turns scattered notes, tasks and tabs into one focused workspace, so your best ideas never slip away.","cta":"Start free trial","cta2":"Watch the demo","illus":"spark"},
+    {"type":"logos","label":"Loved by builders at","items":["Meridian","Quanta","Driftwood","Halcyon","Verdant"]},
+    {"type":"features","h2":"Your work, <em>finally clear</em>.","sub":"Cortex pulls thinking, planning and doing into a single flow that keeps up with your brain.","cards":[
+      ["sparkle","Smart capture","Drop a thought anywhere and Cortex files it where it belongs."],
+      ["zap","Instant focus","Open one clean view and start the moment you sit down."],
+      ["doc","Linked notes","Connect ideas across pages so context follows you everywhere."],
+      ["chart","Effort insights","See where your hours actually go and reclaim the wasted ones."],
+      ["lock","Private by default","Your notes stay yours, encrypted with fine-grained access."],
+      ["cpu","Helpful AI","Let Cortex draft, summarize and tidy up the busywork for you."]
+    ]},
+    {"type":"stats","items":[["20k+","minds onboarded"],["97%","feel more focused"],["4.8","average rating"],["6h","saved each week"]]},
+    {"type":"split1","eyebrow":"Capture","h2":"Catch every idea <em>on the fly</em>.","text":"Jot a quick note, paste a link or talk it out, and Cortex sorts it into the right place without breaking your flow.","bullets":["Quick capture from any device","Auto-tagging that learns your style","Voice notes turned into clean text"],"illus":"network"},
+    {"type":"split2","eyebrow":"Focus","h2":"One calm <em>command center</em>.","text":"No more juggling ten tabs. Today's tasks, notes and goals sit in one quiet view built for deep work.","bullets":["A single daily focus view","Distraction-free writing mode","Reminders that respect your time"],"illus":"target"},
+    {"type":"steps","h2":"Get focused in <em>three steps</em>.","sub":"No setup marathon, no manual required.","steps":[
+      ["Create your space","Sign up and shape your workspace in under a minute."],
+      ["Capture your world","Bring in notes and tasks or start from a clean slate."],
+      ["Find your flow","Let Cortex surface what matters and get into deep work."]
+    ]},
+    {"type":"testimonial","quote":"Cortex replaced my notes app, my to-do list and three sticky notes on my monitor. I finally trust that nothing falls through the cracks.","author":"Sample Person","role":"Independent Designer, Sample Studio"},
+    {"type":"pricing","h2":"Honest, <em>simple</em> pricing.","sub":"Start free. Upgrade when you are ready for more.","tiers":[
+      {"name":"Solo","price":"$0","period":"/ forever","features":["Unlimited notes","Daily focus view","Basic capture","Community support"],"cta":"Get started","featured":false},
+      {"name":"Pro","price":"$8","period":"/ month","features":["Everything in Solo","AI drafting and summaries","Effort insights","Priority support"],"cta":"Start free trial","featured":true},
+      {"name":"Studio","price":"$16","period":"/ user / mo","features":["Everything in Pro","Shared workspaces","SSO and audit logs","Dedicated manager"],"cta":"Contact sales","featured":false}
+    ]},
+    {"type":"faq","h2":"Frequently asked <em>questions</em>.","items":[
+      ["Is the free plan really free?","Yes. The Solo plan is free forever with unlimited notes, no card required."],
+      ["Can I import my existing notes?","You can bring notes in from common apps or a plain file, and Cortex organizes them for you."],
+      ["How does the AI work?","Cortex uses AI to draft, summarize and tidy notes on request. You stay in control of every change."],
+      ["Is my data private?","Your notes are encrypted in transit and at rest, with access controls on paid plans."],
+      ["Does it work on mobile?","Yes. Capture and review on phone, tablet or desktop, and everything stays in sync."]
+    ]},
+    {"type":"cta","h2":"Ready to clear your head?","sub":"Join thousands of makers who swapped scattered tabs for one focused space.","button":"Start free today"},
+    {"type":"footer","brand":"Cortex","tagline":"One focused workspace for notes, tasks and ideas. Sample dummy brand for template preview.","columns":[
+      ["Product","Features","Pricing","Changelog","Roadmap"],
+      ["Company","About","Careers","Blog","Contact"],
+      ["Legal","Privacy","Terms","Security","Status"]
+    ],"copyright":"// Cortex is a sample template with dummy content"}
+  ]
+}

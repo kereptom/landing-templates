@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Landing-page šablony</title>
+<meta name="description" content="36 landing-page šablon na jednom sdíleném enginu. Ukázkový obsah.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='13' height='13' x='2.5' y='2.5' rx='3' fill='%236d4aff'/%3E%3Crect width='13' height='13' x='16.5' y='2.5' rx='3' fill='%2315c264'/%3E%3Crect width='13' height='13' x='2.5' y='16.5' rx='3' fill='%23f2682c'/%3E%3Crect width='13' height='13' x='16.5' y='16.5' rx='3' fill='%23e0249a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbfbfd;--card:#fff;--ink:#1d1d1f;--ink2:#6e6e73;--ink3:#86868b;--line:#e6e6eb;--blue:#0071e3}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Inter","Segoe UI",Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.47}
+.nav{position:sticky;top:0;z-index:50;background:rgba(251,251,253,.82);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--line)}
+.nav .in{max-width:1200px;margin:0 auto;padding:0 22px;height:52px;display:flex;align-items:center;justify-content:space-between}
+.nav .brand{display:flex;align-items:center;gap:10px;font-weight:600;font-size:16px;letter-spacing:-.01em}
+.nav .logo{display:grid;grid-template-columns:1fr 1fr;gap:2px;width:20px;height:20px}
+.nav .logo i{border-radius:3px}
+.nav a{color:var(--ink2);text-decoration:none;font-size:14px}.nav a:hover{color:var(--ink)}
+.wrap{max-width:1200px;margin:0 auto;padding:0 22px}
+.hero{text-align:center;padding:96px 0 30px}
+.hero h1{font-size:clamp(44px,7vw,88px);font-weight:800;letter-spacing:-.035em;line-height:1.04}
+.hero .grad{background:linear-gradient(110deg,#6d4aff,#e0249a 40%,#f2682c 72%,#15c264);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{margin:22px auto 0;max-width:640px;font-size:clamp(18px,2.4vw,23px);color:var(--ink2);letter-spacing:-.01em}
+.note{display:inline-flex;align-items:center;gap:8px;margin-top:26px;background:#fff5e9;color:#9a5a12;border:1px solid #f3dcc0;border-radius:999px;padding:8px 16px;font-size:13.5px}
+.note b{color:#7a4408}
+.stats{display:flex;justify-content:center;flex-wrap:wrap;gap:34px;margin-top:34px;color:var(--ink2);font-size:14px}
+.stats b{display:block;font-size:30px;font-weight:700;color:var(--ink);letter-spacing:-.02em}
+.filters{display:flex;justify-content:center;gap:8px;margin:46px 0 8px;flex-wrap:wrap}
+.filters button{font:inherit;font-size:14px;color:var(--ink2);background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 16px;cursor:pointer;transition:.15s}
+.filters button:hover{color:var(--ink)}
+.filters button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px;padding:22px 0 30px}
+.card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;text-decoration:none;color:inherit;transition:transform .25s cubic-bezier(.2,.7,.2,1),box-shadow .25s,border-color .25s}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(0,0,0,.10);border-color:#dadadf}
+.thumb{position:relative;aspect-ratio:16/10;overflow:hidden;background:#f0f0f3}
+.thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;transition:opacity .4s ease}
+.thumb .alt{opacity:0}
+.card:hover .cover{opacity:0}.card:hover .alt{opacity:1}
+.meta{padding:15px 17px 17px}
+.row{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.name{font-weight:600;font-size:18px;letter-spacing:-.01em}
+.dots{display:flex;gap:5px;flex:none}.dots i{width:13px;height:13px;border-radius:4px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08)}
+.subj{color:var(--ink2);font-size:14.5px;margin-top:3px}
+.tags{display:flex;gap:6px;margin-top:13px;font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--ink3)}
+.tags span{border:1px solid var(--line);border-radius:6px;padding:3px 8px}
+.how{border-top:1px solid var(--line);margin-top:24px;padding:64px 0 30px;text-align:center}
+.how h2{font-size:clamp(28px,4vw,40px);font-weight:700;letter-spacing:-.025em}
+.how .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;max-width:980px;margin:40px auto 0;text-align:left}
+.how .step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px}
+.how .step b{display:block;font-size:17px;margin-bottom:6px}
+.how .step span{color:var(--ink2);font-size:14.5px}
+.how code{font-family:ui-monospace,"SF Mono",Menlo,monospace;font-size:.85em;background:#f0f0f3;border-radius:5px;padding:2px 6px}
+.how .links{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:34px}
+.how .links a{color:var(--blue);text-decoration:none;font-size:15px;border:1px solid var(--line);border-radius:999px;padding:9px 18px;background:#fff}
+.how .links a:hover{border-color:#cdd0d6}
+footer{border-top:1px solid var(--line);padding:26px 0 50px;color:var(--ink3);font-size:12.5px;text-align:center}
+@media (max-width:640px){.hero{padding:60px 0 20px}}
+</style>
+</head>
+<body>
+<div class="nav"><div class="in">
+  <div class="brand"><span class="logo"><i style="background:#6d4aff"></i><i style="background:#15c264"></i><i style="background:#f2682c"></i><i style="background:#e0249a"></i></span> Landing-page šablony</div>
+  <a href="#how">Jak to použít</a>
+</div></div>
+<div class="wrap">
+  <section class="hero">
+    <h1>Jeden engine.<br><span class="grad">36 landing pages.</span></h1>
+    <p>Hotové, responzivní landing pages pro různé obory. Vyberte styl, vyměňte obsah, nasaďte na Vercel.</p>
+    <div class="note">⚠︎ <span><b>Ukázkový (dummy) obsah.</b> Názvy značek, čísla i citace jsou smyšlené, slouží jen k předvedení stylů.</span></div>
+    <div class="stats"><div><b>36</b>šablon</div><div><b>13</b>sekcí na stránce</div><div><b>100%</b>responzivní</div><div><b>1</b>soubor = stránka</div></div>
+    <div class="filters">
+      <button class="on" data-f="all">Vše</button>
+      <button data-f="light">Světlé</button>
+      <button data-f="dark">Tmavé</button>
+      <button data-f="cs">Česky</button>
+      <button data-f="en">English</button>
+    </div>
+  </section>
+  <div class="grid" id="grid">
+      <a class="card" href="templates/01-nimbus-saas/index.html" data-kind="light" data-lang="en">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/01.png" alt="Nimbus" loading="lazy">
+          <img class="alt" src="gallery/shots/01-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Nimbus</span>
+            <span class="dots"><i style="background:#6d4aff"></i><i style="background:#9379ff"></i><i style="background:#573bcc"></i></span></div>
+          <div class="subj">Projektový SaaS</div>
+          <div class="tags"><span>en</span><span>light</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/02-pulsefit/index.html" data-kind="light" data-lang="en">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/02.png" alt="PulseFit" loading="lazy">
+          <img class="alt" src="gallery/shots/02-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">PulseFit</span>
+            <span class="dots"><i style="background:#15c264"></i><i style="background:#52d28c"></i><i style="background:#119b50"></i></span></div>
+          <div class="subj">Fitness aplikace</div>
+          <div class="tags"><span>en</span><span>light</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/03-zrnko-kavarna/index.html" data-kind="light" data-lang="cs">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/03.png" alt="Zrnko" loading="lazy">
+          <img class="alt" src="gallery/shots/03-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Zrnko</span>
+            <span class="dots"><i style="background:#a8642a"></i><i style="background:#bf8c61"></i><i style="background:#865022"></i></span></div>
+          <div class="subj">Kavárna a pražírna</div>
+          <div class="tags"><span>cs</span><span>light</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/04-hajek-advokat/index.html" data-kind="light" data-lang="cs">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/04.png" alt="Hájek &amp; partneři" loading="lazy">
+          <img class="alt" src="gallery/shots/04-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Hájek &amp; partneři</span>
+            <span class="dots"><i style="background:#1f3a63"></i><i style="background:#596d8c"></i><i style="background:#192e4f"></i></span></div>
+          <div class="subj">Advokátní kancelář</div>
+          <div class="tags"><span>cs</span><span>light</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/05-remeslo-plus/index.html" data-kind="light" data-lang="cs">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/05.png" alt="Řemeslo+" loading="lazy">
+          <img class="alt" src="gallery/shots/05-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Řemeslo+</span>
+            <span class="dots"><i style="background:#f2682c"></i><i style="background:#f58f63"></i><i style="background:#c25323"></i></span></div>
+          <div class="subj">Řemeslník a instalatér</div>
+          <div class="tags"><span>cs</span><span>light</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/06-brightsmile/index.html" data-kind="light" data-lang="en">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/06.png" alt="BrightSmile" loading="lazy">
+          <img class="alt" src="gallery/shots/06-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">BrightSmile</span>
+            <span class="dots"><i style="background:#14b3c4"></i><i style="background:#51c7d3"></i><i style="background:#108f9d"></i></span></div>
+          <div class="subj">Zubní ordinace</div>
+          <div class="tags"><span>en</span><span>light</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/07-domov-reality/index.html" data-kind="light" data-lang="cs">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/07.png" alt="Domov" loading="lazy">
+          <img class="alt" src="gallery/shots/07-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Domov</span>
+            <span class="dots"><i style="background:#2f7d57"></i><i style="background:#659f83"></i><i style="background:#266446"></i></span></div>
+          <div class="subj">Realitní kancelář</div>
+          <div class="tags"><span>cs</span><span>light</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/08-bistro-oliva/index.html" data-kind="light" data-lang="cs">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/08.png" alt="Bistro Oliva" loading="lazy">
+          <img class="alt" src="gallery/shots/08-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Bistro Oliva</span>
+            <span class="dots"><i style="background:#7b1e34"></i><i style="background:#9d5869"></i><i style="background:#62182a"></i></span></div>
+          <div class="subj">Restaurace</div>
+          <div class="tags"><span>cs</span><span>light</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/09-frame-studio/index.html" data-kind="light" data-lang="en">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/09.png" alt="Frame Studio" loading="lazy">
+          <img class="alt" src="gallery/shots/09-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Frame Studio</span>
+            <span class="dots"><i style="background:#141417"></i><i style="background:#515153"></i><i style="background:#101012"></i></span></div>
+          <div class="subj">Fotograf</div>
+          <div class="tags"><span>en</span><span>light</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/10-studio-vlna/index.html" data-kind="light" data-lang="cs">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/10.png" alt="Studio Vlna" loading="lazy">
+          <img class="alt" src="gallery/shots/10-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Studio Vlna</span>
+            <span class="dots"><i style="background:#e0249a"></i><i style="background:#e85db4"></i><i style="background:#b31d7b"></i></span></div>
+          <div class="subj">Kreativní agentura</div>
+          <div class="tags"><span>cs</span><span>light</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/11-chainly/index.html" data-kind="dark" data-lang="en">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/11.png" alt="Chainly" loading="lazy">
+          <img class="alt" src="gallery/shots/11-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Chainly</span>
+            <span class="dots"><i style="background:#1fd1c4"></i><i style="background:#59ddd3"></i><i style="background:#19a79d"></i></span></div>
+          <div class="subj">Web3 a blockchain</div>
+          <div class="tags"><span>en</span><span>dark</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/12-penize-fintech/index.html" data-kind="light" data-lang="cs">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/12.png" alt="Peníze" loading="lazy">
+          <img class="alt" src="gallery/shots/12-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Peníze</span>
+            <span class="dots"><i style="background:#2f6bff"></i><i style="background:#6591ff"></i><i style="background:#2656cc"></i></span></div>
+          <div class="subj">Fintech a platby</div>
+          <div class="tags"><span>cs</span><span>light</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/13-learnly/index.html" data-kind="light" data-lang="en">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/13.png" alt="Learnly" loading="lazy">
+          <img class="alt" src="gallery/shots/13-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Learnly</span>
+            <span class="dots"><i style="background:#5b6cf0"></i><i style="background:#8692f4"></i><i style="background:#4956c0"></i></span></div>
+          <div class="subj">Online kurzy</div>
+          <div class="tags"><span>en</span><span>light</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/14-calm-yoga/index.html" data-kind="light" data-lang="en">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/14.png" alt="Calm" loading="lazy">
+          <img class="alt" src="gallery/shots/14-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Calm</span>
+            <span class="dots"><i style="background:#6fae87"></i><i style="background:#94c3a6"></i><i style="background:#598b6c"></i></span></div>
+          <div class="subj">Jóga a wellness</div>
+          <div class="tags"><span>en</span><span>light</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/15-ironhouse/index.html" data-kind="dark" data-lang="cs">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/15.png" alt="IronHouse" loading="lazy">
+          <img class="alt" src="gallery/shots/15-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">IronHouse</span>
+            <span class="dots"><i style="background:#e23b2e"></i><i style="background:#ea6e64"></i><i style="background:#b52f25"></i></span></div>
+          <div class="subj">Posilovna</div>
+          <div class="tags"><span>cs</span><span>dark</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/16-lesk-kadernictvi/index.html" data-kind="light" data-lang="cs">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/16.png" alt="Lesk" loading="lazy">
+          <img class="alt" src="gallery/shots/16-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Lesk</span>
+            <span class="dots"><i style="background:#d6446e"></i><i style="background:#e17594"></i><i style="background:#ab3658"></i></span></div>
+          <div class="subj">Kadeřnictví a beauty</div>
+          <div class="tags"><span>cs</span><span>light</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/17-sharp-barber/index.html" data-kind="dark" data-lang="en">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/17.png" alt="Sharp" loading="lazy">
+          <img class="alt" src="gallery/shots/17-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Sharp</span>
+            <span class="dots"><i style="background:#c8932a"></i><i style="background:#d6af61"></i><i style="background:#a07622"></i></span></div>
+          <div class="subj">Holičství</div>
+          <div class="tags"><span>en</span><span>dark</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/18-stavby-cz/index.html" data-kind="light" data-lang="cs">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/18.png" alt="Stavby CZ" loading="lazy">
+          <img class="alt" src="gallery/shots/18-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Stavby CZ</span>
+            <span class="dots"><i style="background:#4a6275"></i><i style="background:#798b99"></i><i style="background:#3b4e5e"></i></span></div>
+          <div class="subj">Stavební firma</div>
+          <div class="tags"><span>cs</span><span>light</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/19-sparkle-cleaning/index.html" data-kind="light" data-lang="en">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/19.png" alt="Sparkle" loading="lazy">
+          <img class="alt" src="gallery/shots/19-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Sparkle</span>
+            <span class="dots"><i style="background:#2aa7e0"></i><i style="background:#61bee8"></i><i style="background:#2286b3"></i></span></div>
+          <div class="subj">Úklidové služby</div>
+          <div class="tags"><span>en</span><span>light</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/20-tlapka-pet/index.html" data-kind="light" data-lang="cs">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/20.png" alt="Tlapka" loading="lazy">
+          <img class="alt" src="gallery/shots/20-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Tlapka</span>
+            <span class="dots"><i style="background:#ff6b5e"></i><i style="background:#ff9188"></i><i style="background:#cc564b"></i></span></div>
+          <div class="subj">Péče o mazlíčky</div>
+          <div class="tags"><span>cs</span><span>light</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/21-wander-travel/index.html" data-kind="light" data-lang="en">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/21.png" alt="Wander" loading="lazy">
+          <img class="alt" src="gallery/shots/21-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Wander</span>
+            <span class="dots"><i style="background:#f2683c"></i><i style="background:#f58f6f"></i><i style="background:#c25330"></i></span></div>
+          <div class="subj">Cestovní kancelář</div>
+          <div class="tags"><span>en</span><span>light</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/22-summit-event/index.html" data-kind="dark" data-lang="en">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/22.png" alt="Summit" loading="lazy">
+          <img class="alt" src="gallery/shots/22-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Summit</span>
+            <span class="dots"><i style="background:#2f6bff"></i><i style="background:#6591ff"></i><i style="background:#2656cc"></i></span></div>
+          <div class="subj">Konference a eventy</div>
+          <div class="tags"><span>en</span><span>dark</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/23-mikrofon-podcast/index.html" data-kind="light" data-lang="cs">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/23.png" alt="Mikrofon" loading="lazy">
+          <img class="alt" src="gallery/shots/23-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Mikrofon</span>
+            <span class="dots"><i style="background:#d6a019"></i><i style="background:#e1b955"></i><i style="background:#ab8014"></i></span></div>
+          <div class="subj">Podcast</div>
+          <div class="tags"><span>cs</span><span>light</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/24-inbox-newsletter/index.html" data-kind="light" data-lang="en">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/24.png" alt="Inbox" loading="lazy">
+          <img class="alt" src="gallery/shots/24-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Inbox</span>
+            <span class="dots"><i style="background:#e23b2e"></i><i style="background:#ea6e64"></i><i style="background:#b52f25"></i></span></div>
+          <div class="subj">Newsletter a média</div>
+          <div class="tags"><span>en</span><span>light</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/25-shoptik-eshop/index.html" data-kind="light" data-lang="cs">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/25.png" alt="Shoptik" loading="lazy">
+          <img class="alt" src="gallery/shots/25-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Shoptik</span>
+            <span class="dots"><i style="background:#7b2ff7"></i><i style="background:#9d65f9"></i><i style="background:#6226c6"></i></span></div>
+          <div class="subj">E-shop platforma</div>
+          <div class="tags"><span>cs</span><span>light</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/26-cortex-ai/index.html" data-kind="dark" data-lang="en">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/26.png" alt="Cortex" loading="lazy">
+          <img class="alt" src="gallery/shots/26-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Cortex</span>
+            <span class="dots"><i style="background:#2dd4bf"></i><i style="background:#64dfd0"></i><i style="background:#24aa99"></i></span></div>
+          <div class="subj">AI nástroj</div>
+          <div class="tags"><span>en</span><span>dark</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/27-slunce-solar/index.html" data-kind="light" data-lang="cs">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/27.png" alt="Slunce" loading="lazy">
+          <img class="alt" src="gallery/shots/27-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Slunce</span>
+            <span class="dots"><i style="background:#3f9e44"></i><i style="background:#71b775"></i><i style="background:#327e36"></i></span></div>
+          <div class="subj">Solární energetika</div>
+          <div class="tags"><span>cs</span><span>light</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/28-autohub/index.html" data-kind="dark" data-lang="en">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/28.png" alt="AutoHub" loading="lazy">
+          <img class="alt" src="gallery/shots/28-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">AutoHub</span>
+            <span class="dots"><i style="background:#d24a2a"></i><i style="background:#de7961"></i><i style="background:#a83b22"></i></span></div>
+          <div class="subj">Autosalon</div>
+          <div class="tags"><span>en</span><span>dark</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/29-prostor-interier/index.html" data-kind="light" data-lang="cs">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/29.png" alt="Prostor" loading="lazy">
+          <img class="alt" src="gallery/shots/29-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Prostor</span>
+            <span class="dots"><i style="background:#9c7a55"></i><i style="background:#b69d81"></i><i style="background:#7d6244"></i></span></div>
+          <div class="subj">Interiérový design</div>
+          <div class="tags"><span>cs</span><span>light</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/30-forever-wedding/index.html" data-kind="light" data-lang="en">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/30.png" alt="Forever" loading="lazy">
+          <img class="alt" src="gallery/shots/30-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Forever</span>
+            <span class="dots"><i style="background:#c77f99"></i><i style="background:#d6a0b4"></i><i style="background:#9f667a"></i></span></div>
+          <div class="subj">Svatební agentura</div>
+          <div class="tags"><span>en</span><span>light</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/31-pohyb-fyzio/index.html" data-kind="light" data-lang="cs">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/31.png" alt="Pohyb" loading="lazy">
+          <img class="alt" src="gallery/shots/31-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Pohyb</span>
+            <span class="dots"><i style="background:#0e9e8e"></i><i style="background:#4db7ab"></i><i style="background:#0b7e72"></i></span></div>
+          <div class="subj">Fyzioterapie</div>
+          <div class="tags"><span>cs</span><span>light</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/32-metrica/index.html" data-kind="light" data-lang="en">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/32.png" alt="Metrica" loading="lazy">
+          <img class="alt" src="gallery/shots/32-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Metrica</span>
+            <span class="dots"><i style="background:#1f6feb"></i><i style="background:#5994f0"></i><i style="background:#1959bc"></i></span></div>
+          <div class="subj">Produktová analytika</div>
+          <div class="tags"><span>en</span><span>light</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/33-saldo-ucetni/index.html" data-kind="light" data-lang="cs">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/33.png" alt="Saldo" loading="lazy">
+          <img class="alt" src="gallery/shots/33-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Saldo</span>
+            <span class="dots"><i style="background:#20406b"></i><i style="background:#5a7291"></i><i style="background:#1a3356"></i></span></div>
+          <div class="subj">Účetnictví</div>
+          <div class="tags"><span>cs</span><span>light</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/34-echo-music/index.html" data-kind="dark" data-lang="en">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/34.png" alt="Echo" loading="lazy">
+          <img class="alt" src="gallery/shots/34-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Echo</span>
+            <span class="dots"><i style="background:#b32fe0"></i><i style="background:#c765e8"></i><i style="background:#8f26b3"></i></span></div>
+          <div class="subj">Hudební kapela</div>
+          <div class="tags"><span>en</span><span>dark</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/35-pomahame-nezisk/index.html" data-kind="light" data-lang="cs">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/35.png" alt="Pomáháme" loading="lazy">
+          <img class="alt" src="gallery/shots/35-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Pomáháme</span>
+            <span class="dots"><i style="background:#2c8a5a"></i><i style="background:#63a885"></i><i style="background:#236e48"></i></span></div>
+          <div class="subj">Nezisková organizace</div>
+          <div class="tags"><span>cs</span><span>light</span></div>
+        </div>
+      </a>
+      <a class="card" href="templates/36-estate-lux/index.html" data-kind="dark" data-lang="en">
+        <div class="thumb">
+          <img class="cover" src="gallery/shots/36.png" alt="Estate" loading="lazy">
+          <img class="alt" src="gallery/shots/36-b.png" alt="" loading="lazy">
+        </div>
+        <div class="meta">
+          <div class="row"><span class="name">Estate</span>
+            <span class="dots"><i style="background:#b08d4f"></i><i style="background:#c5ab7d"></i><i style="background:#8d713f"></i></span></div>
+          <div class="subj">Luxusní reality</div>
+          <div class="tags"><span>en</span><span>dark</span></div>
+        </div>
+      </a>
+  </div>
+  <section class="how" id="how">
+    <h2>Jak z toho udělat vlastní stránku</h2>
+    <div class="steps">
+      <div class="step"><b>1 · Otevřít</b><span>Otevřete <code>templates/&lt;slug&gt;/index.html</code> v prohlížeči. Funguje offline, je responzivní.</span></div>
+      <div class="step"><b>2 · Vyměnit obsah</b><span>Upravte <code>build/content/&lt;NN&gt;.json</code> a spusťte <code>python3 build/build.py</code>.</span></div>
+      <div class="step"><b>3 · Změnit vzhled</b><span>Barvy a fonty jsou v <code>THEMES</code> v <code>build/build.py</code> (<code>c1</code>, fonty, <code>radius</code>, styl karet).</span></div>
+      <div class="step"><b>4 · Nasadit</b><span>Statická stránka. <code>vercel deploy --prod</code> a je online. Vše inline v jednom souboru.</span></div>
+    </div>
+    <div class="links"><a href="README.md">README</a><a href="GUIDE.md">Průvodce sekcemi</a><a href="https://github.com/kereptom/landing-templates">GitHub</a></div>
+  </section>
+</div>
+<footer>Landing-page šablony &middot; sdílený engine, 13 sekcí, responzivní &middot; ukázkový obsah</footer>
+<script>
+const grid=document.getElementById('grid');
+document.querySelectorAll('.filters button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.filters button').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on');const f=b.dataset.f;
+  grid.querySelectorAll('.card').forEach(c=>{c.style.display=(f==='all'||c.dataset.kind===f||c.dataset.lang===f)?'':'none';});
+});
+</script>
+</body>
+</html>

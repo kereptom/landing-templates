@@ -1,0 +1,45 @@
+{
+  "lang": "cs",
+  "title": "Prostor: ukázková šablona landing page",
+  "desc": "Demonstrační landing page. Veškerý text je ukázkový (dummy) obsah.",
+  "sections": [
+    {"type":"nav","brand":"Prostor","links":["Služby","Realizace","Ceník","Kontakt"],"cta":"Nezávazná konzultace"},
+    {"type":"hero","eyebrow":"Ukázková šablona","h1":"Interiér, který <em>dýchá vámi</em>.","sub":"Navrhneme a zařídíme bydlení na míru vašemu životu i rozpočtu. Od první skici po předání hotového domova.","cta":"Nezávazná konzultace","cta2":"Naše realizace","illus":"house"},
+    {"type":"logos","label":"Pracujeme pro","items":["Domácnosti","Developery","Kanceláře","Kavárny","Hotely"]},
+    {"type":"features","h2":"Co pro váš domov <em>vytvoříme</em>.","sub":"Kompletní návrh interiéru pod jednou střechou. Bez obíhání architektů, truhlářů a obchodů.","cards":[
+      ["sparkle","Koncept a styl","Najdeme atmosféru, která sedne vám i prostoru."],
+      ["doc","Návrh dispozice","Promyšlené uspořádání, kde má každý metr smysl."],
+      ["camera","3D vizualizace","Uvidíte svůj interiér ještě před první cihlou."],
+      ["leaf","Materiály a barvy","Vzorník na míru: textury, dřevo i odstíny zdí."],
+      ["scissors","Nábytek na míru","Atypické kusy navržené přesně do vašeho prostoru."],
+      ["home","Realizace na klíč","Dohlédneme na řemeslníky až po nastěhování."]
+    ]},
+    {"type":"stats","items":[["12","let zkušeností"],["4,9","spokojenost klientů"],["260+","hotových interiérů"],["100%","návrhů ve 3D"]]},
+    {"type":"split1","eyebrow":"Proces","h2":"Od skici k <em>hotovému domovu</em>.","text":"Žádný chaos. Nejdřív si ujasníme, jak chcete žít, a teprve potom kreslíme. V každé fázi přesně víte, co bude dál.","bullets":["Úvodní konzultace a zaměření prostoru","Návrh dispozice a 3D vizualizace","Realizace pod naším dohledem"],"illus":"layers"},
+    {"type":"split2","eyebrow":"Rozpočet","h2":"Cena, kterou <em>máte pod kontrolou</em>.","text":"Rozpočet sestavíme na začátku a držíme se ho. Vybíráme řešení, která ladí s vaší peněženkou, ne proti ní.","bullets":["Položkový rozpočet bez skrytých příplatků","Varianty pro různé cenové hladiny","Platba po jednotlivých fázích"],"illus":"target"},
+    {"type":"steps","h2":"Stačí <em>tři kroky</em>.","sub":"Od první schůzky k zařízenému domovu.","steps":[
+      ["Sejdeme se","Probereme váš styl, potřeby i rozpočet."],
+      ["Navrhneme","Připravíme dispozici a 3D vizualizaci."],
+      ["Zařídíme","Odbavíme realizaci až po předání klíčů."]
+    ]},
+    {"type":"testimonial","quote":"Z malého bytu udělali světlý a vzdušný domov. Vizualizace seděla na detail a rozpočet jsme nepřekročili ani o korunu.","author":"Ukázkový klient","role":"majitelka bytu, Brno"},
+    {"type":"pricing","h2":"Orientační <em>ceník</em>.","sub":"Přesnou cenu řekneme po konzultaci, vždy předem.","tiers":[
+      {"name":"Konzultace","price":"od 1 500 Kč","period":"/ hodina","features":["Návštěva u vás doma","Doporučení dispozice","Tipy na barvy a materiály","Bez dalšího závazku"],"cta":"Objednat konzultaci","featured":false},
+      {"name":"Návrh interiéru","price":"od 12 000 Kč","period":"/ místnost","features":["Dispoziční řešení","3D vizualizace","Vzorník materiálů","Nákupní seznam"],"cta":"Poptat návrh","featured":true},
+      {"name":"Na klíč","price":"individuální","period":"","features":["Kompletní projekt","Nábytek na míru","Koordinace řemeslníků","Předání hotového domova"],"cta":"Domluvit schůzku","featured":false}
+    ]},
+    {"type":"faq","h2":"Časté <em>dotazy</em>.","items":[
+      ["Jak probíhá první schůzka?","Přijedeme k vám, zaměříme prostor a probereme váš styl, potřeby i rozpočet."],
+      ["Dostanu 3D vizualizaci?","Ano. Každý návrh dodáváme ve 3D, takže interiér uvidíte ještě před realizací."],
+      ["Zařídíte i řemeslníky?","U projektů na klíč koordinujeme všechny profese a dohlížíme na kvalitu provedení."],
+      ["Jak je to s rozpočtem?","Položkový rozpočet sestavíme na začátku a v průběhu se ho držíme."],
+      ["Kde pracujete?","Brno a okolí do 40 km. U větších projektů se domluvíme i dál."]
+    ]},
+    {"type":"cta","h2":"Sníte o novém interiéru?","sub":"Napište nebo zavolejte. Domluvíme nezávaznou konzultaci u vás doma.","button":"Nezávazná konzultace"},
+    {"type":"footer","brand":"Prostor","tagline":"Návrhy a realizace interiérů na míru vašemu životu. Ukázková značka pro náhled šablony.","columns":[
+      ["Služby","Konzultace","Návrh interiéru","Nábytek na míru","Realizace na klíč"],
+      ["Studio","O nás","Realizace","Ceník","Kariéra"],
+      ["Kontakt","Telefon","E-mail","Brno a okolí","Po-Pá 9-18"]
+    ],"copyright":"// Prostor je ukázková šablona s dummy obsahem"}
+  ]
+}

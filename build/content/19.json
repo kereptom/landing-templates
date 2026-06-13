@@ -1,0 +1,45 @@
+{
+  "lang": "en",
+  "title": "Sparkle: sample landing template",
+  "desc": "Demonstration landing page. All text is sample (dummy) content.",
+  "sections": [
+    {"type":"nav","brand":"Sparkle","links":["Services","Pricing","FAQ","Contact"],"cta":"Book a clean"},
+    {"type":"hero","eyebrow":"Sample template","h1":"A home that <em>shines</em>.","sub":"Sparkle sends vetted cleaners who show up on time, bring their own supplies, and leave every room spotless.","cta":"Book a clean","cta2":"See what we cover","illus":"house"},
+    {"type":"logos","label":"Trusted by","items":["Apartments","Offices","Airbnbs","Studios","Clinics"]},
+    {"type":"features","h2":"Cleaning, <em>done right</em>.","sub":"From a quick refresh to a deep scrub, one team handles the whole home with care.","cards":[
+      ["sparkle","Spotless finish","Every surface wiped, dusted and polished, top to bottom."],
+      ["clock","On-time arrival","Your cleaner shows up in the window you booked, every time."],
+      ["shield","Vetted and insured","Background-checked pros, fully insured for your peace of mind."],
+      ["leaf","Eco-friendly products","Gentle, non-toxic supplies that are safe for kids and pets."],
+      ["calendar","Flexible scheduling","Book one-off or recurring cleans and reschedule in a tap."],
+      ["heart","Happiness guarantee","Not thrilled? We come back and re-clean for free."]
+    ]},
+    {"type":"stats","items":[["50k+","cleans completed"],["4.9","average rating"],["100%","satisfaction guarantee"],["2 h","average booking time"]]},
+    {"type":"split1","eyebrow":"Book","h2":"A clean in <em>under a minute</em>.","text":"Pick your home size, choose a date, and tell us what matters most. No quotes, no callbacks, just a confirmed time.","bullets":["Upfront, flat-rate pricing","Pick your own cleaner over time","Free rescheduling up to 24 hours ahead"],"illus":"target"},
+    {"type":"split2","eyebrow":"Relax","h2":"We bring <em>everything</em>.","text":"Your cleaner arrives with professional supplies and a room-by-room checklist, so nothing gets missed and you do nothing at all.","bullets":["Supplies and equipment included","Detailed checklist for every room","Photo summary when the job is done"],"illus":"shield"},
+    {"type":"steps","h2":"Clean in <em>three steps</em>.","sub":"No quotes, no hassle, no mess left behind.","steps":[
+      ["Tell us about your home","Share the size and what needs the most attention."],
+      ["Pick a time","Choose a date and window that fits your week."],
+      ["Come home to clean","Relax while your cleaner makes every room shine."]
+    ]},
+    {"type":"testimonial","quote":"I booked in two minutes and came home to a spotless apartment. The cleaner was friendly, thorough and even folded the throw blankets.","author":"Sample Person","role":"Apartment resident, Sample City"},
+    {"type":"pricing","h2":"Simple, <em>flat</em> pricing.","sub":"Pick the clean you need. No hidden fees, ever.","tiers":[
+      {"name":"Refresh","price":"$79","period":"/ visit","features":["Studio or 1-bedroom","Kitchen and bathroom","Dust and vacuum","Supplies included"],"cta":"Book a refresh","featured":false},
+      {"name":"Standard","price":"$129","period":"/ visit","features":["Up to 3 bedrooms","All living spaces","Inside appliances","Happiness guarantee"],"cta":"Book a clean","featured":true},
+      {"name":"Deep clean","price":"$229","period":"/ visit","features":["Whole-home detail","Baseboards and vents","Inside cabinets","Priority scheduling"],"cta":"Book a deep clean","featured":false}
+    ]},
+    {"type":"faq","h2":"Frequently asked <em>questions</em>.","items":[
+      ["Do I need to provide supplies?","No. Your cleaner arrives with all professional supplies and equipment included in the price."],
+      ["Are your cleaners vetted?","Yes. Every cleaner is background-checked, trained and fully insured before their first job."],
+      ["Can I book a recurring clean?","Absolutely. Choose weekly, biweekly or monthly and save on every recurring visit."],
+      ["What if I am not happy?","Tell us within 24 hours and we will return to re-clean the area for free, guaranteed."],
+      ["How do I pay?","Payment is secure and online. You are only charged after the clean is complete."]
+    ]},
+    {"type":"cta","h2":"Ready for a spotless home?","sub":"Book in under a minute and come home to a place that shines.","button":"Book a clean today"},
+    {"type":"footer","brand":"Sparkle","tagline":"Vetted cleaners, flat pricing and a spotless finish every time. Sample dummy brand for template preview.","columns":[
+      ["Services","Refresh","Standard","Deep clean","Recurring"],
+      ["Company","About","Careers","Reviews","Contact"],
+      ["Legal","Privacy","Terms","Guarantee","Status"]
+    ],"copyright":"// Sparkle is a sample template with dummy content"}
+  ]
+}

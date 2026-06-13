@@ -1,0 +1,45 @@
+{
+  "lang": "en",
+  "title": "Sharp: sample landing template",
+  "desc": "Demonstration landing page. All text is sample (dummy) content.",
+  "sections": [
+    {"type":"nav","brand":"Sharp","links":["Services","Barbers","Pricing","Contact"],"cta":"Book now"},
+    {"type":"hero","eyebrow":"Sample template","h1":"Look sharp, <em>feel sharper</em>.","sub":"Classic cuts, hot-towel shaves and beard work by barbers who care. Walk in scruffy, walk out ready.","cta":"Book your chair","cta2":"See the cuts","illus":"people"},
+    {"type":"logos","label":"Featured in","items":["City Style","Groom Mag","The Cut","Daily Edge","Trim Weekly"]},
+    {"type":"features","h2":"Everything for a <em>great cut</em>.","sub":"From a quick tidy-up to the full service, our chairs have you covered.","cards":[
+      ["scissors","Precision cuts","Tailored to your hair, your face and the look you want."],
+      ["sun","Hot-towel shave","A close, relaxing shave with warm towels and a steady hand."],
+      ["user","Beard sculpting","Shape, trim and line-up for a beard that looks intentional."],
+      ["star","Skin fades","Crisp, clean fades blended exactly the way you like them."],
+      ["clock","On-time always","Booked slots run on time, so you are never left waiting."],
+      ["heart","Kids welcome","Patient barbers and a calm chair for the little ones too."]
+    ]},
+    {"type":"stats","items":[["20k+","cuts done"],["4.9","average rating"],["12","master barbers"],["15","years on the block"]]},
+    {"type":"split1","eyebrow":"The cut","h2":"A fresh look in <em>thirty minutes</em>.","text":"Tell us what you want, or let us suggest something. We listen first, then cut, so you leave with exactly the style you pictured.","bullets":["Free consultation before every cut","Styling tips you can repeat at home","Finished with a wash and hot towel"],"illus":"spark"},
+    {"type":"split2","eyebrow":"The chair","h2":"A spot that feels like <em>your own</em>.","text":"No rush, no upsell. Just good music, a proper coffee and a chair where you can actually relax for half an hour.","bullets":["Walk-ins welcome around your booking","Loyalty card: every tenth cut on us","Comfortable, no-pressure atmosphere"],"illus":"chat"},
+    {"type":"steps","h2":"Fresh in <em>three steps</em>.","sub":"No app, no fuss, just book and show up.","steps":[
+      ["Pick your barber","Choose a chair and a time that suits you."],
+      ["Tell us the look","Bring a photo or talk it through with your barber."],
+      ["Walk out sharp","Sit back, relax and leave looking your best."]
+    ]},
+    {"type":"testimonial","quote":"Best fade I have had in years. The barber actually listened, took his time and the hot-towel finish was the cherry on top.","author":"Sample Customer","role":"regular, downtown chair"},
+    {"type":"pricing","h2":"Honest, <em>simple</em> pricing.","sub":"No hidden extras. Every price includes a wash and finish.","tiers":[
+      {"name":"Quick trim","price":"$18","period":"/ visit","features":["Clipper or scissor tidy","Neckline clean-up","Quick wash","In and out in 20 min"],"cta":"Book a trim","featured":false},
+      {"name":"Full service","price":"$32","period":"/ visit","features":["Tailored cut and style","Hot-towel finish","Wash and blow-dry","Styling advice"],"cta":"Book the chair","featured":true},
+      {"name":"Cut & shave","price":"$48","period":"/ visit","features":["Full cut and style","Traditional wet shave","Beard line-up","Face hot towel"],"cta":"Book the works","featured":false}
+    ]},
+    {"type":"faq","h2":"Common <em>questions</em>.","items":[
+      ["Do I need to book ahead?","Booking is recommended for busy times, but we always keep a few chairs for walk-ins."],
+      ["Can I bring a photo?","Please do. A reference photo helps your barber nail the look you are after."],
+      ["Do you cut kids' hair?","Yes. We have patient barbers and a calm chair just right for younger clients."],
+      ["What does a cut include?","Every cut includes a consultation, a wash and a hot-towel finish at no extra cost."],
+      ["How can I pay?","Card, contactless or cash, whatever is easiest for you on the day."]
+    ]},
+    {"type":"cta","h2":"Time for a fresh cut?","sub":"Grab a chair with one of our barbers and walk out looking sharp.","button":"Book your chair"},
+    {"type":"footer","brand":"Sharp","tagline":"Classic cuts, shaves and beard work by barbers who care. Sample dummy brand for template preview.","columns":[
+      ["Services","Haircuts","Shaves","Beard work","Kids cuts"],
+      ["Shop","Barbers","Pricing","Gift cards","Gallery"],
+      ["Visit","Find us","Opening hours","Book online","Contact"]
+    ],"copyright":"// Sharp is a sample template with dummy content"}
+  ]
+}

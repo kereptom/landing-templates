@@ -1,0 +1,45 @@
+{
+  "lang": "cs",
+  "title": "IronHouse: ukázková šablona landing page",
+  "desc": "Demonstrační landing page. Veškerý text je ukázkový (dummy) obsah.",
+  "sections": [
+    {"type":"nav","brand":"IronHouse","links":["Tréninky","Členství","Ceník","Kontakt"],"cta":"Zkušební vstup"},
+    {"type":"hero","eyebrow":"Ukázková šablona","h1":"Posilovna, kde <em>roste síla</em>.","sub":"Moderní stroje, činky i prostor na funkční trénink. Otevřeno nonstop a trenéři, kteří vás posunou dál.","cta":"Zkušební vstup zdarma","cta2":"Prohlédnout sály","illus":"house"},
+    {"type":"logos","label":"Trénují u nás","items":["Začátečníci","Sportovci","Maminky","Senioři","Firemní týmy"]},
+    {"type":"features","h2":"Vše pro váš <em>výkon</em>.","sub":"Posilovna, kardio zóna i osobní trenéři pod jednou střechou. Bez přeplácení za zbytečnosti.","cards":[
+      ["bolt","Silový trénink","Činky, klece a stroje od značek, které drží i pod zátěží."],
+      ["heart","Kardio zóna","Pásy, veslaři a kola s výhledem, ne do zdi."],
+      ["users","Osobní trenéři","Plán na míru a forma, kterou trenér hlídá s vámi."],
+      ["clock","Otevřeno nonstop","Cvičte v šest ráno i o půlnoci, vstup na čip."],
+      ["leaf","Výživové poradenství","Jídelníček, který sedne k tréninku i k životu."],
+      ["shield","Čisto a bezpečno","Dezinfekce u každého stroje a personál na sále."]
+    ]},
+    {"type":"stats","items":[["10+","let na trhu"],["4,9","hodnocení členů"],["80+","strojů a stanovišť"],["2500+","spokojených členů"]]},
+    {"type":"split1","eyebrow":"Začátek","h2":"Od prvního vstupu k <em>výsledkům</em>.","text":"Nezačínáte sami. Provedeme vás stroji, nastavíme zátěž a domluvíme cíl, který má smysl.","bullets":["Vstupní konzultace a změření","Plán na míru vašim cílům","Trenér, který hlídá techniku"],"illus":"growth"},
+    {"type":"split2","eyebrow":"Férovost","h2":"Členství bez <em>závazků</em>.","text":"Žádné dlouhé smlouvy ani skryté poplatky. Platíte za to, co opravdu využijete, a kdykoli můžete přestat.","bullets":["Žádná vázací doba na roky","Zmrazení členství při nemoci","Cena, kterou znáte předem"],"illus":"target"},
+    {"type":"steps","h2":"Stačí <em>tři kroky</em>.","sub":"Od přihlášky k prvnímu tréninku za chvíli.","steps":[
+      ["Přijďte na zkušebku","Projděte si sály a vyzkoušejte stroje zdarma."],
+      ["Vyberte členství","Zvolte tarif, který sedne vašemu režimu."],
+      ["Začněte trénovat","Dostanete čip a můžete hned na sál."]
+    ]},
+    {"type":"testimonial","quote":"Za půl roku v IronHouse jsem shodil deset kilo a konečně mě cvičení baví. Trenér mi nastavil plán, který zvládám i při práci.","author":"Ukázkový člen","role":"člen klubu, Brno"},
+    {"type":"pricing","h2":"Jednoduché <em>členství</em>.","sub":"Vyberte tarif podle toho, jak často chodíte. Bez vázací doby.","tiers":[
+      {"name":"Jednorázový vstup","price":"od 180 Kč","period":"/ vstup","features":["Vstup na celý den","Přístup do všech sálů","Skříňka a sprcha","Bez závazku"],"cta":"Koupit vstup","featured":false},
+      {"name":"Měsíční členství","price":"od 690 Kč","period":"/ měsíc","features":["Neomezené vstupy nonstop","Vstupní konzultace zdarma","Skupinové lekce v ceně","Bez vázací doby"],"cta":"Stát se členem","featured":true},
+      {"name":"Roční členství","price":"od 5 990 Kč","period":"/ rok","features":["Vše z měsíčního tarifu","Dva měsíce zdarma","Měření složení těla","Trénink s trenérem zdarma"],"cta":"Pořídit roční","featured":false}
+    ]},
+    {"type":"faq","h2":"Časté <em>dotazy</em>.","items":[
+      ["Mám si přijít vyzkoušet posilovnu?","Ano. První zkušební vstup je zdarma, projdeme s vámi sály i stroje."],
+      ["Je posilovna opravdu nonstop?","Ano. Členové mají přístup na čip 24 hodin denně, 7 dní v týdnu."],
+      ["Musím se vázat na dlouhou smlouvu?","Ne. Měsíční členství je bez vázací doby a kdykoli ho můžete ukončit."],
+      ["Pomůže mi trenér se začátkem?","Vstupní konzultace je u členství zdarma a osobní trénink si lze přiobjednat."],
+      ["Jak se dá platit?","Hotově, kartou i převodem. Členství platíte předem na zvolené období."]
+    ]},
+    {"type":"cta","h2":"Připraveni začít trénovat?","sub":"Přijďte na zkušební vstup zdarma a vyzkoušejte IronHouse na vlastní kůži.","button":"Zkušební vstup zdarma"},
+    {"type":"footer","brand":"IronHouse","tagline":"Posilovna a fitness centrum s nonstop provozem a trenéry. Ukázková značka pro náhled šablony.","columns":[
+      ["Tréninky","Silový trénink","Kardio zóna","Skupinové lekce","Osobní trenéři"],
+      ["Klub","O nás","Reference","Ceník","Kariéra"],
+      ["Kontakt","Telefon","E-mail","Brno a okolí","Nonstop provoz"]
+    ],"copyright":"// IronHouse je ukázková šablona s dummy obsahem"}
+  ]
+}

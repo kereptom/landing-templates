@@ -1,0 +1,45 @@
+{
+  "lang": "cs",
+  "title": "Studio Vlna: ukázková šablona landing page",
+  "desc": "Demonstrační landing page kreativní agentury. Veškerý text je ukázkový (dummy) obsah.",
+  "sections": [
+    {"type":"nav","brand":"Studio Vlna","links":["Služby","Práce","Ceník","Kontakt"],"cta":"Nezávazná konzultace"},
+    {"type":"hero","eyebrow":"Ukázková šablona","h1":"Značka, která <em>zaujme</em>.","sub":"Tvoříme loga, vizuální identity a kampaně, které vašemu byznysu dají jasný hlas i tvář. Od strategie po poslední pixel.","cta":"Nezávazná konzultace","cta2":"Naše práce","illus":"spark"},
+    {"type":"logos","label":"Pracujeme pro","items":["Startupy","E-shopy","Kavárny","Neziskovky","Výrobce"]},
+    {"type":"features","h2":"Co pro vás <em>vytvoříme</em>.","sub":"Jeden tým na strategii, design i kampaně. Bez žonglování s pěti dodavateli.","cards":[
+      ["sparkle","Vizuální identita","Logo, barvy a typografie, které drží pohromadě napříč kanály."],
+      ["star","Branding strategie","Najdeme tón i příběh, kterým si získáte svoje publikum."],
+      ["camera","Obsah a kampaně","Vizuály a texty pro web, sociální sítě i tisk."],
+      ["globe","Webdesign","Stránky, které vypadají skvěle a hlavně prodávají."],
+      ["heart","Péče o značku","Doprovázíme vás dál, ne jen do předání souborů."],
+      ["rocket","Uvedení na trh","Pomůžeme značku spustit a rozjet první kampaně."]
+    ]},
+    {"type":"stats","items":[["120+","hotových projektů"],["4,9","hodnocení klientů"],["10+","let zkušeností"],["3 t","průměrný náběh značky"]]},
+    {"type":"split1","eyebrow":"Postup","h2":"Od nápadu k <em>silné značce</em>.","text":"Nezačínáme barvičkami. Nejdřív pochopíme váš byznys, publikum a cíle, teprve pak kreslíme. Vždy víte, kam směřujeme.","bullets":["Workshop a brandová strategie","Návrhy s jasným zdůvodněním","Kompletní manuál značky na konec"],"illus":"target"},
+    {"type":"split2","eyebrow":"Spolupráce","h2":"Proces, který <em>dává smysl</em>.","text":"Žádné nekonečné kolečko korektur naslepo. Pracujeme v jasných etapách, vy schvalujete a my posouváme práci dál.","bullets":["Transparentní cena i harmonogram","Pravidelné náhledy a zpětná vazba","Zdrojové soubory vždy patří vám"],"illus":"layers"},
+    {"type":"steps","h2":"Stačí <em>tři kroky</em>.","sub":"Od prvního hovoru k hotové značce bez chaosu.","steps":[
+      ["Ozvěte se","Řekněte nám o svém záměru, ozveme se obratem zpět."],
+      ["Navrhneme směr","Připravíme strategii i první vizuální koncept."],
+      ["Spustíme značku","Předáme manuál, soubory a pomůžeme s rozjezdem."]
+    ]},
+    {"type":"testimonial","quote":"Studio Vlna nám dalo identitu, na kterou jsme hrdí. Konečně působíme tak profesionálně, jak ve skutečnosti pracujeme.","author":"Ukázkový klient","role":"zakladatelka e-shopu, Brno"},
+    {"type":"pricing","h2":"Orientační <em>ceník</em>.","sub":"Přesnou cenu řekneme po úvodní konzultaci, vždy předem.","tiers":[
+      {"name":"Logo a značka","price":"od 15 000 Kč","period":"/ projekt","features":["Návrh loga","Barevná paleta","Základní typografie","Soubory pro web i tisk"],"cta":"Poptat logo","featured":false},
+      {"name":"Vizuální identita","price":"od 45 000 Kč","period":"/ projekt","features":["Kompletní logo a značka","Brandový manuál","Šablony pro sítě","Konzultace zdarma"],"cta":"Poptat identitu","featured":true},
+      {"name":"Značka na klíč","price":"individuální","period":"","features":["Strategie i identita","Web a kampaně","Tvorba obsahu","Dlouhodobá péče"],"cta":"Domluvit konzultaci","featured":false}
+    ]},
+    {"type":"faq","h2":"Časté <em>dotazy</em>.","items":[
+      ["Jak dlouho tvorba značky trvá?","Logo zvládneme za dva až tři týdny, kompletní identitu obvykle za měsíc až dva."],
+      ["Dáváte cenu předem?","Ano. Po úvodní konzultaci dostanete položkovou nabídku a té se držíme."],
+      ["Patří mi výsledné soubory?","Ano. Po zaplacení dostanete všechny zdrojové soubory i práva k užití."],
+      ["Pracujete i s menšími firmami?","Rádi. Máme balíčky pro startupy i živnostníky, nejen pro velké značky."],
+      ["Postaráte se i o web a kampaně?","Ano. Umíme navázat webem, obsahem i správou sociálních sítí."]
+    ]},
+    {"type":"cta","h2":"Potřebujete silnou značku?","sub":"Napište nebo zavolejte. Ozveme se obratem a domluvíme nezávaznou konzultaci.","button":"Nezávazná konzultace"},
+    {"type":"footer","brand":"Studio Vlna","tagline":"Kreativní a brandingová agentura pro značky, které chtějí zaujmout. Ukázková značka pro náhled šablony.","columns":[
+      ["Služby","Branding","Webdesign","Kampaně","Obsah"],
+      ["Studio","O nás","Práce","Ceník","Kariéra"],
+      ["Kontakt","Telefon","E-mail","Brno a okolí","Po-Pá 9-18"]
+    ],"copyright":"// Studio Vlna je ukázková šablona s dummy obsahem"}
+  ]
+}

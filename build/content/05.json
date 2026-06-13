@@ -1,0 +1,45 @@
+{
+  "lang": "cs",
+  "title": "Řemeslo+: ukázková šablona landing page",
+  "desc": "Demonstrační landing page. Veškerý text je ukázkový (dummy) obsah.",
+  "sections": [
+    {"type":"nav","brand":"Řemeslo+","links":["Služby","Reference","Ceník","Kontakt"],"cta":"Nezávazná poptávka"},
+    {"type":"hero","eyebrow":"Ukázková šablona","h1":"Spolehlivý řemeslník <em>na zavolání</em>.","sub":"Instalace, opravy a rekonstrukce s férovou cenou a zárukou. Přijedeme včas a uklidíme po sobě.","cta":"Nezávazná poptávka","cta2":"Naše práce","illus":"house"},
+    {"type":"logos","label":"Důvěřují nám","items":["Domácnosti","Firmy","SVJ","Realitky","Hotely"]},
+    {"type":"features","h2":"Co pro vás <em>uděláme</em>.","sub":"Jeden řemeslník na vodu, topení i drobné opravy. Bez shánění pěti firem.","cards":[
+      ["wrench","Instalace","Voda, topení a odpady od přípojky po finální montáž."],
+      ["tool","Opravy","Rychlé odstranění závad, prasklin a netěsností."],
+      ["shield","Záruka na práci","Na každou zakázku dostanete záruku písemně."],
+      ["clock","Rychlý příjezd","U havárie jsme u vás zpravidla do dvou hodin."],
+      ["phone","Nonstop pohotovost","Zavolejte kdykoli, domluvíme nejbližší termín."],
+      ["home","Rekonstrukce","Koupelny a bytová jádra na klíč, od návrhu po úklid."]
+    ]},
+    {"type":"stats","items":[["15+","let praxe"],["4,9","hodnocení klientů"],["2 h","průměrný příjezd"],["3000+","hotových zakázek"]]},
+    {"type":"split1","eyebrow":"Postup","h2":"Od poptávky k <em>hotové práci</em>.","text":"Žádné překvapení. Nejdřív se domluvíme, pak teprve začneme. Vždy víte, co se bude dít a kdy.","bullets":["Obhlídka a nezávazná cenová nabídka","Domluvený termín, který dodržíme","Po práci uklidíme a předáme záruku"],"illus":"shield"},
+    {"type":"split2","eyebrow":"Férovost","h2":"Cena, kterou <em>předem znáte</em>.","text":"Cenu řekneme dopředu a držíme se jí. Co se nestihne odhadnout, doladíme společně, ne dodatečně na faktuře.","bullets":["Položkový rozpočet, žádné skryté příplatky","Platba až po předání hotové práce","Doklad a záruka ke každé zakázce"],"illus":"target"},
+    {"type":"steps","h2":"Stačí <em>tři kroky</em>.","sub":"Od telefonu k hotové práci bez starostí.","steps":[
+      ["Ozvěte se","Popište závadu, ozveme se obratem zpět."],
+      ["Domluvíme termín","Přijedeme, naceníme a začneme."],
+      ["Hotovo a uklizeno","Předáme práci, doklad i záruku."]
+    ]},
+    {"type":"testimonial","quote":"Přijeli ještě týž den, opravili prasklou stupačku a po sobě uklidili. Cena seděla na korunu podle nabídky.","author":"Ukázkový zákazník","role":"majitel bytu, Praha"},
+    {"type":"pricing","h2":"Orientační <em>ceník</em>.","sub":"Přesnou cenu řekneme po obhlídce, vždy předem.","tiers":[
+      {"name":"Drobné opravy","price":"od 600 Kč","period":"/ hodina","features":["Výměna baterie či ventilu","Drobné netěsnosti","Montáž spotřebiče","Bez cesty po Praze"],"cta":"Poptat opravu","featured":false},
+      {"name":"Standardní zakázka","price":"od 2 500 Kč","period":"/ zakázka","features":["Rozvody vody a odpadů","Montáž radiátorů","Cenová nabídka zdarma","Záruka 24 měsíců"],"cta":"Poptat zakázku","featured":true},
+      {"name":"Rekonstrukce","price":"individuální","period":"","features":["Koupelna na klíč","Položkový rozpočet","Koordinace profesí","Termín písemně"],"cta":"Domluvit obhlídku","featured":false}
+    ]},
+    {"type":"faq","h2":"Časté <em>dotazy</em>.","items":[
+      ["Za jak dlouho přijedete?","U havárie zpravidla do dvou hodin, běžné zakázky domlouváme na nejbližší volný termín."],
+      ["Dáváte cenu předem?","Ano. Po obhlídce dostanete položkovou nabídku a té se držíme."],
+      ["Vystavíte doklad a záruku?","Ke každé zakázce dostanete doklad a písemnou záruku na provedenou práci."],
+      ["V jaké oblasti pracujete?","Praha a okolí do 30 km. U větších zakázek se domluvíme i dál."],
+      ["Jak se dá platit?","Hotově i převodem, vždy až po předání a kontrole hotové práce."]
+    ]},
+    {"type":"cta","h2":"Potřebujete řemeslníka?","sub":"Napište nebo zavolejte. Ozveme se obratem a domluvíme termín.","button":"Nezávazná poptávka"},
+    {"type":"footer","brand":"Řemeslo+","tagline":"Spolehlivý řemeslník na vodu, topení a rekonstrukce. Ukázková značka pro náhled šablony.","columns":[
+      ["Služby","Instalace","Opravy","Rekonstrukce","Pohotovost"],
+      ["Firma","O nás","Reference","Ceník","Kariéra"],
+      ["Kontakt","Telefon","E-mail","Praha a okolí","Po-Ne 7-21"]
+    ],"copyright":"// Řemeslo+ je ukázková šablona s dummy obsahem"}
+  ]
+}

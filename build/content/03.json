@@ -1,0 +1,45 @@
+{
+  "lang": "cs",
+  "title": "Zrnko: ukázková šablona landing page",
+  "desc": "Demonstrační landing page. Veškerý text je ukázkový (dummy) obsah.",
+  "sections": [
+    {"type":"nav","brand":"Zrnko","links":["Káva","Pražírna","Ceník","Kontakt"],"cta":"Objednat kávu"},
+    {"type":"hero","eyebrow":"Ukázková šablona","h1":"Čerstvě pražená káva <em>každé ráno</em>.","sub":"Zrna pražíme po malých dávkách a vozíme je k vám do týdne od pražení. V kavárně i domů, vždy čerstvá.","cta":"Objednat kávu","cta2":"Prohlédnout nabídku","illus":"leaf"},
+    {"type":"logos","label":"Naši kávu pijí","items":["Bistra","Kanceláře","Penziony","Knihkupectví","Pekárny"]},
+    {"type":"features","h2":"Proč pít <em>od nás</em>.","sub":"Vlastní pražírna i kavárna pod jednou střechou. Od zeleného zrna až po šálek.","cards":[
+      ["leaf","Vlastní pražírna","Pražíme po malých dávkách a hlídáme každou várku."],
+      ["sun","Čerstvost","Zrna posíláme do týdne od pražení, nikdy ne ze skladu."],
+      ["globe","Původ zrn","Víme, z které farmy zrno pochází a kdo ho vypěstoval."],
+      ["heart","Ruční příprava","Každé espresso připravuje barista, ne automat."],
+      ["gift","Předplatné","Nastavte interval a káva dorazí sama, kdy ji chcete."],
+      ["home","Posezení","Útulná kavárna s domácími dezerty a klidným koutem."]
+    ]},
+    {"type":"stats","items":[["12+","let pražíme"],["4,9","hodnocení hostů"],["7 dní","od pražení k vám"],["20+","druhů zrn"]]},
+    {"type":"split1","eyebrow":"Pražírna","h2":"Od zrna k <em>šálku</em>.","text":"Každou dávku pražíme ručně a ochutnáváme. Profil pražení ladíme tak, aby zrno ukázalo to nejlepší ze své farmy.","bullets":["Pražení po malých dávkách","Vlastní profil pro každou odrůdu","Datum pražení na každém balení"],"illus":"leaf"},
+    {"type":"split2","eyebrow":"Předplatné","h2":"Káva, která <em>dorazí sama</em>.","text":"Vyberte si zrno a interval, o zbytek se postaráme. Mezi dodávkami můžete kdykoli změnit druh i množství.","bullets":["Interval podle vaší spotřeby","Změna nebo pauza kdykoli","Doprava zdarma nad 800 Kč"],"illus":"cart"},
+    {"type":"steps","h2":"Káva u vás ve <em>třech krocích</em>.","sub":"Od výběru zrna k prvnímu šálku bez starostí.","steps":[
+      ["Vyberte zrno","Podle chuti vám poradíme espresso i filtr."],
+      ["Upražíme čerstvě","Vaši dávku pražíme až po objednávce."],
+      ["Vychutnejte si","Zrna dorazí do týdne přímo k vám domů."]
+    ]},
+    {"type":"testimonial","quote":"Přešli jsme na Zrnko do kanceláře a rozdíl je znát hned. Káva voní, chutná a dorazí vždycky včas.","author":"Ukázkový zákazník","role":"provozní bistra, Brno"},
+    {"type":"pricing","h2":"Orientační <em>ceník</em>.","sub":"Ceny za 250 g čerstvě pražených zrn, doprava zdarma nad 800 Kč.","tiers":[
+      {"name":"Espresso doma","price":"od 220 Kč","period":"/ balení","features":["250 g čerstvých zrn","Sladší espresso směs","Datum pražení na obalu","Tipy na přípravu"],"cta":"Koupit zrna","featured":false},
+      {"name":"Předplatné","price":"od 199 Kč","period":"/ balení","features":["Doprava zdarma","Interval podle vás","Změna druhu kdykoli","Pauza nebo zrušení"],"cta":"Aktivovat předplatné","featured":true},
+      {"name":"Pro kavárny","price":"individuální","period":"","features":["Velkoobchodní ceny","Pravidelné rozvozy","Zaškolení baristů","Zápůjčka mlýnku"],"cta":"Domluvit spolupráci","featured":false}
+    ]},
+    {"type":"faq","h2":"Časté <em>dotazy</em>.","items":[
+      ["Jak čerstvá zrna posíláte?","Vaši dávku pražíme až po objednávce a posíláme do týdne od pražení. Datum najdete na balení."],
+      ["Umíte poradit s výběrem?","Ano. Napište nám, jak kávu připravujete a jakou chuť máte rádi, a doporučíme vhodné zrno."],
+      ["Jak funguje předplatné?","Vyberete zrno a interval, káva pak chodí sama. Druh, množství i termín měníte kdykoli."],
+      ["Dodáváte i do kaváren?","Pro provozy máme velkoobchodní ceny, pravidelné rozvozy a zaškolení baristů."],
+      ["Jak se dá platit?","Kartou online i převodem. U rozvozů do kaváren lze i na fakturu se splatností."]
+    ]},
+    {"type":"cta","h2":"Chcete čerstvou kávu?","sub":"Objednejte zrna nebo se stavte na šálek do kavárny. Upražíme čerstvě právě pro vás.","button":"Objednat kávu"},
+    {"type":"footer","brand":"Zrnko","tagline":"Vlastní pražírna a kavárna s čerstvě praženou kávou. Ukázková značka pro náhled šablony.","columns":[
+      ["Káva","Espresso","Filtr","Předplatné","Dárkové sety"],
+      ["Pražírna","O nás","Původ zrn","Pro kavárny","Kariéra"],
+      ["Kontakt","Telefon","E-mail","Brno a okolí","Po-Ne 8-20"]
+    ],"copyright":"// Zrnko je ukázková šablona s dummy obsahem"}
+  ]
+}

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bistro Oliva: ukázková šablona landing page</title>
+<meta name="description" content="Demonstrační landing page. Veškerý text je ukázkový (dummy) obsah.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%237b1e34'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..600&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&family=JetBrains+Mono:wght@400..600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --c-1:#7b1e34; --c-2:#9d5869; --c-3:#62182a; --accent-soft:#ecdbdb; --accent-line:#d6b6ba;
+  --paper:#fdf7f4; --paper-soft:#f5efec; --ink:#1c1213; --ink-2:#564e4e; --ink-3:#8c8484;
+  --rule:#e2dcd9; --rule-soft:#f0e9e6; --grad:linear-gradient(120deg,#9d5869 0%,#7b1e34 55%,#62182a 100%); --r:0.6;
+  --display:"Playfair Display", Georgia, serif; --serif:"Newsreader", Georgia, serif; --mono:"JetBrains Mono", ui-monospace, monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--paper);color:var(--ink);font-family:var(--serif);line-height:1.6;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,.brand,.btn,.eyebrow,.stat-n,.price-amt,.step-n,.logos-label{font-family:var(--display)}
+.container{max-width:1160px;margin:0 auto;padding:0 24px}
+.container.narrow{max-width:780px}
+em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+body.em-solid em{background:none;-webkit-text-fill-color:var(--c-1);color:var(--c-1)}
+.eyebrow{display:inline-block;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--c-1);background:var(--accent-soft);border:1px solid var(--accent-line);padding:6px 14px;border-radius:999px;margin-bottom:20px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:16px;padding:13px 26px;border-radius:calc(11px*var(--r));border:1px solid transparent;cursor:pointer;transition:transform .15s,box-shadow .2s,background .2s;white-space:nowrap}
+.btn-sm{padding:9px 18px;font-size:14.5px}
+.btn-primary{background:var(--grad);color:#fff;box-shadow:0 8px 22px -8px var(--c-1)}
+body.em-solid .btn-primary{background:var(--c-1)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 30px -10px var(--c-1)}
+.btn-ghost{background:transparent;border-color:var(--rule);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--c-1);color:var(--c-1)}
+.btn-light{background:#fff;color:#111;box-shadow:0 10px 30px -12px rgba(0,0,0,.5)}
+.btn-light:hover{transform:translateY(-2px)}
+.nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb, var(--paper) 82%, transparent);backdrop-filter:saturate(180%) blur(16px);border-bottom:1px solid transparent;transition:border-color .2s,box-shadow .2s}
+.nav.scrolled{border-bottom-color:var(--rule);box-shadow:0 4px 20px -16px rgba(0,0,0,.4)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:19px;letter-spacing:-.01em}
+.brand-dot{width:18px;height:18px;border-radius:6px;background:var(--grad);flex:none}
+.nav-links{display:flex;gap:30px;font-family:var(--display);font-weight:500;font-size:15px}
+.nav-links a{color:var(--ink-2)}
+.nav-links a:hover{color:var(--c-1)}
+.nav-cta{display:flex;align-items:center;gap:10px}
+.burger{display:none;flex-direction:column;gap:4px;background:none;border:none;padding:8px;cursor:pointer}
+.burger span{width:22px;height:2px;background:var(--ink);border-radius:2px}
+.hero{padding:clamp(48px,8vw,96px) 0 clamp(40px,6vw,80px)}
+.hero-in{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(38px,5.6vw,64px);font-weight:800;letter-spacing:-.03em;line-height:1.04;margin-bottom:20px}
+.lede{font-size:clamp(17px,2.1vw,21px);color:var(--ink-2);max-width:34ch;margin-bottom:30px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.art-panel{background:var(--accent-soft);border:1px solid var(--accent-line);border-radius:calc(24px*var(--r));padding:clamp(28px,5vw,54px);display:flex;align-items:center;justify-content:center}
+.art-panel .ill{width:100%;max-width:340px;height:auto}
+.logos{padding:30px 0 10px}
+.logos-label{text-align:center;font-size:12.5px;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-3);margin-bottom:18px}
+.logos-row{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 42px;font-family:var(--display);font-weight:700;font-size:20px;color:var(--ink-3);opacity:.8}
+.section{padding:clamp(56px,8vw,108px) 0}
+.head{text-align:center;max-width:680px;margin:0 auto clamp(36px,5vw,56px)}
+.head h2{font-size:clamp(28px,4.2vw,44px);font-weight:800;letter-spacing:-.025em;line-height:1.1;margin-bottom:14px}
+.head p{font-size:clamp(16px,1.9vw,19px);color:var(--ink-2)}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.feature{background:var(--paper-soft);border:1px solid var(--rule);border-radius:calc(16px*var(--r));padding:28px 26px;transition:transform .18s,box-shadow .2s,border-color .2s}
+.feature:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(0,0,0,.4);border-color:var(--accent-line)}
+.feat-ic{width:48px;height:48px;border-radius:calc(12px*var(--r));background:var(--accent-soft);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.feat-ic .ic{width:24px;height:24px;stroke:var(--c-1);fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.feature h3{font-size:19px;font-weight:700;margin-bottom:8px;letter-spacing:-.01em}
+.feature p{font-size:15.5px;color:var(--ink-2)}
+.stats{padding:clamp(28px,4vw,40px) 0}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;background:var(--accent-soft);border:1px solid var(--accent-line);border-radius:calc(20px*var(--r));padding:clamp(26px,4vw,40px)}
+.stats-row>div{text-align:center}
+.stat-n{font-size:clamp(30px,4vw,46px);font-weight:800;letter-spacing:-.02em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1}
+body.em-solid .stat-n{background:none;-webkit-text-fill-color:var(--c-1);color:var(--c-1)}
+.stat-l{font-size:14px;color:var(--ink-2);margin-top:8px}
+.split-in{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,72px);align-items:center}
+.split.flip .split-art{order:-1}
+.split h2{font-size:clamp(26px,3.6vw,38px);font-weight:800;letter-spacing:-.02em;line-height:1.12;margin-bottom:16px}
+.split p{font-size:17px;color:var(--ink-2);margin-bottom:22px}
+.ticks{list-style:none;display:flex;flex-direction:column;gap:13px}
+.ticks li{display:flex;gap:12px;align-items:flex-start;font-size:16px;color:var(--ink-2)}
+.li-ic{width:22px;height:22px;flex:none;stroke:var(--c-1);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;margin-top:1px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.step{text-align:center;padding:0 10px}
+.step-n{width:54px;height:54px;border-radius:50%;background:var(--grad);color:#fff;font-weight:800;font-size:22px;display:flex;align-items:center;justify-content:center;margin:0 auto 18px}
+body.em-solid .step-n{background:var(--c-1)}
+.step h3{font-size:19px;font-weight:700;margin-bottom:8px}
+.step p{font-size:15.5px;color:var(--ink-2)}
+.quote-in{max-width:840px;margin:0 auto;text-align:center;position:relative}
+.quote-mark{font-family:var(--display);font-size:90px;line-height:.6;color:var(--accent-line);margin-bottom:8px}
+.quote-in blockquote{font-family:var(--serif);font-size:clamp(22px,3.2vw,32px);font-weight:500;line-height:1.4;letter-spacing:-.01em;margin-bottom:24px}
+.quote-by strong{font-family:var(--display);font-size:17px}
+.quote-by span{display:block;color:var(--ink-3);font-size:14.5px;margin-top:3px}
+.pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:start}
+.price-card{position:relative;background:var(--paper-soft);border:1px solid var(--rule);border-radius:calc(18px*var(--r));padding:30px 26px;display:flex;flex-direction:column;gap:18px}
+.price-card.featured{border-color:var(--c-1);box-shadow:0 24px 50px -28px var(--c-1);transform:scale(1.03)}
+.badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--grad);color:#fff;font-family:var(--display);font-size:12px;font-weight:600;padding:5px 14px;border-radius:999px}
+body.em-solid .badge{background:var(--c-1)}
+.price-name{font-family:var(--display);font-weight:700;font-size:18px}
+.price-amt{font-size:40px;font-weight:800;letter-spacing:-.02em;line-height:1}
+.price-amt span{font-family:var(--serif);font-size:15px;font-weight:400;color:var(--ink-3);letter-spacing:0}
+.price-card .ticks{gap:11px}
+.price-card .ticks li{font-size:15px}
+.price-card .btn{width:100%;margin-top:6px}
+.faq{display:flex;flex-direction:column;gap:12px}
+.faq-i{border:1px solid var(--rule);border-radius:calc(12px*var(--r));background:var(--paper-soft);padding:0 22px}
+.faq-i summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0;font-family:var(--display);font-weight:600;font-size:17px}
+.faq-i summary::-webkit-details-marker{display:none}
+.faq-x{font-family:var(--display);font-size:22px;color:var(--c-1);transition:transform .2s;flex:none}
+.faq-i[open] .faq-x{transform:rotate(45deg)}
+.faq-i p{color:var(--ink-2);font-size:15.5px;padding:0 0 18px}
+.cta{background:var(--grad);color:#fff;text-align:center}
+body.em-solid .cta{background:var(--c-1)}
+.cta-in{padding:clamp(56px,8vw,96px) 0;max-width:720px;margin:0 auto}
+.cta h2{font-size:clamp(28px,4.4vw,46px);font-weight:800;letter-spacing:-.02em;color:#fff;margin-bottom:14px}
+.cta p{font-size:clamp(16px,2vw,20px);color:rgba(255,255,255,.88);margin-bottom:30px}
+.footer{background:var(--paper-soft);border-top:1px solid var(--rule);padding-top:clamp(48px,6vw,72px)}
+.foot-in{display:grid;grid-template-columns:1.4fr 2fr;gap:40px;padding-bottom:40px}
+.fbrand p{color:var(--ink-3);font-size:15px;margin-top:14px;max-width:32ch}
+.fcols{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.fhead{font-family:var(--display);font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink);margin-bottom:14px}
+.fcol a{display:block;color:var(--ink-2);font-size:15px;padding:5px 0}
+.fcol a:hover{color:var(--c-1)}
+.foot-bar{border-top:1px solid var(--rule);padding:22px 0 40px;color:var(--ink-3);font-size:13.5px;font-family:var(--mono)}
+@media (max-width:880px){
+  .nav-links{display:none}
+  .nav.open .nav-links{display:flex;position:absolute;top:64px;left:0;right:0;flex-direction:column;background:var(--paper);border-bottom:1px solid var(--rule);padding:16px 24px;gap:14px}
+  .burger{display:flex}
+  .hero-in,.split-in,.foot-in{grid-template-columns:1fr}
+  .split.flip .split-art{order:0}
+  .hero-art{order:-1;max-width:420px}
+  .features,.steps,.pricing{grid-template-columns:1fr}
+  .stats-row{grid-template-columns:repeat(2,1fr)}
+  .fcols{grid-template-columns:repeat(3,1fr)}
+  .price-card.featured{transform:none}
+}
+@media (max-width:520px){ .fcols{grid-template-columns:1fr} .stats-row{grid-template-columns:1fr} }
+</style>
+</head>
+<body class="">
+<header class="nav" id="nav"><div class="container nav-in"><a class="brand" href="#top"><span class="brand-dot"></span>Bistro Oliva</a><nav class="nav-links"><a href="#0">Menu</a><a href="#1">Snídaně</a><a href="#2">Rezervace</a><a href="#3">Kontakt</a></nav><div class="nav-cta"><a class="btn btn-sm" href="#cta">Rezervovat stůl</a><button class="burger" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')"><span></span><span></span><span></span></button></div></div></header>
+<section class="hero" id="top"><div class="container hero-in"><div class="hero-copy"><span class="eyebrow">Ukázková šablona</span><h1>Poctivá kuchyně <em>každý den</em>.</h1><p class="lede">Sezónní suroviny, čerstvé pečivo a denní menu za férovou cenu. Sedněte si na kávu nebo k obědu, jsme kousek od vás.</p><div class="hero-cta"><a class="btn btn-primary" href="#cta">Rezervovat stůl</a><a class="btn btn-ghost" href="#features">Prohlédnout menu</a></div></div><div class="hero-art"><div class="art-panel"><svg class="ill" viewBox="0 0 240 200" fill="none" stroke="var(--c-1)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M130 40c-50 6-86 44-86 92 0 8 1 16 4 24 8-44 44-78 90-86-30 18-52 48-58 84 50-2 96-40 96-96 0-8-2-16-6-22z"/></svg></div></div></div></section>
+<section class="logos"><div class="container"><p class="logos-label">Vaří u nás rádi</p><div class="logos-row"><span>Studenti</span><span>Kanceláře</span><span>Rodiny</span><span>Turisté</span><span>Sousedé</span></div></div></section>
+<section class="section" id="features"><div class="container"><div class="head"><h2>Co u nás <em>najdete</em>.</h2><p>Snídaně, obědy i večerní bistro pod jednou střechou. Bez kompromisů v chuti.</p></div><div class="features"><div class="feature"><div class="feat-ic"><svg class="ic" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 4 13c0-6 7-10 16-10 0 8-4 15-9 17z"/><path d="M4 21c3-4 6-6 10-7"/></svg></div><h3>Sezónní suroviny</h3><p>Vaříme z toho, co právě dozrálo, od lokálních dodavatelů.</p></div><div class="feature"><div class="feat-ic"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></div><h3>Snídaně do 11:00</h3><p>Vajíčka, croissanty a domácí granola každé ráno.</p></div><div class="feature"><div class="feat-ic"><svg class="ic" viewBox="0 0 24 24"><path d="M19 14c1.5-1.5 3-3.3 3-5.5A4.5 4.5 0 0 0 12 5 4.5 4.5 0 0 0 2 8.5c0 2.2 1.5 4 3 5.5l7 7z"/></svg></div><h3>Denní menu</h3><p>Polévka a tři hlavní jídla, každý den jinak a čerstvě.</p></div><div class="feature"><div class="feat-ic"><svg class="ic" viewBox="0 0 24 24"><path d="m12 3 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 17l-5.2 2.8 1-5.8L3.5 9.2l5.9-.9z"/></svg></div><h3>Výběrová káva</h3><p>Pražená kousek od nás, připravená baristou.</p></div><div class="feature"><div class="feat-ic"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="9" width="18" height="12" rx="1"/><path d="M3 13h18M12 9v12"/><path d="M12 9C9 9 7 7 8 5s4 0 4 4c0-4 3-6 4-4s-1 4-4 4z"/></svg></div><h3>Dárkové poukazy</h3><p>Potěšte blízké voucherem na snídani i večeři.</p></div><div class="feature"><div class="feat-ic"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div><h3>Rezervace předem</h3><p>Zamluvte si stůl online během pár vteřin.</p></div></div></div></section>
+<section class="stats"><div class="container stats-row"><div><div class="stat-n">10+</div><div class="stat-l">let na rohu</div></div><div><div class="stat-n">4,8</div><div class="stat-l">hodnocení hostů</div></div><div><div class="stat-n">120</div><div class="stat-l">jídel denně</div></div><div><div class="stat-n">100%</div><div class="stat-l">domácí pečivo</div></div></div></section>
+<section class="section split"><div class="container split-in"><div class="split-copy"><span class="eyebrow">Kuchyně</span><h2>Od trhu na <em>váš talíř</em>.</h2><p>Nakupujeme ráno, vaříme přes den a co se neprodá, nezamrazíme. Proto se menu mění podle toho, co je zrovna nejlepší.</p><ul class="ticks"><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Zelenina a maso od lokálních farem</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Pečivo pečeme každé ráno u nás</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Bezmasé i bezlepkové varianty</span></li></ul></div><div class="split-art"><div class="art-panel"><svg class="ill" viewBox="0 0 240 200" fill="none" stroke="var(--c-1)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M130 40c-50 6-86 44-86 92 0 8 1 16 4 24 8-44 44-78 90-86-30 18-52 48-58 84 50-2 96-40 96-96 0-8-2-16-6-22z"/></svg></div></div></div></section>
+<section class="section split flip"><div class="container split-in"><div class="split-art"><div class="art-panel"><svg class="ill" viewBox="0 0 240 200" fill="none" stroke="var(--c-1)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M40 100 120 40l80 60"/><path d="M58 88v74h124V88"/><rect x="100" y="118" width="40" height="44"/></svg></div></div><div class="split-copy"><span class="eyebrow">Atmosféra</span><h2>Místo, kam se <em>rádi vrátíte</em>.</h2><p>Útulný interiér, zahrádka do dvora a obsluha, která vás zná jménem. Klidné ráno i veselý večer s přáteli.</p><ul class="ticks"><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Zahrádka otevřená přes léto</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Dětský koutek a menu pro nejmenší</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Wi-Fi a tichý kout na práci</span></li></ul></div></div></section>
+<section class="section steps-wrap"><div class="container"><div class="head"><h2>Návštěva ve <em>třech krocích</em>.</h2><p>Žádné objednávkové fronty ani zdržení.</p></div><div class="steps"><div class="step"><div class="step-n">1</div><h3>Vyberte si čas</h3><p>Rezervujte stůl online nebo nám zavolejte.</p></div><div class="step"><div class="step-n">2</div><h3>Přijďte k nám</h3><p>Posaďte se, my doneseme menu a kávu.</p></div><div class="step"><div class="step-n">3</div><h3>Vychutnejte si to</h3><p>Najezte se v klidu a přijďte zas.</p></div></div></div></section>
+<section class="section quote-wrap"><div class="container quote-in"><div class="quote-mark">&ldquo;</div><blockquote>Chodíme sem na obědy celý tým. Denní menu je vždycky čerstvé, polévka domácí a obsluha milá. Lepší bistro v okolí nenajdete.</blockquote><div class="quote-by"><strong>Ukázkový host</strong><span>stálý zákazník, Brno</span></div></div></section>
+<section class="section pricing-wrap" id="pricing"><div class="container"><div class="head"><h2>Orientační <em>ceník</em>.</h2><p>Ceny denního menu a nápojů se mohou podle sezóny lišit.</p></div><div class="pricing"><div class="price-card"><div class="price-name">Snídaně</div><div class="price-amt">od 120 Kč<span>/ porce</span></div><ul class="ticks"><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Vajíčka dle výběru</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Domácí pečivo</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Káva nebo čaj</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Podáváme do 11:00</span></li></ul><a class="btn btn-ghost" href="#cta">Přijít na snídani</a></div><div class="price-card featured"><span class="badge">Doporučeno</span><div class="price-name">Denní menu</div><div class="price-amt">od 165 Kč<span>/ oběd</span></div><ul class="ticks"><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Polévka dne</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Výběr ze tří hlavních jídel</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Voda na stole zdarma</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Podáváme 11:00–14:00</span></li></ul><a class="btn btn-primary" href="#cta">Rezervovat oběd</a></div><div class="price-card"><div class="price-name">Večeře</div><div class="price-amt">individuální<span></span></div><ul class="ticks"><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Sezónní à la carte</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Výběr vín a koktejlů</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Stůl pro skupiny</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Rezervace doporučena</span></li></ul><a class="btn btn-ghost" href="#cta">Zamluvit stůl</a></div></div></div></section>
+<section class="section faq-wrap" id="faq"><div class="container narrow"><div class="head"><h2>Časté <em>dotazy</em>.</h2></div><div class="faq"><details class="faq-i"><summary>Dá se u vás rezervovat stůl?<span class="faq-x">+</span></summary><p>Ano, online během pár vteřin nebo telefonicky. U večeří rezervaci doporučujeme.</p></details><details class="faq-i"><summary>Máte bezmasá a bezlepková jídla?<span class="faq-x">+</span></summary><p>Každý den nabízíme aspoň jednu bezmasou volbu, bezlepkové varianty po domluvě.</p></details><details class="faq-i"><summary>Do kdy podáváte snídaně?<span class="faq-x">+</span></summary><p>Snídaně točíme každý den do 11:00, denní menu pak od 11:00 do 14:00.</p></details><details class="faq-i"><summary>Můžeme přijít s dětmi?<span class="faq-x">+</span></summary><p>Samozřejmě. Máme dětský koutek, menu pro nejmenší i přebalovací pult.</p></details><details class="faq-i"><summary>Berete platební karty?<span class="faq-x">+</span></summary><p>Platit můžete kartou, hotově i stravenkami, jak vám to vyhovuje.</p></details></div></div></section>
+<section class="cta" id="cta"><div class="container cta-in"><h2>Máte chuť na něco dobrého?</h2><p>Rezervujte si stůl nebo se prostě zastavte. Těšíme se na vás každý den.</p><a class="btn btn-light" href="#top">Rezervovat stůl</a></div></section>
+<footer class="footer"><div class="container foot-in"><div class="fbrand"><a class="brand" href="#top"><span class="brand-dot"></span>Bistro Oliva</a><p>Poctivá kuchyně ze sezónních surovin, snídaně i denní menu. Ukázková značka pro náhled šablony.</p></div><div class="fcols"><div class="fcol"><div class="fhead">Nabídka</div><a href="#">Snídaně</a><a href="#">Denní menu</a><a href="#">Večeře</a><a href="#">Káva</a></div><div class="fcol"><div class="fhead">Bistro</div><a href="#">O nás</a><a href="#">Reference</a><a href="#">Ceník</a><a href="#">Kariéra</a></div><div class="fcol"><div class="fhead">Kontakt</div><a href="#">Telefon</a><a href="#">E-mail</a><a href="#">Brno a okolí</a><a href="#">Po-Ne 8-22</a></div></div></div><div class="container foot-bar">// Bistro Oliva je ukázková šablona s dummy obsahem</div></footer>
+<script>
+const nav=document.getElementById('nav');
+const onScroll=()=>nav&&nav.classList.toggle('scrolled',window.scrollY>8);
+window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+document.querySelectorAll('.nav-links a, .nav-cta a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+</script>
+</body>
+</html>

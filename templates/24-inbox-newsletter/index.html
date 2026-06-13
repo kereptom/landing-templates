@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inbox: sample landing template</title>
+<meta name="description" content="Demonstration landing page. All text is sample (dummy) content.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23e23b2e'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..600;1,8..60,400&family=JetBrains+Mono:wght@400..600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --c-1:#e23b2e; --c-2:#ea6e64; --c-3:#b52f25; --accent-soft:#fbe6e4; --accent-line:#f6c4c0;
+  --paper:#ffffff; --paper-soft:#f7f7f7; --ink:#16110f; --ink-2:#534f4d; --ink-3:#8a8887;
+  --rule:#e3e2e2; --rule-soft:#f1f1f1; --grad:linear-gradient(120deg,#ea6e64 0%,#e23b2e 55%,#b52f25 100%); --r:0.4;
+  --display:"Archivo", system-ui, sans-serif; --serif:"Source Serif 4", Georgia, serif; --mono:"JetBrains Mono", ui-monospace, monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--paper);color:var(--ink);font-family:var(--serif);line-height:1.6;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,.brand,.btn,.eyebrow,.stat-n,.price-amt,.step-n,.logos-label{font-family:var(--display)}
+.container{max-width:1160px;margin:0 auto;padding:0 24px}
+.container.narrow{max-width:780px}
+em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+body.em-solid em{background:none;-webkit-text-fill-color:var(--c-1);color:var(--c-1)}
+.eyebrow{display:inline-block;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--c-1);background:var(--accent-soft);border:1px solid var(--accent-line);padding:6px 14px;border-radius:999px;margin-bottom:20px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:16px;padding:13px 26px;border-radius:calc(11px*var(--r));border:1px solid transparent;cursor:pointer;transition:transform .15s,box-shadow .2s,background .2s;white-space:nowrap}
+.btn-sm{padding:9px 18px;font-size:14.5px}
+.btn-primary{background:var(--grad);color:#fff;box-shadow:0 8px 22px -8px var(--c-1)}
+body.em-solid .btn-primary{background:var(--c-1)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 30px -10px var(--c-1)}
+.btn-ghost{background:transparent;border-color:var(--rule);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--c-1);color:var(--c-1)}
+.btn-light{background:#fff;color:#111;box-shadow:0 10px 30px -12px rgba(0,0,0,.5)}
+.btn-light:hover{transform:translateY(-2px)}
+.nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb, var(--paper) 82%, transparent);backdrop-filter:saturate(180%) blur(16px);border-bottom:1px solid transparent;transition:border-color .2s,box-shadow .2s}
+.nav.scrolled{border-bottom-color:var(--rule);box-shadow:0 4px 20px -16px rgba(0,0,0,.4)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:19px;letter-spacing:-.01em}
+.brand-dot{width:18px;height:18px;border-radius:6px;background:var(--grad);flex:none}
+.nav-links{display:flex;gap:30px;font-family:var(--display);font-weight:500;font-size:15px}
+.nav-links a{color:var(--ink-2)}
+.nav-links a:hover{color:var(--c-1)}
+.nav-cta{display:flex;align-items:center;gap:10px}
+.burger{display:none;flex-direction:column;gap:4px;background:none;border:none;padding:8px;cursor:pointer}
+.burger span{width:22px;height:2px;background:var(--ink);border-radius:2px}
+.hero{padding:clamp(48px,8vw,96px) 0 clamp(40px,6vw,80px)}
+.hero-in{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(38px,5.6vw,64px);font-weight:800;letter-spacing:-.03em;line-height:1.04;margin-bottom:20px}
+.lede{font-size:clamp(17px,2.1vw,21px);color:var(--ink-2);max-width:34ch;margin-bottom:30px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.art-panel{background:var(--accent-soft);border:1px solid var(--accent-line);border-radius:calc(24px*var(--r));padding:clamp(28px,5vw,54px);display:flex;align-items:center;justify-content:center}
+.art-panel .ill{width:100%;max-width:340px;height:auto}
+.logos{padding:30px 0 10px}
+.logos-label{text-align:center;font-size:12.5px;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-3);margin-bottom:18px}
+.logos-row{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 42px;font-family:var(--display);font-weight:700;font-size:20px;color:var(--ink-3);opacity:.8}
+.section{padding:clamp(56px,8vw,108px) 0}
+.head{text-align:center;max-width:680px;margin:0 auto clamp(36px,5vw,56px)}
+.head h2{font-size:clamp(28px,4.2vw,44px);font-weight:800;letter-spacing:-.025em;line-height:1.1;margin-bottom:14px}
+.head p{font-size:clamp(16px,1.9vw,19px);color:var(--ink-2)}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.feature{background:var(--paper-soft);border:1px solid var(--rule);border-radius:calc(16px*var(--r));padding:28px 26px;transition:transform .18s,box-shadow .2s,border-color .2s}
+.feature:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(0,0,0,.4);border-color:var(--accent-line)}
+.feat-ic{width:48px;height:48px;border-radius:calc(12px*var(--r));background:var(--accent-soft);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.feat-ic .ic{width:24px;height:24px;stroke:var(--c-1);fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.feature h3{font-size:19px;font-weight:700;margin-bottom:8px;letter-spacing:-.01em}
+.feature p{font-size:15.5px;color:var(--ink-2)}
+.stats{padding:clamp(28px,4vw,40px) 0}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;background:var(--accent-soft);border:1px solid var(--accent-line);border-radius:calc(20px*var(--r));padding:clamp(26px,4vw,40px)}
+.stats-row>div{text-align:center}
+.stat-n{font-size:clamp(30px,4vw,46px);font-weight:800;letter-spacing:-.02em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1}
+body.em-solid .stat-n{background:none;-webkit-text-fill-color:var(--c-1);color:var(--c-1)}
+.stat-l{font-size:14px;color:var(--ink-2);margin-top:8px}
+.split-in{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,72px);align-items:center}
+.split.flip .split-art{order:-1}
+.split h2{font-size:clamp(26px,3.6vw,38px);font-weight:800;letter-spacing:-.02em;line-height:1.12;margin-bottom:16px}
+.split p{font-size:17px;color:var(--ink-2);margin-bottom:22px}
+.ticks{list-style:none;display:flex;flex-direction:column;gap:13px}
+.ticks li{display:flex;gap:12px;align-items:flex-start;font-size:16px;color:var(--ink-2)}
+.li-ic{width:22px;height:22px;flex:none;stroke:var(--c-1);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;margin-top:1px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.step{text-align:center;padding:0 10px}
+.step-n{width:54px;height:54px;border-radius:50%;background:var(--grad);color:#fff;font-weight:800;font-size:22px;display:flex;align-items:center;justify-content:center;margin:0 auto 18px}
+body.em-solid .step-n{background:var(--c-1)}
+.step h3{font-size:19px;font-weight:700;margin-bottom:8px}
+.step p{font-size:15.5px;color:var(--ink-2)}
+.quote-in{max-width:840px;margin:0 auto;text-align:center;position:relative}
+.quote-mark{font-family:var(--display);font-size:90px;line-height:.6;color:var(--accent-line);margin-bottom:8px}
+.quote-in blockquote{font-family:var(--serif);font-size:clamp(22px,3.2vw,32px);font-weight:500;line-height:1.4;letter-spacing:-.01em;margin-bottom:24px}
+.quote-by strong{font-family:var(--display);font-size:17px}
+.quote-by span{display:block;color:var(--ink-3);font-size:14.5px;margin-top:3px}
+.pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:start}
+.price-card{position:relative;background:var(--paper-soft);border:1px solid var(--rule);border-radius:calc(18px*var(--r));padding:30px 26px;display:flex;flex-direction:column;gap:18px}
+.price-card.featured{border-color:var(--c-1);box-shadow:0 24px 50px -28px var(--c-1);transform:scale(1.03)}
+.badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--grad);color:#fff;font-family:var(--display);font-size:12px;font-weight:600;padding:5px 14px;border-radius:999px}
+body.em-solid .badge{background:var(--c-1)}
+.price-name{font-family:var(--display);font-weight:700;font-size:18px}
+.price-amt{font-size:40px;font-weight:800;letter-spacing:-.02em;line-height:1}
+.price-amt span{font-family:var(--serif);font-size:15px;font-weight:400;color:var(--ink-3);letter-spacing:0}
+.price-card .ticks{gap:11px}
+.price-card .ticks li{font-size:15px}
+.price-card .btn{width:100%;margin-top:6px}
+.faq{display:flex;flex-direction:column;gap:12px}
+.faq-i{border:1px solid var(--rule);border-radius:calc(12px*var(--r));background:var(--paper-soft);padding:0 22px}
+.faq-i summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 0;font-family:var(--display);font-weight:600;font-size:17px}
+.faq-i summary::-webkit-details-marker{display:none}
+.faq-x{font-family:var(--display);font-size:22px;color:var(--c-1);transition:transform .2s;flex:none}
+.faq-i[open] .faq-x{transform:rotate(45deg)}
+.faq-i p{color:var(--ink-2);font-size:15.5px;padding:0 0 18px}
+.cta{background:var(--grad);color:#fff;text-align:center}
+body.em-solid .cta{background:var(--c-1)}
+.cta-in{padding:clamp(56px,8vw,96px) 0;max-width:720px;margin:0 auto}
+.cta h2{font-size:clamp(28px,4.4vw,46px);font-weight:800;letter-spacing:-.02em;color:#fff;margin-bottom:14px}
+.cta p{font-size:clamp(16px,2vw,20px);color:rgba(255,255,255,.88);margin-bottom:30px}
+.footer{background:var(--paper-soft);border-top:1px solid var(--rule);padding-top:clamp(48px,6vw,72px)}
+.foot-in{display:grid;grid-template-columns:1.4fr 2fr;gap:40px;padding-bottom:40px}
+.fbrand p{color:var(--ink-3);font-size:15px;margin-top:14px;max-width:32ch}
+.fcols{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.fhead{font-family:var(--display);font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.05em;color:var(--ink);margin-bottom:14px}
+.fcol a{display:block;color:var(--ink-2);font-size:15px;padding:5px 0}
+.fcol a:hover{color:var(--c-1)}
+.foot-bar{border-top:1px solid var(--rule);padding:22px 0 40px;color:var(--ink-3);font-size:13.5px;font-family:var(--mono)}
+@media (max-width:880px){
+  .nav-links{display:none}
+  .nav.open .nav-links{display:flex;position:absolute;top:64px;left:0;right:0;flex-direction:column;background:var(--paper);border-bottom:1px solid var(--rule);padding:16px 24px;gap:14px}
+  .burger{display:flex}
+  .hero-in,.split-in,.foot-in{grid-template-columns:1fr}
+  .split.flip .split-art{order:0}
+  .hero-art{order:-1;max-width:420px}
+  .features,.steps,.pricing{grid-template-columns:1fr}
+  .stats-row{grid-template-columns:repeat(2,1fr)}
+  .fcols{grid-template-columns:repeat(3,1fr)}
+  .price-card.featured{transform:none}
+}
+@media (max-width:520px){ .fcols{grid-template-columns:1fr} .stats-row{grid-template-columns:1fr} }
+</style>
+</head>
+<body class="em-solid">
+<header class="nav" id="nav"><div class="container nav-in"><a class="brand" href="#top"><span class="brand-dot"></span>Inbox</a><nav class="nav-links"><a href="#0">Features</a><a href="#1">Pricing</a><a href="#2">FAQ</a><a href="#3">Stories</a></nav><div class="nav-cta"><a class="btn btn-sm" href="#cta">Start writing</a><button class="burger" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')"><span></span><span></span><span></span></button></div></div></header>
+<section class="hero" id="top"><div class="container hero-in"><div class="hero-copy"><span class="eyebrow">Sample template</span><h1>Own your words, <em>not your gatekeepers</em>.</h1><p class="lede">Inbox is the simplest way to publish a newsletter, grow a real audience and get paid directly by readers who care.</p><div class="hero-cta"><a class="btn btn-primary" href="#cta">Start writing free</a><a class="btn btn-ghost" href="#features">See how it works</a></div></div><div class="hero-art"><div class="art-panel"><svg class="ill" viewBox="0 0 240 200" fill="none" stroke="var(--c-1)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M120 40v40M120 120v40M40 100h40M160 100h40M70 50l28 28M170 150l-28-28M170 50l-28 28M70 150l28-28"/><circle cx="120" cy="100" r="16"/></svg></div></div></div></section>
+<section class="logos"><div class="container"><p class="logos-label">Independent writers publish with</p><div class="logos-row"><span>The Long Read</span><span>Field Notes</span><span>Dispatch</span><span>Open Margin</span><span>Plainspoke</span></div></div></section>
+<section class="section" id="features"><div class="container"><div class="head"><h2>Everything an independent writer <em>actually needs</em>.</h2><p>No ads, no algorithm, no middleman. Just you, your words and the people who read them.</p></div><div class="features"><div class="feature"><div class="feat-ic"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div><h3>Effortless publishing</h3><p>Write in a clean editor and send to every subscriber with one click.</p></div><div class="feature"><div class="feat-ic"><svg class="ic" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1A4 4 0 0 1 16 11"/></svg></div><h3>Audience you own</h3><p>Export your full list anytime. Your readers belong to you, not a platform.</p></div><div class="feature"><div class="feat-ic"><svg class="ic" viewBox="0 0 24 24"><path d="M19 14c1.5-1.5 3-3.3 3-5.5A4.5 4.5 0 0 0 12 5 4.5 4.5 0 0 0 2 8.5c0 2.2 1.5 4 3 5.5l7 7z"/></svg></div><h3>Reader payments</h3><p>Turn loyal readers into paying members with built-in subscriptions.</p></div><div class="feature"><div class="feat-ic"><svg class="ic" viewBox="0 0 24 24"><path d="M3 3v18h18"/><rect x="7" y="11" width="3" height="7"/><rect x="12" y="7" width="3" height="11"/><rect x="17" y="4" width="3" height="14"/></svg></div><h3>Honest analytics</h3><p>See opens, clicks and growth without vanity metrics or guesswork.</p></div><div class="feature"><div class="feat-ic"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18z"/></svg></div><h3>Your own home</h3><p>A fast, clean website for your archive under your own domain.</p></div><div class="feature"><div class="feat-ic"><svg class="ic" viewBox="0 0 24 24"><path d="M13 2 3 14h8l-1 8 10-12h-8l1-8z"/></svg></div><h3>No lock-in</h3><p>Leave whenever you want and take your audience and archive with you.</p></div></div></div></section>
+<section class="stats"><div class="container stats-row"><div><div class="stat-n">40k+</div><div class="stat-l">writers publishing</div></div><div><div class="stat-n">12M</div><div class="stat-l">emails delivered weekly</div></div><div><div class="stat-n">95%</div><div class="stat-l">inbox placement</div></div><div><div class="stat-n">0%</div><div class="stat-l">take on free plans</div></div></div></section>
+<section class="section split"><div class="container split-in"><div class="split-copy"><span class="eyebrow">Write</span><h2>Publish in <em>minutes</em>, not hours.</h2><p>Open the editor, write your piece and hit send. Inbox handles formatting, delivery and the archive so you can stay focused on the words.</p><ul class="ticks"><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Distraction-free writing editor</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Schedule sends for the perfect moment</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Clean archive built automatically</span></li></ul></div><div class="split-art"><div class="art-panel"><svg class="ill" viewBox="0 0 240 200" fill="none" stroke="var(--c-1)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M30 170h180M30 170V40"/><rect x="55" y="120" width="26" height="50"/><rect x="100" y="92" width="26" height="78"/><rect x="145" y="60" width="26" height="110"/><path d="M50 110 95 80l30 18 60-50"/><path d="M165 48h22v22" stroke-width="5"/></svg></div></div></div></section>
+<section class="section split flip"><div class="container split-in"><div class="split-art"><div class="art-panel"><svg class="ill" viewBox="0 0 240 200" fill="none" stroke="var(--c-1)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="80" cy="74" r="22"/><path d="M44 150a36 36 0 0 1 72 0"/><circle cx="158" cy="84" r="18"/><path d="M128 150a30 30 0 0 1 60 0"/></svg></div></div><div class="split-copy"><span class="eyebrow">Grow</span><h2>Build a relationship, <em>not a follower count</em>.</h2><p>Reach every reader directly in their inbox, free from algorithms deciding who sees your work. Real attention, every single time.</p><ul class="ticks"><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Every issue lands in the inbox</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Referrals that reward your readers</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Recommendations from fellow writers</span></li></ul></div></div></section>
+<section class="section steps-wrap"><div class="container"><div class="head"><h2>From blank page to first issue in <em>three steps</em>.</h2><p>No technical setup, no design skills required.</p></div><div class="steps"><div class="step"><div class="step-n">1</div><h3>Claim your publication</h3><p>Pick a name and a domain in under a minute.</p></div><div class="step"><div class="step-n">2</div><h3>Import your readers</h3><p>Bring an existing list or start growing from zero.</p></div><div class="step"><div class="step-n">3</div><h3>Send your first issue</h3><p>Write, hit send and watch the replies roll in.</p></div></div></div></section>
+<section class="section quote-wrap"><div class="container quote-in"><div class="quote-mark">&ldquo;</div><blockquote>I left a big platform and moved to Inbox in an afternoon. My open rates doubled and for the first time my readers are actually paying me.</blockquote><div class="quote-by"><strong>Sample Writer</strong><span>Independent Journalist, Sample Dispatch</span></div></div></section>
+<section class="section pricing-wrap" id="pricing"><div class="container"><div class="head"><h2>Pricing that <em>respects writers</em>.</h2><p>Start free. Only pay when you start earning.</p></div><div class="pricing"><div class="price-card"><div class="price-name">Free</div><div class="price-amt">$0<span>/ forever</span></div><ul class="ticks"><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Up to 1,000 subscribers</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Unlimited issues</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Your own archive</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Community support</span></li></ul><a class="btn btn-ghost" href="#cta">Start writing</a></div><div class="price-card featured"><span class="badge">Popular</span><div class="price-name">Creator</div><div class="price-amt">$12<span>/ month</span></div><ul class="ticks"><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Everything in Free</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Unlimited subscribers</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Reader payments</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Custom domain</span></li></ul><a class="btn btn-primary" href="#cta">Start free trial</a></div><div class="price-card"><div class="price-name">Pro</div><div class="price-amt">$29<span>/ month</span></div><ul class="ticks"><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Everything in Creator</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Multiple writers</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Advanced analytics</span></li><li><svg class="li-ic" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Priority support</span></li></ul><a class="btn btn-ghost" href="#cta">Contact us</a></div></div></div></section>
+<section class="section faq-wrap" id="faq"><div class="container narrow"><div class="head"><h2>Questions writers <em>always ask</em>.</h2></div><div class="faq"><details class="faq-i"><summary>Is there really a free plan?<span class="faq-x">+</span></summary><p>Yes. You can publish to up to a thousand subscribers free forever, no card required.</p></details><details class="faq-i"><summary>Do I own my subscriber list?<span class="faq-x">+</span></summary><p>Always. You can export your full list and archive at any time, with no penalty.</p></details><details class="faq-i"><summary>How do reader payments work?<span class="faq-x">+</span></summary><p>Readers subscribe directly to you. We pass payments through and keep our cut transparent.</p></details><details class="faq-i"><summary>Can I use my own domain?<span class="faq-x">+</span></summary><p>Yes. Paid plans let you publish your newsletter and archive under your own domain.</p></details><details class="faq-i"><summary>What if I want to leave?<span class="faq-x">+</span></summary><p>Take everything with you. Your words, your readers and your archive are yours, always.</p></details></div></div></section>
+<section class="cta" id="cta"><div class="container cta-in"><h2>Ready to publish on your own terms?</h2><p>Join thousands of independent writers who own their audience and their words.</p><a class="btn btn-light" href="#top">Start writing free</a></div></section>
+<footer class="footer"><div class="container foot-in"><div class="fbrand"><a class="brand" href="#top"><span class="brand-dot"></span>Inbox</a><p>The simplest home for independent newsletters and the writers behind them. Sample dummy brand for template preview.</p></div><div class="fcols"><div class="fcol"><div class="fhead">Product</div><a href="#">Features</a><a href="#">Pricing</a><a href="#">Stories</a><a href="#">Changelog</a></div><div class="fcol"><div class="fhead">Company</div><a href="#">About</a><a href="#">Careers</a><a href="#">Press</a><a href="#">Contact</a></div><div class="fcol"><div class="fhead">Legal</div><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Security</a><a href="#">Status</a></div></div></div><div class="container foot-bar">// Inbox is a sample template with dummy content</div></footer>
+<script>
+const nav=document.getElementById('nav');
+const onScroll=()=>nav&&nav.classList.toggle('scrolled',window.scrollY>8);
+window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+document.querySelectorAll('.nav-links a, .nav-cta a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+</script>
+</body>
+</html>

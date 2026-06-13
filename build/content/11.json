@@ -1,0 +1,45 @@
+{
+  "lang": "en",
+  "title": "Chainly: sample landing template",
+  "desc": "Demonstration landing page. All text is sample (dummy) content.",
+  "sections": [
+    {"type":"nav","brand":"Chainly","links":["Features","Pricing","FAQ","Docs"],"cta":"Connect wallet"},
+    {"type":"hero","eyebrow":"Sample template","h1":"Build on-chain, <em>not in the dark</em>.","sub":"Chainly gives your team one place to deploy contracts, track transactions and ship Web3 apps with confidence.","cta":"Start building","cta2":"View live demo","illus":"network"},
+    {"type":"logos","label":"Powering builders at","items":["Mintly","BlockForge","Helix","Nova","Quorum"]},
+    {"type":"features","h2":"Your full Web3 <em>stack</em>.","sub":"Stop wiring together nodes, indexers and dashboards. Chainly handles the chain so you can ship the product.","cards":[
+      ["bolt","Instant deploys","Push smart contracts to any chain in seconds, no node setup required."],
+      ["shield","Audited by default","Static analysis flags risky patterns before they ever reach mainnet."],
+      ["chart","On-chain analytics","See wallet flows, gas usage and contract calls on live dashboards."],
+      ["globe","Multi-chain ready","One API across Ethereum, L2s and the chains you add tomorrow."],
+      ["lock","Self-custody keys","Your keys stay yours, with hardware wallet and multisig support."],
+      ["sparkle","Smart indexing","Query historical events without running your own indexer."]
+    ]},
+    {"type":"stats","items":[["8k+","dApps deployed"],["99.9%","node uptime"],["12","chains supported"],["50%","lower gas spend"]]},
+    {"type":"split1","eyebrow":"Deploy","h2":"From code to <em>mainnet</em> in minutes.","text":"Compile, simulate and deploy from a single flow. Verify contracts automatically and roll back safely if something looks off.","bullets":["One-click verified deploys","Gas estimates before you sign","Reusable contract templates"],"illus":"growth"},
+    {"type":"split2","eyebrow":"Monitor","h2":"One view of every <em>transaction</em>.","text":"No more switching between block explorers. Every contract, wallet and event lives in one shared, searchable workspace.","bullets":["Real-time transaction alerts","Search across every chain","Webhooks that respect rate limits"],"illus":"layers"},
+    {"type":"steps","h2":"Live on-chain in <em>three steps</em>.","sub":"No node ops, no infrastructure team required.","steps":[
+      ["Connect a wallet","Sign in with your wallet and create a workspace in seconds."],
+      ["Deploy a contract","Push your code or start from an audited template."],
+      ["Track everything","Watch transactions roll in and monitor your dApp live."]
+    ]},
+    {"type":"testimonial","quote":"We shipped our first L2 contract on Chainly in an afternoon and finally stopped babysitting our own nodes. The team trusts the data.","author":"Sample Person","role":"Lead Engineer, Sample Protocol"},
+    {"type":"pricing","h2":"Transparent, <em>on-chain</em> pricing.","sub":"Start free. Scale as your transaction volume grows.","tiers":[
+      {"name":"Builder","price":"$0","period":"/ forever","features":["Up to 3 contracts","Testnet deploys","Basic analytics","Community support"],"cta":"Start building","featured":false},
+      {"name":"Team","price":"$49","period":"/ mo","features":["Everything in Builder","Mainnet deploys","Webhooks and alerts","Priority support"],"cta":"Connect wallet","featured":true},
+      {"name":"Enterprise","price":"Custom","period":"","features":["Everything in Team","Dedicated nodes","SLA and audit logs","Solutions engineer"],"cta":"Contact sales","featured":false}
+    ]},
+    {"type":"faq","h2":"Frequently asked <em>questions</em>.","items":[
+      ["Which chains do you support?","Ethereum, major L2s and a growing list of EVM chains. New chains are added regularly."],
+      ["Do you ever touch my keys?","No. Chainly is non-custodial, you sign with your own wallet or multisig at all times."],
+      ["Can I deploy to testnets for free?","Yes. The Builder plan includes unlimited testnet deploys with no card required."],
+      ["How does billing work?","You pay a flat monthly fee per workspace, with usage-based add-ons. Cancel anytime."],
+      ["Are contracts verified automatically?","Paid plans verify source on the block explorer right after each successful deploy."]
+    ]},
+    {"type":"cta","h2":"Ready to ship on-chain?","sub":"Join thousands of builders who launch faster without running their own infrastructure.","button":"Start building free"},
+    {"type":"footer","brand":"Chainly","tagline":"One workspace to deploy, monitor and scale your Web3 apps. Sample dummy brand for template preview.","columns":[
+      ["Product","Features","Pricing","Changelog","Roadmap"],
+      ["Developers","Docs","API","SDKs","Status"],
+      ["Legal","Privacy","Terms","Security","Audits"]
+    ],"copyright":"// Chainly is a sample template with dummy content"}
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "lang": "cs",
+  "title": "Hájek a partneři: ukázková šablona landing page",
+  "desc": "Demonstrační landing page. Veškerý text je ukázkový (dummy) obsah.",
+  "sections": [
+    {"type":"nav","brand":"Hájek & partneři","links":["Služby","Tým","Ceník","Kontakt"],"cta":"Nezávazná konzultace"},
+    {"type":"hero","eyebrow":"Ukázková šablona","h1":"Advokátní kancelář <em>na vaší straně</em>.","sub":"Smlouvy, spory i obchodní právo s jasným postupem a férovou cenou. Mluvíme srozumitelně a hájíme vaše zájmy.","cta":"Nezávazná konzultace","cta2":"Naše služby","illus":"shield"},
+    {"type":"logos","label":"Důvěřují nám","items":["Firmy","Podnikatelé","Rodiny","Startupy","Obce"]},
+    {"type":"features","h2":"S čím vám <em>pomůžeme</em>.","sub":"Jedna kancelář pro smlouvy, spory i každodenní právní otázky. Bez obíhání více specialistů.","cards":[
+      ["doc","Smlouvy a revize","Připravíme i prověříme smlouvy tak, aby chránily vaše zájmy."],
+      ["shield","Zastupování u soudu","Spory řešíme důsledně a s jasnou strategií od začátku."],
+      ["chart","Obchodní právo","Zakládání firem, valné hromady a každodenní agenda společností."],
+      ["home","Nemovitosti","Převody, nájmy a advokátní úschova s jistotou pro obě strany."],
+      ["users","Rodinné právo","Rozvody, péče o děti i dědictví s ohledem a diskrétností."],
+      ["lock","Mlčenlivost","Vše, co nám svěříte, zůstává přísně důvěrné."]
+    ]},
+    {"type":"stats","items":[["20+","let praxe"],["4,9","hodnocení klientů"],["1200+","vyřešených případů"],["48 h","reakce na poptávku"]]},
+    {"type":"split1","eyebrow":"Postup","h2":"Od konzultace k <em>řešení</em>.","text":"Žádné překvapení. Nejdřív situaci probereme, pak navrhneme postup. Vždy víte, co děláme a proč.","bullets":["Úvodní konzultace a posouzení případu","Jasný plán s odhadem nákladů","Pravidelné informování o vývoji"],"illus":"target"},
+    {"type":"split2","eyebrow":"Férovost","h2":"Odměna, kterou <em>předem znáte</em>.","text":"Způsob odměny dohodneme dopředu a držíme se ho. Žádné skryté položky, žádné nemilé překvapení na faktuře.","bullets":["Pevná cena nebo hodinová sazba dle dohody","Transparentní vyúčtování úkonů","Konzultace o nákladech kdykoli v průběhu"],"illus":"layers"},
+    {"type":"steps","h2":"Stačí <em>tři kroky</em>.","sub":"Od prvního kontaktu k vyřešené věci bez starostí.","steps":[
+      ["Ozvěte se","Popište svou situaci, ozveme se obratem zpět."],
+      ["Probereme případ","Posoudíme možnosti a navrhneme postup i cenu."],
+      ["Zastoupíme vás","Vyřídíme agendu a hájíme vaše zájmy až do konce."]
+    ]},
+    {"type":"testimonial","quote":"Smlouvu prověřili do druhého dne a srozumitelně vysvětlili rizika. Spor se nakonec vůbec nekonal, vyřešili to dohodou.","author":"Ukázkový klient","role":"jednatel společnosti, Praha"},
+    {"type":"pricing","h2":"Orientační <em>ceník</em>.","sub":"Přesnou odměnu dohodneme po úvodní konzultaci, vždy předem.","tiers":[
+      {"name":"Konzultace","price":"od 1 500 Kč","period":"/ hodina","features":["Posouzení vaší situace","Doporučení dalšího postupu","Odpovědi na konkrétní dotazy","Diskrétnost samozřejmostí"],"cta":"Objednat konzultaci","featured":false},
+      {"name":"Smlouva či podání","price":"od 4 000 Kč","period":"/ úkon","features":["Příprava nebo revize smlouvy","Návrhy a podání k soudu","Pevná cena předem","Vysvětlení srozumitelně"],"cta":"Poptat zpracování","featured":true},
+      {"name":"Trvalá spolupráce","price":"individuální","period":"","features":["Právní servis pro firmu","Měsíční paušál dle rozsahu","Přednostní reakce","Dedikovaný advokát"],"cta":"Domluvit spolupráci","featured":false}
+    ]},
+    {"type":"faq","h2":"Časté <em>dotazy</em>.","items":[
+      ["Jak rychle se ozvete?","Na poptávku reagujeme zpravidla do 48 hodin a domluvíme nejbližší volný termín."],
+      ["Řeknete cenu předem?","Ano. Po úvodní konzultaci dohodneme způsob odměny a té se držíme."],
+      ["Je první konzultace závazná?","Není. Nejdřív si nezávazně probereme vaši situaci a možnosti řešení."],
+      ["Jakým oblastem práva se věnujete?","Občanskému, obchodnímu, rodinnému a právu nemovitostí, včetně zastupování u soudu."],
+      ["Je naše komunikace důvěrná?","Ano. Advokáta váže zákonná mlčenlivost, vše svěřené zůstává přísně důvěrné."]
+    ]},
+    {"type":"cta","h2":"Potřebujete právní pomoc?","sub":"Napište nebo zavolejte. Ozveme se obratem a probereme vaši situaci.","button":"Nezávazná konzultace"},
+    {"type":"footer","brand":"Hájek & partneři","tagline":"Advokátní kancelář pro smlouvy, spory a obchodní právo. Ukázková značka pro náhled šablony.","columns":[
+      ["Služby","Smlouvy","Spory","Nemovitosti","Obchodní právo"],
+      ["Kancelář","O nás","Tým","Ceník","Kariéra"],
+      ["Kontakt","Telefon","E-mail","Praha a okolí","Po-Pá 9-17"]
+    ],"copyright":"// Hájek & partneři je ukázková šablona s dummy obsahem"}
+  ]
+}

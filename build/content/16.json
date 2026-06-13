@@ -1,0 +1,45 @@
+{
+  "lang": "cs",
+  "title": "Lesk: ukázková šablona landing page",
+  "desc": "Demonstrační landing page. Veškerý text je ukázkový (dummy) obsah.",
+  "sections": [
+    {"type":"nav","brand":"Lesk","links":["Služby","Galerie","Ceník","Rezervace"],"cta":"Objednat termín"},
+    {"type":"hero","eyebrow":"Ukázková šablona","h1":"Účes, ze kterého <em>budete zářit</em>.","sub":"Kadeřnictví a beauty salon pro dámy i pány. Střih, barva a péče od týmu, který vás vyslechne a poradí.","cta":"Objednat termín","cta2":"Naše práce","illus":"spark"},
+    {"type":"logos","label":"Pracujeme se značkami","items":["Aurora","Velvet","Noir","Bloom","Mira"]},
+    {"type":"features","h2":"Co u nás <em>zvládneme</em>.","sub":"Vlasy, nehty i pleť pod jednou střechou. Bez shánění pěti salonů.","cards":[
+      ["scissors","Střih na míru","Dámský i pánský střih podle tvaru obličeje a typu vlasů."],
+      ["sparkle","Barvení a melír","Balayage, melír i přeliv s ohledem na zdraví vlasů."],
+      ["heart","Péče o vlasy","Regenerace, keratin a kúry pro lesk a sílu."],
+      ["star","Nehtová modeláž","Manikúra, gel lak a zdobení podle vaší nálady."],
+      ["sun","Kosmetika a pleť","Čištění, masky a líčení na každou příležitost."],
+      ["calendar","Snadná rezervace","Termín si vyberete online za pár vteřin, kdykoli."]
+    ]},
+    {"type":"stats","items":[["12+","let na trhu"],["4,9","hodnocení klientů"],["8","stylistů v týmu"],["20k+","spokojených návštěv"]]},
+    {"type":"split1","eyebrow":"Konzultace","h2":"Nejdřív vás <em>vyslechneme</em>.","text":"Než vezmeme nůžky do ruky, probereme vaše přání i typ vlasů. Společně najdeme účes, který vám sedne a zvládnete ho i doma.","bullets":["Nezávazná konzultace zdarma","Návrh barvy podle odstínu pleti","Tipy na domácí péči po odchodu"],"illus":"chat"},
+    {"type":"split2","eyebrow":"Kvalita","h2":"Péče, kterou vlasy <em>ucítí</em>.","text":"Pracujeme jen s ověřenou kosmetikou a barvami šetrnými k vlasům. Lesk a zdraví vydrží dlouho po návštěvě.","bullets":["Profesionální produkty bez kompromisů","Šetrné technologie barvení","Doporučení na míru vašim vlasům"],"illus":"leaf"},
+    {"type":"steps","h2":"Stačí <em>tři kroky</em>.","sub":"Od rezervace k novému účesu bez starostí.","steps":[
+      ["Vyberte termín","Objednejte se online nebo telefonicky během chvilky."],
+      ["Přijďte na konzultaci","Probereme přání a vybereme styl i barvu."],
+      ["Odejděte v záři","Užijte si nový účes a péči, která vydrží."]
+    ]},
+    {"type":"testimonial","quote":"Konečně salon, kde mě opravdu poslouchají. Barva vyšla přesně podle představ a vlasy mám zdravější než kdy dřív.","author":"Ukázková zákaznice","role":"klientka, Brno"},
+    {"type":"pricing","h2":"Orientační <em>ceník</em>.","sub":"Přesnou cenu řekneme po konzultaci, vždy předem.","tiers":[
+      {"name":"Střih","price":"od 450 Kč","period":"/ návštěva","features":["Mytí a masáž hlavy","Střih na míru","Foukaná a styling","Pánský i dámský"],"cta":"Objednat střih","featured":false},
+      {"name":"Barva a střih","price":"od 1 200 Kč","period":"/ návštěva","features":["Konzultace odstínu","Barvení nebo melír","Střih a foukaná","Péče na závěr"],"cta":"Objednat balíček","featured":true},
+      {"name":"Beauty den","price":"individuální","period":"","features":["Vlasy na míru","Manikúra a nehty","Kosmetika a líčení","Termín dle přání"],"cta":"Domluvit termín","featured":false}
+    ]},
+    {"type":"faq","h2":"Časté <em>dotazy</em>.","items":[
+      ["Jak se objednám?","Online přes rezervační formulář nebo telefonicky, vybereme nejbližší volný termín."],
+      ["Dáte mi cenu předem?","Ano. Po konzultaci řekneme cenu dopředu a té se držíme."],
+      ["Pracujete i s pány?","Samozřejmě. Nabízíme dámské i pánské střihy a péči."],
+      ["Jaké produkty používáte?","Profesionální kosmetiku šetrnou k vlasům, doporučíme i péči domů."],
+      ["Mohu termín přesunout?","Ano, stačí dát vědět den předem a najdeme jiný volný čas."]
+    ]},
+    {"type":"cta","h2":"Připraveni na změnu?","sub":"Rezervujte si termín a nechte se rozmazlit naším týmem stylistů.","button":"Objednat termín"},
+    {"type":"footer","brand":"Lesk","tagline":"Kadeřnictví a beauty salon pro vlasy, nehty i pleť. Ukázková značka pro náhled šablony.","columns":[
+      ["Služby","Střih","Barvení","Nehty","Kosmetika"],
+      ["Salon","O nás","Galerie","Ceník","Kariéra"],
+      ["Kontakt","Telefon","E-mail","Brno centrum","Po-So 9-20"]
+    ],"copyright":"// Lesk je ukázková šablona s dummy obsahem"}
+  ]
+}

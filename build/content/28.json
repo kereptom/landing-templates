@@ -1,0 +1,45 @@
+{
+  "lang": "en",
+  "title": "AutoHub: sample landing template",
+  "desc": "Demonstration landing page. All text is sample (dummy) content.",
+  "sections": [
+    {"type":"nav","brand":"AutoHub","links":["Inventory","Financing","Reviews","Contact"],"cta":"Browse cars"},
+    {"type":"hero","eyebrow":"Sample template","h1":"Find your next car, <em>without the hassle</em>.","sub":"AutoHub lists every vehicle with a clear price, full history and a no-pressure test drive booked online in minutes.","cta":"Browse inventory","cta2":"See how it works","illus":"cart"},
+    {"type":"logos","label":"Brands on our lot","items":["Northwind","Lumen","Forge","Atlas","Vela"]},
+    {"type":"features","h2":"Car buying made <em>simple</em>.","sub":"Skip the showroom games. AutoHub covers the whole journey from search to keys in hand.","cards":[
+      ["cart","Huge selection","Hundreds of inspected cars across every budget and body style."],
+      ["doc","Full history","Every listing shows ownership, service records and accident reports."],
+      ["chart","Transparent pricing","One fair price up front, no haggling and no surprise fees."],
+      ["calendar","Easy test drives","Book a drive online and pick a slot that fits your day."],
+      ["shield","Certified quality","Each car passes a 150-point inspection before it reaches the lot."],
+      ["wrench","Service on site","Our workshop keeps your car running long after you drive away."]
+    ]},
+    {"type":"stats","items":[["20k+","cars sold"],["4.9","average rating"],["150","point inspection"],["7 day","return window"]]},
+    {"type":"split1","eyebrow":"Shop","h2":"Browse the lot from your <em>couch</em>.","text":"Filter by price, mileage and features, then see real photos and a full report for every car before you ever visit.","bullets":["Filters for budget and body style","Real photos and 360 views","Saved searches with price alerts"],"illus":"target"},
+    {"type":"split2","eyebrow":"Finance","h2":"Payments that <em>fit your budget</em>.","text":"Get pre-approved in minutes and see your real monthly payment before you choose. No impact on your credit score to check.","bullets":["Pre-approval in under five minutes","Rates from trusted lenders","Trade in your old car for credit"],"illus":"growth"},
+    {"type":"steps","h2":"Drive away in <em>three steps</em>.","sub":"No paperwork marathon, no all-day visits.","steps":[
+      ["Find your car","Search the inventory and shortlist the ones you love."],
+      ["Book a test drive","Pick an online slot and take it for a spin."],
+      ["Sign and drive","Finish the paperwork online and pick up your keys."]
+    ]},
+    {"type":"testimonial","quote":"I found my car online, booked a test drive for Saturday and drove it home that afternoon. The price was exactly what they listed, no add-ons.","author":"Sample Person","role":"Verified buyer, Sample City"},
+    {"type":"pricing","h2":"Plans for every <em>driver</em>.","sub":"Buy, finance or subscribe. Switch whenever your needs change.","tiers":[
+      {"name":"Cash buy","price":"Listed price","period":"/ one time","features":["No financing fees","Full ownership today","7 day return window","Free history report"],"cta":"Browse cars","featured":false},
+      {"name":"Finance","price":"from $199","period":"/ month","features":["Everything in Cash buy","Pre-approval in minutes","Flexible terms","Trade-in credit"],"cta":"Get pre-approved","featured":true},
+      {"name":"Subscribe","price":"from $399","period":"/ month","features":["Everything in Finance","Insurance included","Swap cars anytime","Maintenance covered"],"cta":"Start subscription","featured":false}
+    ]},
+    {"type":"faq","h2":"Questions, <em>answered</em>.","items":[
+      ["Can I really buy a car online?","Yes. You can browse, finance and complete the paperwork online, then pick up or have the car delivered."],
+      ["Do you accept trade-ins?","We do. Tell us about your current car and we will give you an instant credit toward your next one."],
+      ["Is there a return policy?","Every purchase comes with a 7 day return window so you can be sure the car is right for you."],
+      ["Are the cars inspected?","Each vehicle passes a 150-point inspection and comes with a full history report before it goes on the lot."],
+      ["How does financing work?","Get pre-approved in minutes with no impact on your credit score, then choose the term that fits your budget."]
+    ]},
+    {"type":"cta","h2":"Ready to find your car?","sub":"Join thousands of drivers who skipped the showroom stress and bought with confidence.","button":"Browse inventory"},
+    {"type":"footer","brand":"AutoHub","tagline":"A simpler way to buy, finance and service your next car. Sample dummy brand for template preview.","columns":[
+      ["Shop","Inventory","Financing","Trade-in","Subscribe"],
+      ["Company","About","Careers","Reviews","Contact"],
+      ["Legal","Privacy","Terms","Warranty","Returns"]
+    ],"copyright":"// AutoHub is a sample template with dummy content"}
+  ]
+}

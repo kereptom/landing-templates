@@ -1,0 +1,45 @@
+{
+  "lang": "en",
+  "title": "Calm: sample landing template",
+  "desc": "Demonstration landing page. All text is sample (dummy) content.",
+  "sections": [
+    {"type":"nav","brand":"Calm","links":["Classes","Schedule","Pricing","About"],"cta":"Book a class"},
+    {"type":"hero","eyebrow":"Sample template","h1":"Breathe deeper, <em>move freely</em>.","sub":"Calm is a yoga and wellness studio where every class meets you where you are, from your first stretch to your strongest pose.","cta":"Book your first class","cta2":"Explore the schedule","illus":"leaf"},
+    {"type":"logos","label":"Loved by people from","items":["Riverside","Maple Co","Harbor","Bright Labs","Solace"]},
+    {"type":"features","h2":"Everything you need to <em>feel good</em>.","sub":"From gentle flows to deep stillness, our classes support your body and quiet your mind.","cards":[
+      ["leaf","Gentle flows","Slow, mindful sequences that build strength without strain."],
+      ["heart","Restorative rest","Deep relaxation classes that release tension and reset your nervous system."],
+      ["sun","Morning energy","Wake up with bright, breath-led sessions to start your day grounded."],
+      ["users","Small groups","Capped class sizes so every student gets real attention and care."],
+      ["sparkle","Mindful breathing","Guided breathwork to calm anxiety and sharpen your focus."],
+      ["calendar","Flexible schedule","Classes morning to evening, seven days a week, around your life."]
+    ]},
+    {"type":"stats","items":[["8k+","students welcomed"],["97%","feel calmer after class"],["4.9","average studio rating"],["30+","classes every week"]]},
+    {"type":"split1","eyebrow":"Practice","h2":"A space made for <em>stillness</em>.","text":"Step off the street and into a warm, light-filled studio designed to slow your breath the moment you arrive.","bullets":["Heated and natural-light rooms","Mats, blocks and props provided","Quiet lounge for before and after"],"illus":"leaf"},
+    {"type":"split2","eyebrow":"Guidance","h2":"Teachers who truly <em>see you</em>.","text":"Our certified instructors offer hands-on adjustments and gentle modifications, so every body finds its own version of the pose.","bullets":["Certified, caring instructors","Modifications for every level","Personal attention in every class"],"illus":"people"},
+    {"type":"steps","h2":"Start your practice in <em>three steps</em>.","sub":"No experience needed, just bring yourself.","steps":[
+      ["Pick a class","Browse the schedule and choose a flow that fits your day."],
+      ["Reserve your spot","Book online in seconds and we will save your mat."],
+      ["Show up and breathe","Arrive, settle in, and let the practice carry you."]
+    ]},
+    {"type":"testimonial","quote":"I came in stressed and stiff, and left lighter than I had felt in months. The teachers make everyone feel welcome, beginner or not.","author":"Sample Student","role":"Member since 2024, Sample City"},
+    {"type":"pricing","h2":"Simple, <em>gentle</em> pricing.","sub":"Try a class, then choose the rhythm that suits you.","tiers":[
+      {"name":"Drop-in","price":"$18","period":"/ class","features":["Single class access","Mats and props included","Book any open session","No commitment"],"cta":"Book a class","featured":false},
+      {"name":"Monthly","price":"$89","period":"/ month","features":["Unlimited classes","Priority booking","Bring a friend monthly","Pause anytime"],"cta":"Start monthly","featured":true},
+      {"name":"Annual","price":"$799","period":"/ year","features":["Everything in Monthly","Two months free","Free workshop access","Member-only events"],"cta":"Go annual","featured":false}
+    ]},
+    {"type":"faq","h2":"Questions, <em>answered</em>.","items":[
+      ["I have never done yoga, is that ok?","Absolutely. Many of our classes are made for first-timers, and our teachers guide you every step of the way."],
+      ["Do I need to bring my own mat?","No. We provide clean mats, blocks and props, though you are welcome to bring your own."],
+      ["How do I book a class?","Reserve online in seconds. Just pick a session, tap book, and we will save your spot."],
+      ["What should I wear?","Comfortable clothes you can move in. Bare feet on the mat, and a water bottle if you like."],
+      ["Can I pause my membership?","Yes. Monthly memberships can be paused anytime, no questions and no fees."]
+    ]},
+    {"type":"cta","h2":"Ready to find your calm?","sub":"Join hundreds of students who made space for stillness in their week.","button":"Book your first class"},
+    {"type":"footer","brand":"Calm","tagline":"A yoga and wellness studio for breath, movement and rest. Sample dummy brand for template preview.","columns":[
+      ["Studio","Classes","Schedule","Pricing","Workshops"],
+      ["Studio info","About","Teachers","Stories","Contact"],
+      ["Visit","Location","Hours","Newsletter","Gift cards"]
+    ],"copyright":"// Calm is a sample template with dummy content"}
+  ]
+}

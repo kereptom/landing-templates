@@ -1,0 +1,45 @@
+{
+  "lang": "en",
+  "title": "PulseFit: sample landing template",
+  "desc": "Demonstration landing page. All text is sample (dummy) content.",
+  "sections": [
+    {"type":"nav","brand":"PulseFit","links":["Features","Pricing","FAQ","Blog"],"cta":"Get the app"},
+    {"type":"hero","eyebrow":"Sample template","h1":"Train smarter, <em>feel stronger</em>.","sub":"PulseFit turns your phone into a personal coach, with adaptive workouts and progress you can actually see.","cta":"Start free trial","cta2":"Watch the tour","illus":"spark"},
+    {"type":"logos","label":"Featured by","items":["FitWire","MoveDaily","PeakMag","RunLab","HealthBeat"]},
+    {"type":"features","h2":"Your coach in <em>your pocket</em>.","sub":"From the first squat to your fastest mile, PulseFit guides every rep and every step.","cards":[
+      ["bolt","Adaptive workouts","Plans that adjust to your energy, schedule and goals each day."],
+      ["heart","Heart-rate sync","Connect any wearable and train in the right zone every session."],
+      ["chart","Progress you see","Clear charts track strength, pace and consistency over time."],
+      ["calendar","Smart scheduling","PulseFit fits training around your week, not the other way around."],
+      ["users","Train together","Join challenges and share milestones with friends who keep you honest."],
+      ["sparkle","AI form tips","On-screen cues help you move safely and get more from each rep."]
+    ]},
+    {"type":"stats","items":[["2M+","workouts logged"],["96%","hit their goal"],["4.8","app store rating"],["30 min","average session"]]},
+    {"type":"split1","eyebrow":"Plan","h2":"A program built <em>around you</em>.","text":"Tell PulseFit your goal and the time you have, and it shapes a plan that grows with you week after week.","bullets":["Goals for strength, fat loss or endurance","Sessions that flex to your schedule","Auto-adjusting load and intensity"],"illus":"growth"},
+    {"type":"split2","eyebrow":"Track","h2":"Every rep <em>counts</em>.","text":"Log sets, runs and rides in a tap. PulseFit remembers your numbers so you always know if you are improving.","bullets":["One-tap logging during workouts","History for every lift and route","Insights that flag plateaus early"],"illus":"target"},
+    {"type":"steps","h2":"Get moving in <em>three steps</em>.","sub":"No equipment list, no guesswork required.","steps":[
+      ["Set your goal","Pick a focus and tell us how often you can train."],
+      ["Get your plan","Receive a tailored program ready for day one."],
+      ["Build the habit","Train, track and watch your progress add up."]
+    ]},
+    {"type":"testimonial","quote":"PulseFit got me running three times a week without burning out. Seeing my pace drop every month keeps me coming back.","author":"Sample Person","role":"Marathon beginner, Sample City"},
+    {"type":"pricing","h2":"Plans that <em>fit your goals</em>.","sub":"Start free. Upgrade when you are ready to go further.","tiers":[
+      {"name":"Free","price":"$0","period":"/ forever","features":["Core workout library","Basic progress charts","Activity logging","Community challenges"],"cta":"Download free","featured":false},
+      {"name":"Plus","price":"$9","period":"/ month","features":["Everything in Free","Adaptive AI plans","Wearable heart-rate sync","Form coaching tips"],"cta":"Start free trial","featured":true},
+      {"name":"Pro","price":"$19","period":"/ month","features":["Everything in Plus","1:1 coach check-ins","Nutrition guidance","Priority support"],"cta":"Go Pro","featured":false}
+    ]},
+    {"type":"faq","h2":"Frequently asked <em>questions</em>.","items":[
+      ["Do I need any equipment?","No. Most plans work with bodyweight, and PulseFit adapts if you add gear later."],
+      ["Which wearables are supported?","PulseFit syncs with popular watches and chest straps over Bluetooth in seconds."],
+      ["Is there really a free plan?","Yes. The Free plan stays free forever, with no card required to begin."],
+      ["Can I cancel anytime?","You can cancel a paid plan whenever you like and keep access until it ends."],
+      ["Will workouts fit my schedule?","Tell PulseFit your week and it builds sessions around the time you actually have."]
+    ]},
+    {"type":"cta","h2":"Ready to move?","sub":"Join millions building stronger, healthier habits one session at a time.","button":"Get the app free"},
+    {"type":"footer","brand":"PulseFit","tagline":"Your adaptive coach for workouts, runs and lasting habits. Sample dummy brand for template preview.","columns":[
+      ["Product","Features","Pricing","Workouts","Wearables"],
+      ["Company","About","Careers","Blog","Contact"],
+      ["Legal","Privacy","Terms","Security","Status"]
+    ],"copyright":"// PulseFit is a sample template with dummy content"}
+  ]
+}

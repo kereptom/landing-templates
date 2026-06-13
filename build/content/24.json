@@ -1,0 +1,45 @@
+{
+  "lang": "en",
+  "title": "Inbox: sample landing template",
+  "desc": "Demonstration landing page. All text is sample (dummy) content.",
+  "sections": [
+    {"type":"nav","brand":"Inbox","links":["Features","Pricing","FAQ","Stories"],"cta":"Start writing"},
+    {"type":"hero","eyebrow":"Sample template","h1":"Own your words, <em>not your gatekeepers</em>.","sub":"Inbox is the simplest way to publish a newsletter, grow a real audience and get paid directly by readers who care.","cta":"Start writing free","cta2":"See how it works","illus":"spark"},
+    {"type":"logos","label":"Independent writers publish with","items":["The Long Read","Field Notes","Dispatch","Open Margin","Plainspoke"]},
+    {"type":"features","h2":"Everything an independent writer <em>actually needs</em>.","sub":"No ads, no algorithm, no middleman. Just you, your words and the people who read them.","cards":[
+      ["mail","Effortless publishing","Write in a clean editor and send to every subscriber with one click."],
+      ["users","Audience you own","Export your full list anytime. Your readers belong to you, not a platform."],
+      ["heart","Reader payments","Turn loyal readers into paying members with built-in subscriptions."],
+      ["chart","Honest analytics","See opens, clicks and growth without vanity metrics or guesswork."],
+      ["globe","Your own home","A fast, clean website for your archive under your own domain."],
+      ["bolt","No lock-in","Leave whenever you want and take your audience and archive with you."]
+    ]},
+    {"type":"stats","items":[["40k+","writers publishing"],["12M","emails delivered weekly"],["95%","inbox placement"],["0%","take on free plans"]]},
+    {"type":"split1","eyebrow":"Write","h2":"Publish in <em>minutes</em>, not hours.","text":"Open the editor, write your piece and hit send. Inbox handles formatting, delivery and the archive so you can stay focused on the words.","bullets":["Distraction-free writing editor","Schedule sends for the perfect moment","Clean archive built automatically"],"illus":"growth"},
+    {"type":"split2","eyebrow":"Grow","h2":"Build a relationship, <em>not a follower count</em>.","text":"Reach every reader directly in their inbox, free from algorithms deciding who sees your work. Real attention, every single time.","bullets":["Every issue lands in the inbox","Referrals that reward your readers","Recommendations from fellow writers"],"illus":"people"},
+    {"type":"steps","h2":"From blank page to first issue in <em>three steps</em>.","sub":"No technical setup, no design skills required.","steps":[
+      ["Claim your publication","Pick a name and a domain in under a minute."],
+      ["Import your readers","Bring an existing list or start growing from zero."],
+      ["Send your first issue","Write, hit send and watch the replies roll in."]
+    ]},
+    {"type":"testimonial","quote":"I left a big platform and moved to Inbox in an afternoon. My open rates doubled and for the first time my readers are actually paying me.","author":"Sample Writer","role":"Independent Journalist, Sample Dispatch"},
+    {"type":"pricing","h2":"Pricing that <em>respects writers</em>.","sub":"Start free. Only pay when you start earning.","tiers":[
+      {"name":"Free","price":"$0","period":"/ forever","features":["Up to 1,000 subscribers","Unlimited issues","Your own archive","Community support"],"cta":"Start writing","featured":false},
+      {"name":"Creator","price":"$12","period":"/ month","features":["Everything in Free","Unlimited subscribers","Reader payments","Custom domain"],"cta":"Start free trial","featured":true},
+      {"name":"Pro","price":"$29","period":"/ month","features":["Everything in Creator","Multiple writers","Advanced analytics","Priority support"],"cta":"Contact us","featured":false}
+    ]},
+    {"type":"faq","h2":"Questions writers <em>always ask</em>.","items":[
+      ["Is there really a free plan?","Yes. You can publish to up to a thousand subscribers free forever, no card required."],
+      ["Do I own my subscriber list?","Always. You can export your full list and archive at any time, with no penalty."],
+      ["How do reader payments work?","Readers subscribe directly to you. We pass payments through and keep our cut transparent."],
+      ["Can I use my own domain?","Yes. Paid plans let you publish your newsletter and archive under your own domain."],
+      ["What if I want to leave?","Take everything with you. Your words, your readers and your archive are yours, always."]
+    ]},
+    {"type":"cta","h2":"Ready to publish on your own terms?","sub":"Join thousands of independent writers who own their audience and their words.","button":"Start writing free"},
+    {"type":"footer","brand":"Inbox","tagline":"The simplest home for independent newsletters and the writers behind them. Sample dummy brand for template preview.","columns":[
+      ["Product","Features","Pricing","Stories","Changelog"],
+      ["Company","About","Careers","Press","Contact"],
+      ["Legal","Privacy","Terms","Security","Status"]
+    ],"copyright":"// Inbox is a sample template with dummy content"}
+  ]
+}

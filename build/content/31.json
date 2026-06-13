@@ -1,0 +1,45 @@
+{
+  "lang": "cs",
+  "title": "Pohyb: ukázková šablona landing page",
+  "desc": "Demonstrační landing page. Veškerý text je ukázkový (dummy) obsah.",
+  "sections": [
+    {"type":"nav","brand":"Pohyb","links":["Terapie","Tým","Ceník","Kontakt"],"cta":"Objednat se"},
+    {"type":"hero","eyebrow":"Ukázková šablona","h1":"Vraťte se k <em>pohybu bez bolesti</em>.","sub":"Fyzioterapie a rehabilitace na míru. Najdeme příčinu obtíží a sestavíme plán, který opravdu funguje.","cta":"Objednat se","cta2":"Jak terapie probíhá","illus":"leaf"},
+    {"type":"logos","label":"Pomáháme","items":["Sportovcům","Seniorům","Maminkám","Kancelářským","Po operacích"]},
+    {"type":"features","h2":"S čím vám <em>pomůžeme</em>.","sub":"Jedno místo pro bolesti zad, doléčení i návrat ke sportu. Bez zbytečného odkládání.","cards":[
+      ["heart","Bolesti zad a kloubů","Najdeme příčinu, ne jen tlumíme příznaky bolesti."],
+      ["tool","Manuální terapie","Šetrné techniky na uvolnění svalů a kloubů."],
+      ["trend","Rehabilitace po úrazech","Bezpečný návrat k běžnému pohybu i sportu."],
+      ["user","Individuální cvičení","Cviky na míru, které zvládnete i doma."],
+      ["sun","Prevence a držení těla","Naučíme vás správně sedět, stát i zvedat."],
+      ["check","Měřitelný pokrok","Pravidelně vyhodnocujeme, jak se zlepšujete."]
+    ]},
+    {"type":"stats","items":[["12+","let praxe"],["4,9","hodnocení klientů"],["20 000+","odcvičených terapií"],["92 %","úleva od bolesti"]]},
+    {"type":"split1","eyebrow":"Postup","h2":"Od vstupního vyšetření k <em>plánu na míru</em>.","text":"Nezačínáme cvičit naslepo. Nejdřív zjistíme příčinu obtíží a teprve potom sestavíme terapii přesně pro vás.","bullets":["Důkladné vstupní vyšetření","Plán terapie podle vašich cílů","Pravidelné vyhodnocení pokroku"],"illus":"target"},
+    {"type":"split2","eyebrow":"Samostatnost","h2":"Cviky, které <em>zvládnete sami</em>.","text":"Cílem není, abyste k nám chodili napořád. Naučíme vás pečovat o své tělo tak, aby se bolest nevracela.","bullets":["Jasně vysvětlené domácí cviky","Materiály a video k zacvičení","Rady pro běžný den i práci"],"illus":"growth"},
+    {"type":"steps","h2":"Stačí <em>tři kroky</em>.","sub":"Od objednání k úlevě od bolesti.","steps":[
+      ["Objednejte se","Vyberte si termín online nebo zavolejte."],
+      ["Přijďte na vyšetření","Najdeme příčinu a domluvíme plán terapie."],
+      ["Cvičte a uvolněte se","Společně pracujeme na vašem návratu k pohybu."]
+    ]},
+    {"type":"testimonial","quote":"Po půl roce bolestí zad jsem konečně bez prášků. Naučili mě cviky, které dělám doma, a záda mě přestala budit.","author":"Ukázkový klient","role":"účetní, Brno"},
+    {"type":"pricing","h2":"Přehledný <em>ceník</em>.","sub":"Přesný plán doporučíme po vstupním vyšetření.","tiers":[
+      {"name":"Vstupní vyšetření","price":"od 900 Kč","period":"/ 60 minut","features":["Odběr anamnézy","Funkční vyšetření","Návrh plánu terapie","Doporučení prvních cviků"],"cta":"Objednat vyšetření","featured":false},
+      {"name":"Terapie na míru","price":"od 700 Kč","period":"/ 50 minut","features":["Manuální terapie","Individuální cvičení","Domácí cviky a materiály","Průběžné vyhodnocení"],"cta":"Objednat terapii","featured":true},
+      {"name":"Balíček 5 terapií","price":"od 3 200 Kč","period":"/ balíček","features":["Pět návštěv se slevou","Plán napříč terapiemi","Kontrolní vyšetření","Platnost 4 měsíce"],"cta":"Koupit balíček","featured":false}
+    ]},
+    {"type":"faq","h2":"Časté <em>dotazy</em>.","items":[
+      ["Potřebuji doporučení od lékaře?","Nepotřebujete. Přijít můžete i bez poukazu, vyšetření a terapii hradíte přímo."],
+      ["Jak dlouho jedna návštěva trvá?","Vstupní vyšetření zhruba hodinu, následné terapie zpravidla padesát minut."],
+      ["Co si mám vzít s sebou?","Pohodlné oblečení na cvičení a případnou předchozí zdravotní dokumentaci."],
+      ["Za jak dlouho ucítím úlevu?","Záleží na obtížích. Mnoho klientů cítí zlepšení po prvních několika terapiích."],
+      ["Dostanu cviky i domů?","Ano. Ke každé terapii dostanete cviky na míru, často i s videem k zacvičení."]
+    ]},
+    {"type":"cta","h2":"Začněte se hýbat <em>bez bolesti</em>.","sub":"Objednejte se na vstupní vyšetření a udělejte první krok ke zdravějšímu tělu.","button":"Objednat se"},
+    {"type":"footer","brand":"Pohyb","tagline":"Fyzioterapie a rehabilitace na míru pro váš návrat k pohybu. Ukázková značka pro náhled šablony.","columns":[
+      ["Terapie","Bolesti zad","Po úrazech","Manuální terapie","Prevence"],
+      ["Ordinace","O nás","Tým","Ceník","Kariéra"],
+      ["Kontakt","Telefon","E-mail","Brno a okolí","Po-Pá 8-19"]
+    ],"copyright":"// Pohyb je ukázková šablona s dummy obsahem"}
+  ]
+}

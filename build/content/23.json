@@ -1,0 +1,45 @@
+{
+  "lang": "cs",
+  "title": "Mikrofon: ukázková šablona landing page",
+  "desc": "Demonstrační landing page. Veškerý text je ukázkový (dummy) obsah.",
+  "sections": [
+    {"type":"nav","brand":"Mikrofon","links":["Epizody","Hosté","Předplatné","Kontakt"],"cta":"Poslechnout"},
+    {"type":"hero","eyebrow":"Ukázková šablona","h1":"Příběhy, které <em>stojí za poslech</em>.","sub":"Každý týden nová epizoda s lidmi, kteří mají co říct. Rozhovory bez vaty, témata do hloubky a zvuk, který si užijete ve sluchátkách.","cta":"Poslechnout zdarma","cta2":"Projít epizody","illus":"people"},
+    {"type":"logos","label":"Najdete nás na","items":["Spotify","Apple","YouTube","Podcasty","RSS"]},
+    {"type":"features","h2":"Proč si nás <em>oblíbíte</em>.","sub":"Žádné nekonečné odbočky. Jen dobré otázky, zajímaví hosté a poctivá produkce.","cards":[
+      ["mail","Pravidelně každý týden","Nová epizoda vychází ve čtvrtek ráno, ať máte na cestu do práce co poslouchat."],
+      ["users","Hosté z první ruky","Lidé, kteří svým oborem skutečně žijí, ne jen mluví do prázdna."],
+      ["sparkle","Témata do hloubky","Necháme prostor vyprávět, neskáčeme do řeči a jdeme až k jádru věci."],
+      ["doc","Přepisy ke každé epizodě","Raději čtete? Ke každému dílu najdete celý přepis i shrnutí."],
+      ["heart","Bez reklamních předělů","Předplatitelé poslouchají úplně bez přerušení a o pár dní dřív."],
+      ["globe","Posloucháte odkudkoli","Spotify, Apple, YouTube i klasické RSS. Vyberte si, kde vám to vyhovuje."]
+    ]},
+    {"type":"stats","items":[["120+","odvysílaných dílů"],["4,8","hodnocení posluchačů"],["50k+","poslechů měsíčně"],["35 min","průměrná délka dílu"]]},
+    {"type":"split1","eyebrow":"Tvorba","h2":"Od nápadu k <em>hotové epizodě</em>.","text":"Nepouštíme mikrofon jen tak. Každý díl si připravíme, ověříme fakta a sestříháme tak, aby vás držel u poslechu od první minuty.","bullets":["Rešerše a otázky připravené předem","Studiový zvuk, žádné šumy a praskání","Pečlivý střih bez zbytečných pauz"],"illus":"spark"},
+    {"type":"split2","eyebrow":"Komunita","h2":"Pořad, který <em>tvoříme spolu</em>.","text":"Témata i hosty často navrhujete vy. Posloucháte, píšete nám zpětnou vazbu a my podle ní pořad dál ladíme.","bullets":["Hosté na vaše tipy z komentářů","Hlasování o příštích tématech","Otázky posluchačů přímo v dílu"],"illus":"chat"},
+    {"type":"steps","h2":"Začnete ve <em>třech krocích</em>.","sub":"Od první epizody k pravidelnému poslechu.","steps":[
+      ["Vyberte aplikaci","Spotify, Apple nebo YouTube, podle toho, co máte rádi."],
+      ["Sledujte pořad","Klikněte na odběr a žádný nový díl vám neunikne."],
+      ["Poslouchejte naplno","Pusťte si epizodu na cestu, na běhání i k vaření."]
+    ]},
+    {"type":"testimonial","quote":"Mikrofon mi dělá společnost cestou do práce každý čtvrtek. Rozhovory jsou bez vaty a hosty si vážně umí vybrat.","author":"Ukázkový posluchač","role":"stálý odběratel, Brno"},
+    {"type":"pricing","h2":"Podpořte nás <em>předplatným</em>.","sub":"Poslouchat můžete zdarma. Předplatné odemkne bonusy a podpoří tvorbu.","tiers":[
+      {"name":"Posluchač","price":"0 Kč","period":"/ navždy","features":["Všechny epizody zdarma","Poslech ve všech aplikacích","Přepisy ke každému dílu","Reklamní předěly v dílech"],"cta":"Začít poslouchat","featured":false},
+      {"name":"Fanoušek","price":"99 Kč","period":"/ měsíc","features":["Epizody bez reklam","Díly o dva dny dříve","Bonusové nezkrácené rozhovory","Uzavřená skupina posluchačů"],"cta":"Stát se fanouškem","featured":true},
+      {"name":"Mecenáš","price":"299 Kč","period":"/ měsíc","features":["Vše z plánu Fanoušek","Poděkování v závěru dílu","Přístup k živým nahrávkám","Hlasování o tématech"],"cta":"Podpořit pořad","featured":false}
+    ]},
+    {"type":"faq","h2":"Časté <em>dotazy</em>.","items":[
+      ["Kdy vychází nové díly?","Každý čtvrtek ráno. Předplatitelé mají přístup už v úterý."],
+      ["Kde si pořad mohu pustit?","Na Spotify, Apple Podcasts, YouTube i přes klasické RSS ve vaší oblíbené aplikaci."],
+      ["Musím za poslech platit?","Ne. Všechny epizody jsou zdarma, předplatné jen odemyká bonusy a podporuje tvorbu."],
+      ["Máte ke každému dílu přepis?","Ano, ke každé epizodě najdete na webu celý přepis i krátké shrnutí."],
+      ["Můžu navrhnout hosta nebo téma?","Rádi. Napište nám tip a o tématech předplatitelé navíc hlasují."]
+    ]},
+    {"type":"cta","h2":"Pustíte si první díl?","sub":"Přidejte si Mikrofon do své aplikace a žádná nová epizoda vám neunikne.","button":"Poslechnout zdarma"},
+    {"type":"footer","brand":"Mikrofon","tagline":"Týdenní podcast o lidech a tématech, která stojí za poslech. Ukázková značka pro náhled šablony.","columns":[
+      ["Pořad","Epizody","Hosté","Přepisy","Témata"],
+      ["Poslech","Spotify","Apple","YouTube","RSS"],
+      ["Kontakt","E-mail","Tipy na hosty","Spolupráce","Sociální sítě"]
+    ],"copyright":"// Mikrofon je ukázková šablona s dummy obsahem"}
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "lang": "en",
+  "title": "Wander: sample landing template",
+  "desc": "Demonstration landing page. All text is sample (dummy) content.",
+  "sections": [
+    {"type":"nav","brand":"Wander","links":["Destinations","Trips","Pricing","Stories"],"cta":"Plan a trip"},
+    {"type":"hero","eyebrow":"Sample template","h1":"See the world, <em>skip the stress</em>.","sub":"Wander handles flights, stays and day plans in one tidy itinerary, so you can travel light and stay present.","cta":"Start planning","cta2":"Browse destinations","illus":"globe"},
+    {"type":"logos","label":"Travelers booked with","items":["Coastline","Summit","Meridian","Lagoon","Saffron"]},
+    {"type":"features","h2":"Your whole trip in <em>one place</em>.","sub":"Stop juggling tabs and screenshots. Wander keeps the entire journey from dream to departure together.","cards":[
+      ["map","Smart itineraries","Day-by-day plans that adapt to your pace, weather and mood."],
+      ["globe","Hand-picked places","Local stays and hidden corners, not the same tired tourist list."],
+      ["users","Travel together","Invite friends, vote on plans and split the costs without the spreadsheet."],
+      ["calendar","Flexible booking","Lock in dates with free changes, because plans love to wander too."],
+      ["shield","Covered everywhere","Trip protection and 24/7 help, from delayed flights to lost bags."],
+      ["sparkle","Local picks","Suggestions from people who actually live where you are going."]
+    ]},
+    {"type":"stats","items":[["80k+","trips planned"],["96%","would travel again"],["4.9","average rating"],["120+","countries covered"]]},
+    {"type":"split1","eyebrow":"Plan","h2":"From idea to <em>itinerary</em> in minutes.","text":"Tell us where and when, and Wander drafts a route with stays, transfers and daily ideas you can reshape in a tap.","bullets":["Routes built around your interests","Transfers and stays that connect","One-tap swaps when plans shift"],"illus":"target"},
+    {"type":"split2","eyebrow":"Travel","h2":"Everything you need, <em>offline too</em>.","text":"Tickets, maps and confirmations stay in one pocket, ready even when the signal is not. No more frantic inbox digging.","bullets":["All bookings in one wallet","Maps that work without data","Reminders that respect your time zone"],"illus":"layers"},
+    {"type":"steps","h2":"Packed and going in <em>three steps</em>.","sub":"No travel agent visit, no endless tabs.","steps":[
+      ["Tell us your dream","Pick a place or let Wander surprise you with a match."],
+      ["Shape the plan","Tweak the draft itinerary until it feels like yours."],
+      ["Book and go","Confirm everything at once and hit the road."]
+    ]},
+    {"type":"testimonial","quote":"We planned two weeks across the coast in one evening with Wander. Everything just worked, and we actually relaxed for once.","author":"Sample Traveler","role":"Weekend explorer, Sample City"},
+    {"type":"pricing","h2":"Simple, <em>honest</em> pricing.","sub":"Start free. Upgrade when the trips get bigger.","tiers":[
+      {"name":"Explorer","price":"$0","period":"/ forever","features":["Up to 3 trips","Basic itineraries","Shared planning","Community tips"],"cta":"Get started","featured":false},
+      {"name":"Voyager","price":"$8","period":"/ month","features":["Everything in Explorer","Unlimited trips","Offline access","Priority support"],"cta":"Start free trial","featured":true},
+      {"name":"Globetrotter","price":"$16","period":"/ month","features":["Everything in Voyager","Trip protection","Concierge picks","Group cost splitting"],"cta":"Talk to us","featured":false}
+    ]},
+    {"type":"faq","h2":"Frequently asked <em>questions</em>.","items":[
+      ["Is there really a free plan?","Yes. The Explorer plan is free forever for up to three trips, no card required."],
+      ["Can Wander book my flights and stays?","You can book stays, transfers and activities in-app, with flight search rolling out by region."],
+      ["What if my plans change?","Voyager and Globetrotter include flexible dates, so you can reshuffle without the panic."],
+      ["Do the maps work without internet?","Yes. Paid plans download maps, tickets and confirmations for offline use."],
+      ["Is my booking protected?","Globetrotter adds trip protection and 24/7 help for delays, cancellations and lost bags."]
+    ]},
+    {"type":"cta","h2":"Ready to wander?","sub":"Join thousands of travelers who swapped the planning headache for one clear itinerary.","button":"Plan a trip today"},
+    {"type":"footer","brand":"Wander","tagline":"One tidy place for flights, stays and day plans. Sample dummy brand for template preview.","columns":[
+      ["Product","Destinations","Trips","Pricing","Stories"],
+      ["Company","About","Careers","Press","Contact"],
+      ["Legal","Privacy","Terms","Cookies","Status"]
+    ],"copyright":"// Wander is a sample template with dummy content"}
+  ]
+}

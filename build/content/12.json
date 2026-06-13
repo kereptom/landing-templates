@@ -1,0 +1,45 @@
+{
+  "lang": "cs",
+  "title": "Peníze: ukázková šablona landing page",
+  "desc": "Demonstrační landing page pro fintech a mobilní platby. Veškerý text je ukázkový (dummy) obsah.",
+  "sections": [
+    {"type":"nav","brand":"Peníze","links":["Funkce","Ceník","FAQ","Blog"],"cta":"Založit účet"},
+    {"type":"hero","eyebrow":"Ukázková šablona","h1":"Platby <em>během vteřiny</em>.","sub":"Peníze spojí účet, kartu i platby v jedné aplikaci, takže máte výdaje vždy pod kontrolou.","cta":"Založit účet zdarma","cta2":"Jak to funguje","illus":"phone"},
+    {"type":"logos","label":"Důvěřují nám","items":["Northwind","Lumen","Forge","Atlas","Vela"]},
+    {"type":"features","h2":"Vše v <em>jedné aplikaci</em>.","sub":"Konec přepínání mezi bankou, peněženkou a tabulkou. Peníze pokryjí celý tok od příjmu po výdaj.","cards":[
+      ["bolt","Okamžité platby","Pošlete peníze přáteli během vteřiny, kdykoli a kamkoli."],
+      ["phone","Mobilní peněženka","Plaťte telefonem v obchodě i online jedním dotykem."],
+      ["chart","Přehled výdajů","Vidíte, kam peníze tečou, rozdělené do jasných kategorií."],
+      ["shield","Bezpečné platby","Každou transakci hlídáme a potvrdíte ji otiskem prstu."],
+      ["globe","Platby v zahraničí","Férový kurz bez skrytých příplatků, ať jste kdekoli."],
+      ["lock","Zámek karty","Kartu zablokujete i odblokujete v aplikaci jedním klepnutím."]
+    ]},
+    {"type":"stats","items":[["2 mil.+","aktivních uživatelů"],["99,9%","dostupnost služby"],["4,9","hodnocení v obchodě"],["0 Kč","poplatky za vedení"]]},
+    {"type":"split1","eyebrow":"Posílání","h2":"Pošlete peníze za <em>pár sekund</em>.","text":"Žádné dlouhé čísla účtů. Vyberete kontakt, zadáte částku a platba dorazí okamžitě, i o víkendu.","bullets":["Platba podle telefonního čísla","Rozdělení účtu mezi přátele","Opakované platby na pár klepnutí"],"illus":"network"},
+    {"type":"split2","eyebrow":"Přehled","h2":"Výdaje, kterým <em>rozumíte</em>.","text":"Každá transakce má kategorii, místo i čas. Konečně víte, kam mizí peníze, bez ručního třídění.","bullets":["Automatické kategorie výdajů","Měsíční rozpočty a limity","Upozornění na neobvyklé platby"],"illus":"growth"},
+    {"type":"steps","h2":"Hotovo ve <em>třech krocích</em>.","sub":"Bez papírování a bez návštěvy pobočky.","steps":[
+      ["Stáhněte aplikaci","Zaregistrujte se za pár minut přímo z telefonu."],
+      ["Ověřte totožnost","Naskenujte doklad a selfie, ověření zvládneme hned."],
+      ["Začněte platit","Aktivujte kartu a posílejte první platby."]
+    ]},
+    {"type":"testimonial","quote":"Přešli jsme na Peníze a poplatky za platby v zahraničí nám klesly skoro na nulu. Aplikace je rychlá a přehledná.","author":"Ukázkový uživatel","role":"freelancer, Brno"},
+    {"type":"pricing","h2":"Jednoduchý a <em>férový</em> ceník.","sub":"Začněte zdarma. Plaťte víc, jen když chcete víc.","tiers":[
+      {"name":"Basic","price":"0 Kč","period":"/ měsíc","features":["Vedení účtu zdarma","Platební karta","Okamžité platby","Přehled výdajů"],"cta":"Založit účet","featured":false},
+      {"name":"Plus","price":"149 Kč","period":"/ měsíc","features":["Vše z Basic","Platby v zahraničí bez poplatku","Vyšší limity výběrů","Prioritní podpora"],"cta":"Vyzkoušet zdarma","featured":true},
+      {"name":"Premium","price":"299 Kč","period":"/ měsíc","features":["Vše z Plus","Kovová karta","Cestovní pojištění","Osobní bankéř"],"cta":"Kontaktovat nás","featured":false}
+    ]},
+    {"type":"faq","h2":"Časté <em>dotazy</em>.","items":[
+      ["Je založení účtu opravdu zdarma?","Ano. Tarif Basic je zdarma napořád, bez poplatků za vedení účtu a bez podmínek."],
+      ["Jak rychle účet založím?","Registrace i ověření totožnosti zvládnete z telefonu během několika minut."],
+      ["Jsou moje peníze v bezpečí?","Vklady chráníme podle zákona a každou platbu potvrzujete biometricky přímo v aplikaci."],
+      ["Funguje platba v zahraničí?","Ano. Plaťte kartou i telefonem po celém světě za férový kurz, na tarifu Plus bez poplatku."],
+      ["Co když ztratím telefon?","Kartu i účet okamžitě zablokujete přes web nebo zákaznickou linku, peníze zůstanou v bezpečí."]
+    ]},
+    {"type":"cta","h2":"Připraveni platit chytře?","sub":"Přidejte se k milionům lidí, kteří mají platby i výdaje v jedné aplikaci.","button":"Založit účet zdarma"},
+    {"type":"footer","brand":"Peníze","tagline":"Účet, karta i platby v jedné aplikaci. Ukázková značka pro náhled šablony.","columns":[
+      ["Produkt","Funkce","Ceník","Novinky","Roadmapa"],
+      ["Firma","O nás","Kariéra","Blog","Kontakt"],
+      ["Právní","Soukromí","Podmínky","Bezpečnost","Status"]
+    ],"copyright":"// Peníze je ukázková šablona s dummy obsahem"}
+  ]
+}
