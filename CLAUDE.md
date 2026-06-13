@@ -24,7 +24,7 @@ si v tabulce dole to jedno číslo (`NN`) a jdi rovnou na jeho soubory.
    `radius`, `bodyclass`.
 4. Spusť `python3 build/build.py`. Hotovo.
 5. Deploy (jen na vyžádání): `vercel deploy --prod --yes` z kořene projektu.
-   Web: https://landing-templates.vercel.app  GitHub: kereptom/landing-templates
+   Web: https://28landingtemplates.vercel.app  GitHub: kereptom/landing-templates
 
 ## Co NEČÍST (šetři tokeny)
 
